@@ -21,4 +21,4 @@
 "arquivo": "ProgramaPoliticodoPCBeleicoes20261.pdf",
 "programa": "Edmilson Costa e Cleusa Santos — Partido Comunista Brasileiro (PCB) — Eleições Presidenciais de 2026"
 "arquivo": "PLANODEGOVERNO.pdf",
-"programa": "PLANO DE GOVERNO — “Proteger Hoje, Transformar o Amanhã”; candidato, partido e período eleitoral não explicitados no documento"
+"programa": "Clariana Barão — Democracia Cristã — “Proteger Hoje, Transformar o Amanhã”; atribuição corrigida a partir de informação fornecida pelo usuário"

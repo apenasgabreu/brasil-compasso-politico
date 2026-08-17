@@ -92,14 +92,14 @@ const sourceFiles = [
   ["flávio", "Flávio Bolsonaro — PL", "Diretrizes de Plano de Governo", "/manus-storage/DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal_36dd945a.pdf"],
   ["augusto", "Augusto Cury", "Plano de Governo", "/manus-storage/PLANODEGOVERNOOBRASILDOSNOSSOSSONHOS_555f1710.pdf"],
   ["pcb", "Edmilson Costa e Cleusa Santos — PCB", "Programa Político", "/manus-storage/ProgramaPoliticodoPCBeleicoes20261_7be57e53.pdf"],
-  ["proteger", "Programa sem candidatura identificada", "Proteger Hoje, Transformar o Amanhã", "/manus-storage/PLANODEGOVERNO_7020aa1e.pdf"],
+  ["proteger", "Clariana Barão — Democracia Cristã", "Proteger Hoje, Transformar o Amanhã", "/manus-storage/PLANODEGOVERNO_7020aa1e.pdf"],
 ] as const;
 
 export function getProgramMeta(program: string) {
   const normalized = program.toLocaleLowerCase("pt-BR");
   const found = sourceFiles.find(([needle]) => normalized.includes(needle));
   return found
-    ? { name: found[1], document: found[2], url: found[3], identifiable: !normalized.includes("sem autoria") }
+    ? { name: found[1], document: found[2], url: found[3], identifiable: true }
     : { name: program, document: "Documento programático", url: "#", identifiable: false };
 }
 

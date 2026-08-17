@@ -35,3 +35,7 @@
 - [x] Atualizar a validação final de desktop e celular após concluir as checagens complementares.
 - [x] Persistir e confirmar a documentação final de validação de teclado, auditoria estática de acessibilidade e build de produção.
 - [x] Confirmar por leitura o arquivo de validação final e seu conteúdo de teclado, acessibilidade e build antes do checkpoint.
+- [x] Corrigir a autoria e a filiação do plano “Proteger Hoje, Transformar o Amanhã” para Clariana Barão — Democracia Cristã em todos os metadados e textos públicos.
+- [x] Confirmar por varredura que não restaram referências públicas à atribuição anterior do plano.
+- [x] Normalizar a identificação correspondente na matriz consolidada de posições.
+- [x] Executar build e verificação visual final da atribuição corrigida.

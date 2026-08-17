@@ -1,4 +1,4 @@
-import { axisOrder, type Answer, type Axis, type Position, programs, questions, type Program } from "@/data/compassData";
+import { axisOrder, getProgramMeta, type Answer, type Axis, type Position, programs, questions, type Program } from "@/data/compassData";
 
 export type AxisScore = { axis: Axis; score: number | null; coverage: number; compared: number };
 export type ProgramScore = { program: Program; score: number | null; coverage: number; axes: AxisScore[]; economic: number | null; social: number | null };
@@ -66,7 +66,7 @@ export function userCoordinates(answers: Record<string, Answer>) {
 }
 
 export function deterministicNarrative(item: ProgramScore, answers: Record<string, Answer> = {}) {
-  const meta = item.program.program;
+  const meta = getProgramMeta(item.program.program).name;
   const affinity = item.score === null ? "não pôde ser calculada" : `${Math.round(item.score * 100)}%`;
   const comparisons = questions
     .map((question) => {
