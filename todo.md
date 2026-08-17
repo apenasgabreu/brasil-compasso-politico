@@ -71,7 +71,7 @@
 - [x] Remover fotografias de vices para exibir somente a pessoa candidata à Presidência em cada resultado.
 - [x] Validar em preview de resultados o retrato frontal de Lula, Hertz Dias, Wilson Grassi e a ausência de foto de vice.
 - [x] Validar visualmente, com composição legível, o card de Story com retrato, afinidade e origem metodológica.
-- [ ] Salvar novo checkpoint após registrar as validações visuais finais.
+- [x] Salvar novo checkpoint após registrar as validações visuais finais.
 - [x] Criar e remover uma prévia temporária de resultados para a validação visual dos retratos corrigidos.
 - [x] Capturar uma prévia explícita e legível do card de Story com retrato, afinidade e origem metodológica.
 - [x] Atualizar o registro de validação após a revisão visual explícita do card de Story.
