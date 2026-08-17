@@ -1,4 +1,5 @@
 import { createElement } from "react";
+import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { ProgramCatalog } from "./Home";
@@ -8,5 +9,20 @@ describe("catálogo de programas", () => {
     const markup = renderToStaticMarkup(createElement(ProgramCatalog));
     expect(markup).not.toMatch(/<a\b[^>]*>(?:(?!<\/?a\b)[\s\S])*<a\b/);
     expect((markup.match(/<a\b/g) ?? [])).toHaveLength(12);
+  });
+
+  it("mantém retratos estáticos compactos, circulares e responsivos", () => {
+    const markup = renderToStaticMarkup(createElement(ProgramCatalog));
+    const css = readFileSync(new URL("../index.css", import.meta.url), "utf8");
+
+    expect((markup.match(/class="portrait-static"/g) ?? [])).toHaveLength(12);
+    expect((markup.match(/alt="Retrato de [^"]+"/g) ?? [])).toHaveLength(12);
+    expect(css).toContain(".portrait-stack a, .portrait-static");
+    expect(css).toContain("width: 58px; height: 58px");
+    expect(css).toContain("border-radius: 50%");
+    expect(css).toContain("object-fit: cover");
+    expect(css).toContain(".portrait-stack-compact a, .portrait-stack-compact .portrait-static");
+    expect(css).toContain("@media (max-width: 850px) { .hero-grid, .result-feature, .detail-grid");
+    expect(css).toContain(".program-catalog { grid-template-columns: 1fr; }");
   });
 });

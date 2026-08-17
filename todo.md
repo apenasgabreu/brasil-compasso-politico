@@ -100,3 +100,22 @@
 - [x] Adicionar teste de renderização que verifique a ausência de âncoras aninhadas no catálogo em HTML gerado.
 - [x] Revalidar a página de metodologia após navegação, com captura limpa de erros do React.
 - [x] Corrigir o catálogo da página de metodologia, que era a origem real da estrutura de links aninhados.
+- [x] Mapear todos os usos de retratos na metodologia, resultados, detalhamento e compartilhamento.
+- [x] Definir e aplicar proporções, enquadramento e tamanhos consistentes para retratos em cada contexto visual.
+- [x] Verificar se o padrão corrigido se mantém em desktop e celular, sem prejudicar identificação ou acessibilidade.
+- [x] Aplicar ao retrato estático do catálogo as mesmas dimensões, recorte circular e `object-fit` dos retratos interativos.
+- [x] Confirmar que resultados, detalhamento e Story já usam enquadramento próprio e não compartilham a falha do catálogo.
+- [x] Validar visualmente o catálogo com retratos padronizados em desktop e em viewport móvel.
+- [x] Verificar foco, texto alternativo e legibilidade dos retratos padronizados após a correção.
+- [x] Adicionar foco visível aos cartões de programa, que seguem focáveis após a remoção do link interno do retrato.
+- [x] Criar e remover uma prévia temporária da página Método para a validação móvel dos retratos.
+- [x] Revisar explicitamente os retratos padronizados da página Método em desktop e em viewport móvel.
+- [x] Registrar uma checagem visual específica de legibilidade dos retratos padronizados.
+- [x] Criar e remover uma prévia temporária da página Método para revisão visual independente em desktop e celular.
+- [x] Capturar e revisar explicitamente o catálogo de retratos em desktop, com os registros em escala legível.
+- [x] Registrar uma confirmação visual separada da legibilidade e reconhecimento dos retratos em desktop e celular.
+- [x] Criar e remover uma prévia temporária focalizada da página Método para a captura desktop dos retratos.
+- [x] Adicionar teste determinístico para escala, recorte circular, `object-fit` e quebra responsiva do catálogo de retratos.
+- [x] Registrar somente as conclusões visualmente objetivas e testáveis da auditoria de retratos.
+- [x] Qualificar no registro de validação as observações manuais de aparência e manter como conclusão apenas evidências objetivas e testáveis.
+- [x] Reler e confirmar a versão objetiva do registro de validação de retratos após a qualificação das observações manuais.
