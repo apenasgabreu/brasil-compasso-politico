@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { buildShareText, buildStoryOrigin, copyShareText, shareNativeResult, shareStory, socialLink } from "./resultShare";
+import { buildShareText, buildStoryOrigin, buildStorySource, copyShareText, shareNativeResult, shareStory, socialLink } from "./resultShare";
 
 const result = { candidate: "Clariana Barão — Democracia Cristã", score: 0.68, coverage: 0.4, url: "https://exemplo.test" };
 
@@ -19,6 +19,13 @@ describe("resumo compartilhável", () => {
     expect(origin).toContain("posições documentadas");
     expect(origin).toContain("Programa de Governo");
     expect(origin).not.toContain("ECO-01");
+  });
+
+  it("inclui partido e referência direta ao programa sem acrescentar respostas", () => {
+    const source = buildStorySource({ ...result, party: "Democracia Cristã", sourceUrl: "https://exemplo.test/programa.pdf" });
+    expect(source).toContain("QR code");
+    expect(source).toContain("PDF");
+    expect(source).not.toContain("ECO-01");
   });
 
   it("monta links codificados para redes sem incluir respostas individuais", () => {
@@ -49,4 +56,3 @@ describe("resumo compartilhável", () => {
     expect(click).toHaveBeenCalledOnce();
   });
 });
-

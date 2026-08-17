@@ -81,3 +81,15 @@
 - [x] Executar OCR verificável do card de Story salvo para confirmar candidato, afinidade e origem metodológica.
 - [x] Persistir a transcrição confirmada do card de Story e relê-la antes do checkpoint.
 - [x] Confirmar por leitura a persistência da transcrição OCR do card de Story em sua documentação dedicada.
+- [x] Incluir o partido da candidatura no card de Story gerado localmente.
+- [x] Incluir no card de Story uma referência direta e legível ao PDF do programa analisado.
+- [x] Testar e validar visualmente o card atualizado com partido e referência documental.
+- [x] Tornar a referência direta ao PDF legível no Story por meio de QR code local e rótulo textual de fonte.
+- [x] Decodificar o QR code do card gerado e confirmar que aponta para o PDF do programa analisado.
+- [x] Capturar e revisar em resolução integral o card final com retrato, partido, percentual, rótulo de fonte e QR code.
+- [x] Executar OCR no card final atualizado para confirmar partido, afinidade e rótulo de fonte.
+- [x] Registrar a validação final do card com partido e QR code antes do checkpoint.
+- [x] Confirmar visualmente, em imagem integral, os elementos do card final com partido e QR code.
+- [x] Reler a documentação de revisão do card para confirmar a persistência da validação final.
+- [x] Persistir sem interrupção a validação final do card com partido e QR code na documentação dedicada.
+- [x] Reler a documentação de revisão após a persistência final e confirmar os elementos validados.
