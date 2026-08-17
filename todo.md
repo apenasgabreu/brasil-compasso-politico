@@ -93,3 +93,10 @@
 - [x] Reler a documentação de revisão do card para confirmar a persistência da validação final.
 - [x] Persistir sem interrupção a validação final do card com partido e QR code na documentação dedicada.
 - [x] Reler a documentação de revisão após a persistência final e confirmar os elementos validados.
+- [x] Localizar e remover qualquer estrutura de links aninhados na página de resultados.
+- [x] Adicionar teste de regressão para garantir que os componentes de retrato e fonte não emitam links aninhados.
+- [x] Validar no navegador que o aviso de nesting do React não retorna.
+- [x] Corrigir o registro da falha para indicar que ela ocorria no catálogo da página de metodologia.
+- [x] Adicionar teste de renderização que verifique a ausência de âncoras aninhadas no catálogo em HTML gerado.
+- [x] Revalidar a página de metodologia após navegação, com captura limpa de erros do React.
+- [x] Corrigir o catálogo da página de metodologia, que era a origem real da estrutura de links aninhados.

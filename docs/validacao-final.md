@@ -33,3 +33,9 @@ O retrato de Lula foi substituído por foto oficial frontal. As candidaturas ass
 O card local para Story passou a incluir o retrato da candidatura de maior afinidade e o bloco “De onde vem este resultado”, que informa que o resultado é calculado localmente a partir das respostas do eleitor comparadas às posições documentadas no programa. A exportação PNG foi testada no navegador com retrato e origem metodológica, gerando arquivo válido de 2,15 MB sem transmissão de respostas.
 
 Uma prévia ampliada do PNG foi revisada visualmente no navegador. O card exibiu retrato frontal de Lula, identificação da candidatura, afinidade de 74%, cobertura de 68% e o bloco “De onde vem este resultado”, incluindo a referência ao Livro do Plano de Governo. A hierarquia, o contraste e a legibilidade permaneceram adequados na composição vertical de Story.
+
+## Correção de markup — 17 de agosto de 2026
+
+O catálogo de programas antes combinava o link externo do PDF com o componente de retrato, que também gerava um link para a fonte da foto. O componente passou a renderizar o retrato como elemento estático dentro do catálogo, preservando o link externo do documento e evitando a estrutura inválida `a > a`. A verificação do DOM da página de metodologia encontrou **0** âncoras aninhadas, **12** links de catálogo e **0** links de retrato dentro deles. A suíte passou com 13 testes, incluindo teste de regressão, e a compilação de produção concluiu com êxito.
+
+O teste de regressão agora renderiza o componente do catálogo em HTML estático e verifica diretamente que não existe uma âncora dentro de outra, mantendo doze links de documentos. Em uma sessão limpa, a navegação introdução → metodologia foi repetida com captura temporária de `console.error`: o resultado foi **0** erros capturados, **0** avisos de nesting do React e **0** âncoras aninhadas no DOM.
