@@ -39,3 +39,24 @@
 - [x] Confirmar por varredura que não restaram referências públicas à atribuição anterior do plano.
 - [x] Normalizar a identificação correspondente na matriz consolidada de posições.
 - [x] Executar build e verificação visual final da atribuição corrigida.
+- [x] Avaliar a adequação linguística e conceitual das 50 afirmações à luz de Brasil no Espelho antes de alterá-las.
+- [x] Documentar a decisão metodológica sobre simplificação das questões, com evidências e limites da fonte contextual.
+- [x] Persistir e confirmar por leitura a conclusão metodológica sobre simplificação das questões à luz de Brasil no Espelho.
+- [x] Simplificar dez afirmações de maior carga técnico-institucional sem alterar seu construto, direção normativa ou vínculo programático.
+- [x] Implementar compartilhamento social voluntário e privado, incluindo orientação para stories do Instagram sem transmitir respostas ao servidor.
+- [x] Testar a montagem do resumo compartilhável e os fallbacks de compartilhamento local.
+- [x] Obter e integrar imagens de identificação de fonte verificável para as candidaturas documentalmente identificadas.
+- [x] Validar a atualização de linguagem, compartilhamento e identificação visual em desktop e celular.
+- [x] Testar o download local do card de Story, a indisponibilidade do compartilhamento nativo e a cópia do resumo com sucesso e erro.
+- [x] Validar em celular a tela de resultados com retratos, painel de compartilhamento e ações legíveis.
+- [x] Persistir e confirmar o registro final dessas validações complementares.
+- [x] Inspecionar visualmente em viewport móvel a tela de resultados com retratos, painel de compartilhamento e botões.
+- [x] Confirmar por leitura o registro final das validações complementares após a última atualização documental.
+- [x] Criar uma prévia exclusivamente de desenvolvimento para inspecionar os resultados atualizados em viewport móvel.
+- [x] Remover a prévia interna de resultados após concluir a validação móvel.
+- [x] Confirmar visualmente, com evidência legível, os retratos e o painel social na tela móvel de resultados.
+- [x] Recriar temporariamente a prévia de resultados em desenvolvimento para a captura móvel de confirmação.
+- [x] Remover a segunda prévia temporária e seus estilos de foco antes da compilação final.
+- [x] Ler novamente a documentação de validação final após a última atualização e confirmar sua persistência.
+- [x] Realizar revisão visual independente e explícita da tela móvel de resultados com retratos e painel social.
+- [x] Remover a prévia temporária usada na revisão visual independente antes de salvar a atualização.

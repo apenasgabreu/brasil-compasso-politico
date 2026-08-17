@@ -29,7 +29,7 @@ export const questions: Question[] = [
   { id: "ECO-01", axis: "Economia e orçamento", text: "O Estado deve ampliar a atuação direta em setores estratégicos da economia, mesmo que reduza espaço para empresas privadas.", economic: -1 },
   { id: "ECO-02", axis: "Economia e orçamento", text: "A redução de impostos e de gastos públicos deve ser prioridade para melhorar a atividade econômica.", economic: 1 },
   { id: "ECO-03", axis: "Economia e orçamento", text: "Impostos sobre renda, heranças e patrimônio elevados devem financiar maior parte dos serviços públicos.", economic: -1 },
-  { id: "ECO-04", axis: "Economia e orçamento", text: "A política fiscal deve priorizar metas de dívida e superávit, mesmo quando isso limita a expansão de gastos.", economic: 1 },
+  { id: "ECO-04", axis: "Economia e orçamento", text: "O governo deve priorizar o controle da dívida e gastar menos do que arrecada, mesmo que isso limite novos gastos públicos.", economic: 1 },
   { id: "ECO-05", axis: "Economia e orçamento", text: "O Banco Central deve manter autonomia para definir a política monetária.", economic: 1 },
   { id: "TRA-01", axis: "Trabalho e proteção social", text: "A jornada legal de trabalho deve ser reduzida sem redução de salários." },
   { id: "TRA-02", axis: "Trabalho e proteção social", text: "As regras trabalhistas devem ser flexibilizadas para facilitar contratações e reduzir custos." },
@@ -42,26 +42,26 @@ export const questions: Question[] = [
   { id: "SAE-04", axis: "Saúde e educação", text: "O acesso à universidade pública deve ser ampliado com redução de barreiras seletivas." },
   { id: "SAE-05", axis: "Saúde e educação", text: "Avaliações de aprendizagem devem orientar a gestão escolar e as políticas educacionais." },
   { id: "CID-01", axis: "Cidades, moradia e infraestrutura", text: "O governo federal deve financiar diretamente programas amplos de habitação popular." },
-  { id: "CID-02", axis: "Cidades, moradia e infraestrutura", text: "Parcerias com empresas privadas e concessões devem ampliar infraestrutura de logística e saneamento." },
+  { id: "CID-02", axis: "Cidades, moradia e infraestrutura", text: "Empresas privadas devem poder ajudar a ampliar estradas, transporte de cargas, água e esgoto por meio de parcerias com o governo." },
   { id: "CID-03", axis: "Cidades, moradia e infraestrutura", text: "Imóveis urbanos vazios devem poder ser destinados a moradia popular." },
   { id: "CID-04", axis: "Cidades, moradia e infraestrutura", text: "O transporte coletivo deve caminhar para tarifa zero ou forte subsídio público." },
-  { id: "CID-05", axis: "Cidades, moradia e infraestrutura", text: "A regularização fundiária e a titulação devem ser priorizadas para ampliar a segurança de posse." },
+  { id: "CID-05", axis: "Cidades, moradia e infraestrutura", text: "O governo deve facilitar documentos que reconheçam quem mora ou trabalha em um terreno, dando mais segurança para permanecer no local." },
   { id: "AMB-01", axis: "Ambiente, energia e agricultura", text: "A política climática deve priorizar a redução de emissões, mesmo que imponha limites a atividades econômicas." },
-  { id: "AMB-02", axis: "Ambiente, energia e agricultura", text: "A transição energética deve acelerar fontes renováveis e reduzir dependência de combustíveis fósseis." },
+  { id: "AMB-02", axis: "Ambiente, energia e agricultura", text: "O Brasil deve acelerar o uso de energia renovável, como sol e vento, e depender menos de petróleo, carvão e gás." },
   { id: "AMB-03", axis: "Ambiente, energia e agricultura", text: "Mercados de carbono e pagamento por serviços ambientais devem remunerar quem preserva." },
   { id: "AMB-04", axis: "Ambiente, energia e agricultura", text: "O licenciamento ambiental deve ser simplificado e ter prazos definidos para projetos de baixo risco." },
   { id: "AMB-05", axis: "Ambiente, energia e agricultura", text: "A reforma agrária e o apoio à agricultura familiar devem ser prioridades nacionais." },
   { id: "SEG-01", axis: "Segurança e justiça", text: "O combate ao crime organizado deve ampliar integração policial, inteligência e controle de ativos financeiros." },
   { id: "SEG-02", axis: "Segurança e justiça", text: "As leis penais devem ser endurecidas para crimes graves, mesmo que isso resulte em mais tempo de prisão.", social: -1 },
-  { id: "SEG-03", axis: "Segurança e justiça", text: "A segurança pública deve priorizar desmilitarização, controle da atividade policial e redução do encarceramento.", social: 1 },
+  { id: "SEG-03", axis: "Segurança e justiça", text: "A segurança pública deve ter mais controle sobre a atuação policial, menos foco em prisões e mudar o modelo militar das polícias.", social: 1 },
   { id: "SEG-04", axis: "Segurança e justiça", text: "As Forças Armadas devem ter maior atuação em fronteiras e operações de segurança." },
   { id: "SEG-05", axis: "Segurança e justiça", text: "O sistema prisional deve priorizar separação de lideranças, educação, trabalho e reinserção social." },
   { id: "DIR-01", axis: "Direitos e igualdade", text: "O Estado deve ampliar políticas específicas para reduzir desigualdades de raça e gênero.", social: 1 },
   { id: "DIR-02", axis: "Direitos e igualdade", text: "O acesso a creche e redes públicas de cuidado deve ser ampliado para apoiar famílias e trabalho.", social: 1 },
-  { id: "DIR-03", axis: "Direitos e igualdade", text: "Terras indígenas e quilombolas devem ser demarcadas e protegidas com prioridade.", social: 1 },
+  { id: "DIR-03", axis: "Direitos e igualdade", text: "Terras de povos indígenas e de comunidades quilombolas devem ter seus limites reconhecidos e receber proteção prioritária.", social: 1 },
   { id: "DIR-04", axis: "Direitos e igualdade", text: "O Estado deve ampliar políticas de proteção e direitos para pessoas LGBTQIA+.", social: 1 },
   { id: "DIR-05", axis: "Direitos e igualdade", text: "A interrupção voluntária da gravidez deve ser legalizada e ofertada pela rede pública.", social: 1 },
-  { id: "DEM-01", axis: "Democracia e instituições", text: "O orçamento público deve incluir mecanismos permanentes de participação popular deliberativa." },
+  { id: "DEM-01", axis: "Democracia e instituições", text: "O orçamento público deve ter formas permanentes para a população participar e ajudar a decidir como o dinheiro será usado." },
   { id: "DEM-02", axis: "Democracia e instituições", text: "A autonomia de estados e municípios deve aumentar, com mais recursos e responsabilidades locais." },
   { id: "DEM-03", axis: "Democracia e instituições", text: "Decisões monocráticas de tribunais superiores devem ser mais restritas." },
   { id: "DEM-04", axis: "Democracia e instituições", text: "A reeleição para cargos do Executivo deve ser extinta." },
@@ -73,9 +73,9 @@ export const questions: Question[] = [
   { id: "EXT-05", axis: "Política externa e defesa", text: "A soberania sobre recursos naturais e dados estratégicos deve limitar dependência de empresas ou governos estrangeiros." },
   { id: "CTD-01", axis: "Ciência, tecnologia e desenvolvimento", text: "O Estado deve ampliar investimento direto em ciência e tecnologia públicas." },
   { id: "CTD-02", axis: "Ciência, tecnologia e desenvolvimento", text: "Universidades e empresas devem cooperar mais em pesquisa e inovação." },
-  { id: "CTD-03", axis: "Ciência, tecnologia e desenvolvimento", text: "O Brasil deve desenvolver infraestrutura digital e inteligência artificial com proteção de dados e governança pública." },
-  { id: "CTD-04", axis: "Ciência, tecnologia e desenvolvimento", text: "A exploração de minerais críticos e terras raras deve priorizar agregação de valor e controle nacional." },
-  { id: "CTD-05", axis: "Ciência, tecnologia e desenvolvimento", text: "O desenvolvimento regional deve usar infraestrutura e políticas específicas para reduzir desigualdades territoriais." },
+  { id: "CTD-03", axis: "Ciência, tecnologia e desenvolvimento", text: "O Brasil deve ampliar internet e inteligência artificial, protegendo dados pessoais e mantendo regras públicas claras." },
+  { id: "CTD-04", axis: "Ciência, tecnologia e desenvolvimento", text: "A exploração de minerais estratégicos, como terras raras, deve gerar mais processamento no Brasil e manter controle nacional." },
+  { id: "CTD-05", axis: "Ciência, tecnologia e desenvolvimento", text: "Regiões mais pobres devem receber infraestrutura e políticas próprias para reduzir diferenças entre as regiões do país." },
 ];
 
 export const programs = rawPositions.programs as unknown as Program[];
@@ -95,12 +95,29 @@ const sourceFiles = [
   ["proteger", "Clariana Barão — Democracia Cristã", "Proteger Hoje, Transformar o Amanhã", "/manus-storage/PLANODEGOVERNO_7020aa1e.pdf"],
 ] as const;
 
+export type CandidatePortrait = { name: string; image: string; source: string; credit: string };
+
+const candidatePortraits: Record<string, CandidatePortrait[]> = {
+  "Romeu Zema — NOVO": [{ name: "Romeu Zema", image: "/manus-storage/romeu-zema_380554f5.jpg", source: "https://commons.wikimedia.org/wiki/File:Romeu_Zema_2025_(cropped).jpg", credit: "Wikimedia Commons · CC BY 4.0" }],
+  "Samara Martins — UP": [{ name: "Samara Martins", image: "/manus-storage/samara-martins_2eb2ee23.jpg", source: "https://commons.wikimedia.org/wiki/File:Samara_Martins_UP.jpg", credit: "Wikimedia Commons · atribuição indicada na fonte" }],
+  "Ronaldo Caiado — PSD": [{ name: "Ronaldo Caiado", image: "/manus-storage/ronaldo-caiado_e98d53c5.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_do_governador_de_Goi%C3%A1s,_Ronaldo_Caiado_em_2023_(ombros).jpg", credit: "Bianca Kida · CC BY 2.0" }],
+  "Renan Santos — Partido Missão": [{ name: "Renan Santos", image: "/manus-storage/renan-santos_691a460c.jpg", source: "https://commons.wikimedia.org/wiki/File:Renan_Santos.jpg", credit: "Romerito Pontes · CC BY 4.0" }],
+  "Luiz Inácio Lula da Silva — coligação": [{ name: "Luiz Inácio Lula da Silva", image: "/manus-storage/lula_fdc20500.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(m%C3%A3o_pitoca).jpg", credit: "Ricardo Stuckert/PR · CC BY 2.0" }],
+  "Flávio Bolsonaro — PL": [{ name: "Flávio Bolsonaro", image: "/manus-storage/flavio-bolsonaro_8022afb1.jpg", source: "https://commons.wikimedia.org/wiki/File:Flavio_Bolsonaro_em_2006.jpg", credit: "Wikimedia Commons · CC BY 4.0" }],
+  "Augusto Cury": [{ name: "Augusto Cury", image: "/manus-storage/augusto-cury_252b0a4e.jpg", source: "https://commons.wikimedia.org/wiki/File:Augusto_Cury,_escritor_(28339139296).jpg", credit: "Lima Andruška · CC BY-SA 2.0" }],
+  "Edmilson Costa e Cleusa Santos — PCB": [
+    { name: "Edmilson Costa", image: "/manus-storage/edmilson-costa_a47ac5e9.jpg", source: "https://commons.wikimedia.org/wiki/File:Edmilson_Costa_-_PCB.jpg", credit: "PCB/Diário Liberdade · CC BY 3.0" },
+    { name: "Cleusa Santos", image: "/manus-storage/cleusa-santos_6a69df02.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_CLEUSA_SANTOS_CANDIDATA_VICE-PRESIDENTE_TSE_(280002551976).jpg", credit: "Fonte TSE · CC BY 4.0" },
+  ],
+  "Clariana Barão — Democracia Cristã": [{ name: "Clariana Barão", image: "/manus-storage/clariana-barao_47a8443a.jpg", source: "https://www.democraciacrista.org.br/clariana-e-a-indicada-na-convencao-nacional-para-presidencia-da-republica-pela-democracia-crista/", credit: "Democracia Cristã · imagem institucional" }],
+};
+
 export function getProgramMeta(program: string) {
   const normalized = program.toLocaleLowerCase("pt-BR");
   const found = sourceFiles.find(([needle]) => normalized.includes(needle));
   return found
-    ? { name: found[1], document: found[2], url: found[3], identifiable: true }
-    : { name: program, document: "Documento programático", url: "#", identifiable: false };
+    ? { name: found[1], document: found[2], url: found[3], portraits: candidatePortraits[found[1]] ?? [], identifiable: true }
+    : { name: program, document: "Documento programático", url: "#", portraits: [], identifiable: false };
 }
 
 export const responseOptions: { value: Position; label: string }[] = [
