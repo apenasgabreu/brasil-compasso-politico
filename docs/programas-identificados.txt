@@ -1,0 +1,24 @@
+"arquivo": "planogoverno10120.pdf",
+"programa": "Romeu Zema — Partido NOVO — Programa de governo para a Presidência da República (período eleitoral não explicitado no título; o documento menciona 2026)"
+"arquivo": "BrasilemPrimeiroLugar.pdf",
+"programa": "Partido Democrata — Brasil em Primeiro Lugar — Plano de Governo 2027–2030"
+"arquivo": "pje-ProgramaSAMARA_02(1).pdf",
+"programa": "Samara Martins — Unidade Popular (UP) — período eleitoral não explicitado no documento"
+"arquivo": "PCOprogramadegoverno2026.pdf",
+"programa": "Programa do PCO — Partido da Causa Operária (PCO) — Eleições 2026"
+"arquivo": "PlanodeGovernoRonaldoCaiadoPresidente.pdf",
+"programa": "Ronaldo Caiado e Gilberto Kassab — PSD — Programa 2027–2030"
+"arquivo": "PlanodeGovernoMissao2026Finalcompressed.pdf",
+"programa": "Renan Santos — Partido Missão — Programa 2026"
+"arquivo": "0806JOB838PTlivroplanodegovernocompressed.pdf",
+"programa": "Luiz Inácio Lula da Silva — PT, PSB, PV, PCdoB, PDT, PSOL e Rede — Programa de Governo Lula III (período eleitoral não explicitado no documento)"
+"arquivo": "ProgramaPSTUEleiAAes2026.pdf",
+"programa": "Programa “Eleições 2026 — Com os trabalhadores contra o sistema — Por um Brasil soberano e socialista” — PSTU — eleições 2026"
+"arquivo": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+"programa": "Flávio Bolsonaro — PL — Programa 2027–2030"
+"arquivo": "PLANODEGOVERNOOBRASILDOSNOSSOSSONHOS.pdf",
+"programa": "Augusto Cury — partido não declarado — período eleitoral não declarado"
+"arquivo": "ProgramaPoliticodoPCBeleicoes20261.pdf",
+"programa": "Edmilson Costa e Cleusa Santos — Partido Comunista Brasileiro (PCB) — Eleições Presidenciais de 2026"
+"arquivo": "PLANODEGOVERNO.pdf",
+"programa": "PLANO DE GOVERNO — “Proteger Hoje, Transformar o Amanhã”; candidato, partido e período eleitoral não explicitados no documento"

@@ -1,0 +1,3578 @@
+{
+  "generatedAt": "2026-08-17",
+  "programs": [
+    {
+      "program": "Romeu Zema — Partido NOVO",
+      "positions": {
+        "ECO-01": -2,
+        "ECO-02": 2,
+        "ECO-03": -2,
+        "ECO-04": 2,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": 2,
+        "TRA-03": 2,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": 2,
+        "SAE-02": 1,
+        "SAE-03": null,
+        "SAE-04": 1,
+        "SAE-05": 2,
+        "CID-01": null,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": 2,
+        "AMB-01": -1,
+        "AMB-02": 2,
+        "AMB-03": 2,
+        "AMB-04": 2,
+        "AMB-05": null,
+        "SEG-01": 2,
+        "SEG-02": 2,
+        "SEG-03": -2,
+        "SEG-04": 2,
+        "SEG-05": 1,
+        "DIR-01": null,
+        "DIR-02": null,
+        "DIR-03": null,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": null,
+        "EXT-01": null,
+        "EXT-02": null,
+        "EXT-03": null,
+        "EXT-04": null,
+        "EXT-05": null,
+        "CTD-01": null,
+        "CTD-02": null,
+        "CTD-03": null,
+        "CTD-04": null,
+        "CTD-05": null
+      },
+      "confidences": {
+        "ECO-01": 0.9,
+        "ECO-02": 0.9,
+        "ECO-03": 0.9,
+        "ECO-04": 0.9,
+        "TRA-02": 0.9,
+        "TRA-03": 0.9,
+        "SAE-01": 0.9,
+        "SAE-02": 0.8,
+        "SAE-04": 0.8,
+        "SAE-05": 0.9,
+        "CID-02": 0.9,
+        "CID-05": 0.9,
+        "AMB-01": 0.8,
+        "AMB-02": 0.9,
+        "AMB-03": 0.9,
+        "AMB-04": 0.9,
+        "SEG-01": 0.9,
+        "SEG-02": 0.9,
+        "SEG-03": 0.9,
+        "SEG-04": 0.9,
+        "SEG-05": 0.8
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "15",
+          "quote": "Privatizar todas as empresas estatais",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "16",
+          "quote": "Definir metas de redução de impostos que forcem o corte efetivo de gastos",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "16",
+          "quote": "CORTAR OS IMPOSTOS QUE SUFOCAM O BRASILEIRO",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "18",
+          "quote": "promovendo reformas e mantendo superávits primários",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "23",
+          "quote": "Oferecer ao trabalhador e ao empregador um regime alternativo à CLT",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "63",
+          "quote": "integrando ações de capacitação, inclusão no mercado de trabalho",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "58",
+          "quote": "Fortalecer a Estratégia de Saúde da Família, de forma conectada à saúde digital, como porta de entrada do sistema de saúde, ampliando sua cobertura",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-02",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "60",
+          "quote": "parcerias com clínicas e hospitais privados para realização de consultas",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "56",
+          "quote": "Ampliar as vagas e o financiamento de bolsas de pesquisa",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "51",
+          "quote": "Aprimorar o sistema nacional de avaliação de aprendizagem, garantindo que ele oriente políticas educacionais",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "31",
+          "quote": "ampliar a estruturação de projetos de concessão e PPPs",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "65",
+          "quote": "Estruturar um programa federal de apoio técnico aos estados e municípios para a regularização fundiária urbana e rural",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-01",
+          "axis": "Ambiente, energia e agricultura",
+          "position": -1,
+          "page": "47",
+          "quote": "Garantir um licenciamento ambiental que proteja o meio ambiente sem prejudicar o desenvolvimento econômico",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "34",
+          "quote": "Alavancar a energia limpa e barata para expansão dos investimentos na indústria e tecnologia",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-03",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "48",
+          "quote": "Estabelecer um ambiente de negócios seguro e desburocratizado para a comercialização voluntária de créditos de carbono",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-04",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "27",
+          "quote": "Simplificar o processo de licenciamento conforme a nova Lei Geral do Licenciamento Ambiental",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "5",
+          "quote": "Empregar as Forças Armadas de forma integrada às polícias para retomar territórios dominados pelo crime organizado",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-02",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "6",
+          "quote": "Reformar o Código Penal garantindo penas duras e proporcionais à gravidade de crimes violentos, hediondos e patrimoniais",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": -2,
+          "page": "6",
+          "quote": "Construir presídios de segurança máxima para confinamento de faccionados",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "38",
+          "quote": "Ampliar a presença do Estado brasileiro nos postos de fronteira e na Amazônia, integrando inteligência, vigilância e forças de segurança",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-05",
+          "axis": "Segurança e justiça",
+          "position": 1,
+          "page": "6",
+          "quote": "Construir presídios de segurança máxima para confinamento de faccionados",
+          "confidence": 0.8
+        }
+      ],
+      "limitations": "O documento permite codificar explicitamente parte das afirmações econômicas, trabalhistas, de saúde, infraestrutura, ambiente e segurança. Permanecem nulas as questões sem formulação comparável ou sem apoio/rejeição substancial explícitos, especialmente autonomia do Banco Central, jornada e salário mínimo, habitação popular, imóveis vazios, tarifa zero, agricultura familiar e reforma agrária, direitos específicos, aborto, democracia, política externa e ciência e tecnologia. Algumas citações sustentam apenas parte da afirmação; nesses casos a intensidade foi mantida em ±1 quando apropriado. A evidência de SAE-04 é apenas parcial em relação à redução de barreiras seletivas, e as formulações ambientais conciliam proteção ambiental com desenvolvimento econômico, não estabelecendo prioridade climática irrestrita."
+    },
+    {
+      "program": "Partido Democrata — Brasil em Primeiro Lugar",
+      "positions": {
+        "ECO-01": null,
+        "ECO-02": 2,
+        "ECO-03": -2,
+        "ECO-04": null,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": 2,
+        "TRA-03": 2,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": 2,
+        "SAE-02": null,
+        "SAE-03": null,
+        "SAE-04": null,
+        "SAE-05": 2,
+        "CID-01": 2,
+        "CID-02": 2,
+        "CID-03": 1,
+        "CID-04": null,
+        "CID-05": 2,
+        "AMB-01": null,
+        "AMB-02": 1,
+        "AMB-03": null,
+        "AMB-04": 2,
+        "AMB-05": 1,
+        "SEG-01": 2,
+        "SEG-02": null,
+        "SEG-03": -2,
+        "SEG-04": 2,
+        "SEG-05": 2,
+        "DIR-01": null,
+        "DIR-02": null,
+        "DIR-03": null,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": null,
+        "EXT-01": 1,
+        "EXT-02": 1,
+        "EXT-03": null,
+        "EXT-04": 2,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": null,
+        "CTD-03": 2,
+        "CTD-04": null,
+        "CTD-05": null
+      },
+      "confidences": {
+        "ECO-02": 0.9,
+        "ECO-03": 0.9,
+        "TRA-02": 0.9,
+        "TRA-03": 0.9,
+        "SAE-01": 0.9,
+        "SAE-05": 0.9,
+        "CID-01": 0.9,
+        "CID-02": 0.9,
+        "CID-03": 0.8,
+        "CID-05": 0.9,
+        "AMB-02": 0.8,
+        "AMB-04": 0.9,
+        "AMB-05": 0.8,
+        "SEG-01": 0.9,
+        "SEG-03": 0.9,
+        "SEG-04": 0.9,
+        "SEG-05": 0.9,
+        "EXT-01": 0.8,
+        "EXT-02": 0.8,
+        "EXT-04": 0.9,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-03": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "7",
+          "quote": "A aposta econômica desta candidatura está declarada: crescer reduzindo atrito, não expandindo gasto.",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "9",
+          "quote": "Para quem ganha doze mil, isso representa queda de 64% no imposto devido.",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "19",
+          "quote": "Substituída a contribuição patronal sobre a folha, contratar com carteira assinada deixa de ser a forma mais cara.",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "20",
+          "quote": "Programa de qualificação profissional financiado pela União e executado com o sistema S e com a rede federal de ensino técnico.",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "34",
+          "quote": "Expandir a cobertura de equipes de saúde da família com meta por município e cofinanciamento federal estável.",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "36",
+          "quote": "apoio técnico e financeiro vinculado a resultado aferido em avaliação externa",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "41",
+          "quote": "Direcionamento dos recursos do FGTS e do Sistema Brasileiro de Poupança e Empréstimo para a faixa de renda que hoje não acessa financiamento.",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "46",
+          "quote": "Uso pleno do regime de autorização ferroviária, que permite ao setor privado construir e operar ferrovia própria.",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-03",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 1,
+          "page": "41",
+          "quote": "Uso do imóvel vazio: incentivo tributário à colocação no mercado de unidade retomada e de estoque parado.",
+          "confidence": 0.8
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "42",
+          "quote": "Titulação em massa em áreas consolidadas, com procedimento simplificado.",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "46",
+          "quote": "Usar a matriz renovável já existente como fator de atração industrial",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-04",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "47",
+          "quote": "Licenciamento ambiental com prazo definido e análise técnica de qualidade.",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "32",
+          "quote": "Apoio de custo ao pequeno e ao médio produtor, com prioridade para a agricultura familiar",
+          "confidence": 0.8
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "21",
+          "quote": "Integração operacional permanente entre a unidade de inteligência financeira, a Receita Federal, a Polícia Federal e o Ministério Público",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": -2,
+          "page": "21",
+          "quote": "O centro deste pilar é a expansão e o endurecimento do sistema penitenciário federal de segurança máxima",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "48",
+          "quote": "Emprego permanente das Forças Armadas na faixa de fronteira, com o poder de polícia",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-05",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "21",
+          "quote": "destinado exclusivamente a lideranças e presos de alta periculosidade",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "51",
+          "quote": "Posição brasileira em foro multilateral definida caso a caso, por conveniência nacional",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "48",
+          "quote": "Cooperação operacional com os países vizinhos, porque fronteira se fecha dos dois lados",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-04",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "48",
+          "quote": "fixa emenda constitucional o mínimo 2% do PIB à defesa e vincula ao menos 35% desse valor à modernização",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "50",
+          "quote": "Base Industrial de Defesa com exigência de conteúdo nacional e meta de exportação",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "37",
+          "quote": "Financiamento estável e previsível à pesquisa, com regra plurianual.",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "44",
+          "quote": "Cumprimento efetivo da Lei nº 13.709/2018 dentro da administração federal",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "O documento é fortemente concentrado em tributação, formalização do trabalho, segurança, saúde, educação, habitação, infraestrutura e defesa. Não apresenta posições explícitas comparáveis sobre jornada sem redução salarial, salário mínimo acima da inflação, autonomia do Banco Central, tarifa zero, mercados de carbono, aborto, direitos LGBTQIA+, políticas raciais e de gênero, restrição a decisões monocráticas ou fim da reeleição. Algumas propostas são apenas parciais em relação à afirmação: renováveis não implicam rejeição explícita de fósseis; apoio à agricultura familiar não equivale a prioridade nacional ou reforma agrária; participação multilateral e cooperação fronteiriça não definem uma política externa ampla; e a expansão penitenciária contradiz a redução do encarceramento, embora o texto mencione controle judicial e garantias individuais."
+    },
+    {
+      "program": "PCO — Programa partidário",
+      "positions": {
+        "ECO-01": 2,
+        "ECO-02": null,
+        "ECO-03": 2,
+        "ECO-04": -2,
+        "ECO-05": -2,
+        "TRA-01": null,
+        "TRA-02": -1,
+        "TRA-03": null,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": 2,
+        "SAE-02": -2,
+        "SAE-03": 2,
+        "SAE-04": 2,
+        "SAE-05": null,
+        "CID-01": 2,
+        "CID-02": null,
+        "CID-03": 2,
+        "CID-04": null,
+        "CID-05": null,
+        "AMB-01": null,
+        "AMB-02": null,
+        "AMB-03": null,
+        "AMB-04": null,
+        "AMB-05": 2,
+        "SEG-01": null,
+        "SEG-02": null,
+        "SEG-03": 1,
+        "SEG-04": null,
+        "SEG-05": null,
+        "DIR-01": null,
+        "DIR-02": null,
+        "DIR-03": 2,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": null,
+        "EXT-01": null,
+        "EXT-02": 2,
+        "EXT-03": null,
+        "EXT-04": null,
+        "EXT-05": 1,
+        "CTD-01": null,
+        "CTD-02": null,
+        "CTD-03": null,
+        "CTD-04": 2,
+        "CTD-05": null
+      },
+      "confidences": {
+        "ECO-01": 0.9,
+        "ECO-03": 0.9,
+        "ECO-04": 0.9,
+        "ECO-05": 0.9,
+        "TRA-02": 0.8,
+        "SAE-01": 0.9,
+        "SAE-02": 0.9,
+        "SAE-03": 0.9,
+        "SAE-04": 0.9,
+        "CID-01": 0.9,
+        "CID-03": 0.9,
+        "AMB-05": 0.9,
+        "SEG-03": 0.8,
+        "DIR-03": 0.9,
+        "EXT-02": 0.9,
+        "EXT-05": 0.8,
+        "CTD-04": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "4",
+          "quote": "Cancelamento de todas as privatizações realizadas (Eletrobrás, Vale, bancos, telefonia etc.)",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "11",
+          "quote": "Imposto somente sobre os ganhos dos capitalistas e grandes fortunas.",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "5",
+          "quote": "Fim do teto de gastos e da Lei de Responsabilidade Fiscal",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-05",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "11",
+          "quote": "Fim da “independência” do Banco Central",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": -1,
+          "page": "5",
+          "quote": "Contra as terceirizações; estabilidade imediata para todos os servidores contratados precariamente",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "9",
+          "quote": "Mais verbas para a saúde pública. Não pode haver limite nos gastos para salvar a vida do povo",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-02",
+          "axis": "Saúde e educação",
+          "position": -2,
+          "page": "9",
+          "quote": "Fim do lucro com a doença: saúde pública e gratuita, sob o controle dos trabalhadores",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "8",
+          "quote": "Mais verbas para a educação; verbas públicas somente para o ensino público",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "8",
+          "quote": "Fim dos vestibulares. Livre ingresso nas universidades",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "7",
+          "quote": "Elaboração de um plano nacional de construção de milhões de moradias populares",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-03",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "7",
+          "quote": "Expropriação dos imóveis vagos dos especuladores do mercado imobiliário",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "6",
+          "quote": "Reforma Agrária com expropriação do latifúndio e demarcação das terras dos índios",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": 1,
+          "page": "10",
+          "quote": "Dissolução da polícia militar e de todo o aparato repressivo",
+          "confidence": 0.8
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "6",
+          "quote": "Demarcação e posse da terra para todos os índios das retomadas",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "13",
+          "quote": "Abaixo a ingerência dos EUA e da OEA; fora o imperialismo da América Latina.",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "13",
+          "quote": "Defesa da soberania e da unidade nacional, com o controle das organizações populares e dos índios sobre as riquezas do território amazônico",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "4",
+          "quote": "Não à entrega das terras raras: criação de empresa estatal que controle sua exploração",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "O documento é um programa de luta com propostas explícitas sobretudo sobre estatização, serviços públicos, reforma agrária, moradia, educação, saúde, repressão policial, soberania e América Latina. Não apresenta posições comparáveis para grande parte das afirmações sobre clima e transição energética, mercados de carbono, licenciamento, proteção LGBTQIA+, aborto, cuidado, plataformas digitais, avaliação educacional, transporte, regularização fundiária, crime organizado, sistema prisional, federalismo, reeleição, defesa tecnológica, cooperação universitária, infraestrutura digital e desenvolvimento regional. Algumas propostas são apenas parcialmente comparáveis: a oposição às terceirizações não equivale integralmente à flexibilização trabalhista; a dissolução da Polícia Militar não cobre, por si só, redução do encarceramento; e a soberania amazônica cobre recursos naturais, mas não dados estratégicos. As posições foram mantidas nulas nesses casos, sem converter omissões em neutralidade."
+    },
+    {
+      "program": "Ronaldo Caiado e Gilberto Kassab — PSD",
+      "positions": {
+        "ECO-01": -1,
+        "ECO-02": 1,
+        "ECO-03": null,
+        "ECO-04": null,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": null,
+        "TRA-03": 1,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": 2,
+        "SAE-02": null,
+        "SAE-03": null,
+        "SAE-04": null,
+        "SAE-05": 1,
+        "CID-01": null,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": 1,
+        "AMB-01": 1,
+        "AMB-02": 1,
+        "AMB-03": 2,
+        "AMB-04": 2,
+        "AMB-05": null,
+        "SEG-01": 2,
+        "SEG-02": null,
+        "SEG-03": -1,
+        "SEG-04": 2,
+        "SEG-05": null,
+        "DIR-01": null,
+        "DIR-02": null,
+        "DIR-03": 1,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": 1,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": 1,
+        "EXT-01": 2,
+        "EXT-02": 1,
+        "EXT-03": 2,
+        "EXT-04": 1,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": 2,
+        "CTD-03": 1,
+        "CTD-04": 2,
+        "CTD-05": 2
+      },
+      "confidences": {
+        "ECO-01": 0.8,
+        "ECO-02": 0.8,
+        "TRA-03": 0.8,
+        "SAE-01": 0.9,
+        "SAE-05": 0.8,
+        "CID-02": 0.9,
+        "CID-05": 0.8,
+        "AMB-01": 0.8,
+        "AMB-02": 0.8,
+        "AMB-03": 0.9,
+        "AMB-04": 0.9,
+        "SEG-01": 0.9,
+        "SEG-03": 0.8,
+        "SEG-04": 0.9,
+        "DIR-03": 0.8,
+        "DEM-02": 0.8,
+        "DEM-05": 0.8,
+        "EXT-01": 0.9,
+        "EXT-02": 0.8,
+        "EXT-03": 0.9,
+        "EXT-04": 0.8,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-02": 0.9,
+        "CTD-03": 0.8,
+        "CTD-04": 0.9,
+        "CTD-05": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": -1,
+          "page": "43",
+          "quote": "Fazer do Estado um parceiro do desenvolvimento",
+          "confidence": 0.8
+        },
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": 1,
+          "page": "35",
+          "quote": "Energia mais barata e conta de luz transparente",
+          "confidence": 0.8
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 1,
+          "page": "44",
+          "quote": "Formar trabalhadores para a economia do futuro",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "75",
+          "quote": "O SUS será preservado como sistema universal",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "30",
+          "quote": "Avaliar para melhorar a aprendizagem",
+          "confidence": 0.8
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "47",
+          "quote": "Ampliação das concessões e parcerias público-privadas",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 1,
+          "page": "69",
+          "quote": "Apoiar a regularização fundiária com transparência",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-01",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "50",
+          "quote": "Grande Pacto Nacional pelo Desenvolvimento Sustentável",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "37",
+          "quote": "Petróleo: pilar da matriz, motor da transição",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-03",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "51",
+          "quote": "Mercado de carbono de alta integridade",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-04",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "50",
+          "quote": "Licenciamento por risco, prazo e objetividade",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "69",
+          "quote": "Integrar Forças Armadas, Polícia Federal, Polícia Rodoviária Federal, forças estaduais, Receita, inteligência",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": -1,
+          "page": "69",
+          "quote": "fortalecer saúde e educação indígena",
+          "confidence": 0.8
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "69",
+          "quote": "Integrar Forças Armadas",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 1,
+          "page": "68",
+          "quote": "Regularização e acesso a serviços em comunidades quilombolas e indígenas",
+          "confidence": 0.8
+        },
+        {
+          "id": "DEM-02",
+          "axis": "Democracia e instituições",
+          "position": 1,
+          "page": "47",
+          "quote": "Descentralização da execução e cooperação federativa",
+          "confidence": 0.8
+        },
+        {
+          "id": "DEM-05",
+          "axis": "Democracia e instituições",
+          "position": 1,
+          "page": "13",
+          "quote": "Mercados digitais competitivos e plataformas responsáveis",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "73",
+          "quote": "Fortalecer simultaneamente as relações com os Estados Unidos, a União Europeia, a América Latina, a África, a Ásia e o Oriente Médio",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "73",
+          "quote": "aprofundar a integração econômica regional",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-03",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "73",
+          "quote": "Consolidar o acordo entre o Mercosul e a União Europeia",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-04",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "74",
+          "quote": "Diplomacia de Defesa e Atlântico Sul",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "53",
+          "quote": "Minerais críticos e terras raras serão tratados como ativos estratégicos de soberania",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "42",
+          "quote": "Ciência será tratada como investimento de longo prazo",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-02",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "42",
+          "quote": "a iniciativa privada será protagonista da inovação",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "13",
+          "quote": "Inteligência artificial, plataformas e mercados digitais",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "53",
+          "quote": "O Brasil deixará de ser apenas exportador de minério bruto e construirá cadeias de processamento",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-05",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "53",
+          "quote": "integrada ao desenvolvimento regional",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "A análise registra apenas formulações expressas e comparáveis às afirmações. O programa contém propostas extensas de infraestrutura, ambiente, saúde, ciência, segurança e relações exteriores, mas é omisso ou insuficientemente específico sobre diversos itens: tributação distributiva, metas fiscais, autonomia do Banco Central, jornada e salário mínimo, proteção trabalhista em plataformas, contratação privada complementar no SUS, prioridade financeira da educação, universidade pública, habitação popular, imóveis vazios, tarifa zero, reforma agrária e agricultura familiar, endurecimento penal, política prisional, raça e gênero, creches, direitos LGBTQIA+, aborto, orçamento deliberativo, decisões monocráticas e reeleição. Algumas menções são setoriais ou instrumentais e não permitem concluir sobre a afirmação inteira; nesses casos, a posição foi mantida como null. A evidência de SEG-03 foi mantida negativa apenas porque o documento enfatiza integração e atuação policial/forças de segurança, sem defender desmilitarização ou redução do encarceramento; a citação específica não contém, isoladamente, toda a rejeição substantiva, razão pela qual essa codificação deve ser interpretada com cautela."
+    },
+    {
+      "program": "Renan Santos — Partido Missão",
+      "positions": {
+        "ECO-01": null,
+        "ECO-02": 2,
+        "ECO-03": -2,
+        "ECO-04": 2,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": 2,
+        "TRA-03": 2,
+        "TRA-04": null,
+        "TRA-05": -2,
+        "SAE-01": null,
+        "SAE-02": null,
+        "SAE-03": -2,
+        "SAE-04": -2,
+        "SAE-05": 2,
+        "CID-01": null,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": 2,
+        "AMB-01": null,
+        "AMB-02": 1,
+        "AMB-03": null,
+        "AMB-04": 2,
+        "AMB-05": -2,
+        "SEG-01": 2,
+        "SEG-02": 2,
+        "SEG-03": -2,
+        "SEG-04": 2,
+        "SEG-05": 2,
+        "DIR-01": null,
+        "DIR-02": null,
+        "DIR-03": -2,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": -2,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": null,
+        "EXT-01": 2,
+        "EXT-02": 2,
+        "EXT-03": 2,
+        "EXT-04": 2,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": 2,
+        "CTD-03": 1,
+        "CTD-04": 2,
+        "CTD-05": 1
+      },
+      "confidences": {
+        "ECO-02": 0.9,
+        "ECO-03": 0.9,
+        "ECO-04": 0.9,
+        "TRA-02": 0.9,
+        "TRA-03": 0.9,
+        "TRA-05": 0.9,
+        "SAE-03": 0.9,
+        "SAE-04": 0.9,
+        "SAE-05": 0.9,
+        "CID-02": 0.9,
+        "CID-05": 0.9,
+        "AMB-02": 0.8,
+        "AMB-04": 0.9,
+        "AMB-05": 0.9,
+        "SEG-01": 0.9,
+        "SEG-02": 0.9,
+        "SEG-03": 0.9,
+        "SEG-04": 0.9,
+        "SEG-05": 0.9,
+        "DIR-03": 0.9,
+        "DEM-02": 0.9,
+        "EXT-01": 0.9,
+        "EXT-02": 0.9,
+        "EXT-03": 0.9,
+        "EXT-04": 0.9,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-02": 0.9,
+        "CTD-03": 0.8,
+        "CTD-04": 0.9,
+        "CTD-05": 0.8
+      },
+      "evidences": [
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "6",
+          "quote": "liberam espaço fiscal para investimentos e redução de impostos",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "9",
+          "quote": "o principal instrumento de ajuste fiscal foi a elevação da carga tributária",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "10",
+          "quote": "uma política econômica baseada em evidências, com disciplina fiscal e racionalidade institucional",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "5",
+          "quote": "reforma trabalhista para flexibilizar relações de trabalho",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "6",
+          "quote": "substituição do Bolsa Família por frentes de trabalho remuneradas",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-05",
+          "axis": "Trabalho e proteção social",
+          "position": -2,
+          "page": "10",
+          "quote": "desindexação de benefícios previdenciários e assistenciais do salário mínimo",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": -2,
+          "page": "6",
+          "quote": "priorização do ensino básico em relação ao ensino superior",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": -2,
+          "page": "32",
+          "quote": "Abolir o sistema de cotas na educação brasileira e em geral",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "32",
+          "quote": "escolas mais ordeiras receberão mais recursos, gestores e competências na União",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "24",
+          "quote": "mobilização do capital privado por concessões, PPPs e o novo regime de autorização ferroviária",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "48",
+          "quote": "a ausência de regularização fundiária priva os três entes federativos de bilhões",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "23",
+          "quote": "tem matriz limpa e potencial renovável extraordinário",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-04",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "39",
+          "quote": "Racionalização e simplificação dos processos de licenciamento ambiental",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": -2,
+          "page": "42",
+          "quote": "O governo da Missão não criará um único novo assentamento",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "13",
+          "quote": "fronteiras secas com scanners tridimensionais e inteligência integrada",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-02",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "13",
+          "quote": "Leis específicas deverão endereçar a reincidência e os roubos de eletrônicos, aumentando penas",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": -2,
+          "page": "12",
+          "quote": "adoção imediata do Direito Penal do Inimigo como framework jurídico",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "13",
+          "quote": "utilizando os mecanismos da GLO e do Estado de Defesa",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-05",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "13",
+          "quote": "lideranças condenadas serão deslocadas a superpresídios de segurança máxima",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": -2,
+          "page": "42",
+          "quote": "licenciamento acelerado para a exploração de reservas estratégicas em terras indígenas",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-02",
+          "axis": "Democracia e instituições",
+          "position": -2,
+          "page": "15",
+          "quote": "os municípios serão consolidados a vizinhos",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "45",
+          "quote": "consolidar liderança por meio da integração multilateral",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "45",
+          "quote": "o Brasil deve consolidar liderança na América Latina",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-03",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "39",
+          "quote": "Integração do Brasil às cadeias americanas de semicondutores e defesa",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-04",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "46",
+          "quote": "fortalecimento da Base Industrial de Defesa visa expandir a capacidade produtiva e tecnológica",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "38",
+          "quote": "a soberania brasileira em terras raras é uma questão fundamental de Estado",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "42",
+          "quote": "criar a tecnologia capaz de produzir uma cadeia produtiva",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-02",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "38",
+          "quote": "Em um trabalho conjunto com professores de grandes universidades e uma equipe comprometida",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "43",
+          "quote": "unificação técnica do maior acervo de dados agropecuários do planeta",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "39",
+          "quote": "Criação de uma planta-piloto de separação e refino de terras raras",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-05",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "35",
+          "quote": "revertido por meio da implementação de Zonas Econômicas Especiais",
+          "confidence": 0.8
+        }
+      ],
+      "limitations": "O PDF é uma edição condensada e declara remeter a um plano integral de mais de 500 páginas; por isso, várias afirmações da matriz não têm formulação comparável ou operacional no documento fornecido. As posições nulas refletem omissão, vagueza ou ausência de tratamento específico, especialmente em direitos LGBTQIA+, aborto, creches e cuidado, tarifa zero, imóveis vazios, jornada de trabalho, salário mínimo acima da inflação, Banco Central, participação orçamentária, reeleição, decisões monocráticas, mercados de carbono e políticas específicas de raça e gênero. Algumas propostas abordam temas próximos, mas não reproduzem integralmente a afirmação; nesses casos foi mantida a cautela e evitada inferência."
+    },
+    {
+      "program": "Luiz Inácio Lula da Silva — coligação",
+      "positions": {
+        "ECO-01": 2,
+        "ECO-02": -2,
+        "ECO-03": 2,
+        "ECO-04": null,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": -2,
+        "TRA-03": 1,
+        "TRA-04": 2,
+        "TRA-05": 2,
+        "SAE-01": 2,
+        "SAE-02": null,
+        "SAE-03": 2,
+        "SAE-04": 1,
+        "SAE-05": null,
+        "CID-01": 2,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": 2,
+        "AMB-01": 2,
+        "AMB-02": 2,
+        "AMB-03": null,
+        "AMB-04": null,
+        "AMB-05": 2,
+        "SEG-01": 2,
+        "SEG-02": null,
+        "SEG-03": null,
+        "SEG-04": 2,
+        "SEG-05": null,
+        "DIR-01": 2,
+        "DIR-02": 2,
+        "DIR-03": 2,
+        "DIR-04": 2,
+        "DIR-05": null,
+        "DEM-01": 2,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": 2,
+        "EXT-01": 2,
+        "EXT-02": 2,
+        "EXT-03": null,
+        "EXT-04": 2,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": null,
+        "CTD-03": 2,
+        "CTD-04": 2,
+        "CTD-05": 2
+      },
+      "confidences": {
+        "ECO-01": 0.9,
+        "ECO-02": 0.9,
+        "ECO-03": 0.9,
+        "TRA-02": 0.9,
+        "TRA-03": 0.8,
+        "TRA-04": 0.9,
+        "TRA-05": 0.9,
+        "SAE-01": 0.9,
+        "SAE-03": 0.9,
+        "SAE-04": 0.8,
+        "CID-01": 0.9,
+        "CID-02": 0.9,
+        "CID-05": 0.9,
+        "AMB-01": 0.9,
+        "AMB-02": 0.9,
+        "AMB-05": 0.9,
+        "SEG-01": 0.9,
+        "SEG-04": 0.9,
+        "DIR-01": 0.9,
+        "DIR-02": 0.9,
+        "DIR-03": 0.9,
+        "DIR-04": 0.9,
+        "DEM-01": 0.9,
+        "DEM-05": 0.9,
+        "EXT-01": 0.9,
+        "EXT-02": 0.9,
+        "EXT-04": 0.9,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-03": 0.9,
+        "CTD-04": 0.9,
+        "CTD-05": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "7",
+          "quote": "Não há desenvolvimento sem soberania em áreas estratégicas, capacidade industrial, domínio tecnológico e projeto nacional.",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "10",
+          "quote": "sem renunciar ao reequilíbrio das contas públicas",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "12",
+          "quote": "Sob a diretriz de ‘colocar o pobre no orçamento e o rico no Imposto de Renda’",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": -2,
+          "page": "9",
+          "quote": "observamos a precarização das relações laborais, a expansão da informalidade e o desamparo de trabalhadores de plataforma",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 1,
+          "page": "25",
+          "quote": "a política de aprendizagem para o trabalho [...] como mecanismo de estímulo à inserção no mundo do trabalho",
+          "confidence": 0.8
+        },
+        {
+          "id": "TRA-04",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "9",
+          "quote": "o desamparo de trabalhadores de plataforma",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-05",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "12",
+          "quote": "A política de valorização real do salário-mínimo",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "12",
+          "quote": "O Sistema Único de Saúde (SUS) foi resgatado [...] para consolidar-se como a espinha dorsal",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "7",
+          "quote": "na construção do maior sistema universal público de saúde, o SUS",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "20",
+          "quote": "com a política de cotas, a universidade brasileira mudou de rosto",
+          "confidence": 0.8
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "11",
+          "quote": "investimentos em [...] infraestrutura urbana, habitação, saneamento básico",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "12",
+          "quote": "Batemos recordes de investimentos em infraestrutura e em leilões de concessões de logística e energia.",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "56",
+          "quote": "reforçar a política de regularização fundiária",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-01",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "64",
+          "quote": "acelerar a substituição progressiva de combustíveis fósseis por biocombustíveis e combustíveis de baixa intensidade de carbono",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "64",
+          "quote": "acelerar a substituição progressiva de combustíveis fósseis por biocombustíveis e combustíveis de baixa intensidade de carbono",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "60",
+          "quote": "a produção sustentável da agricultura familiar será priorizada",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "13",
+          "quote": "enfrentamento ao crime organizado [...] fortalecimento do Sistema Único de Segurança Pública (SUSP), inteligência tática e o controle de armas",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "14",
+          "quote": "fortalecer sua autonomia de decisão, proteger seu território, seu povo, seus recursos naturais",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-01",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "21",
+          "quote": "ampliar as políticas de proteção às mulheres, combater o machismo, o sexismo e o feminicídio",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-02",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "26",
+          "quote": "Apoiaremos as Cuidotecas, espaços de acolhida de crianças de 3 a 12 anos",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "20",
+          "quote": "Persistiremos, garantindo proteção a seus territórios, com ações para demarcação e desintrusão de terras",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-04",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "23",
+          "quote": "garantir capacidade de o Estado atender [...] às pessoas LGBTQIAP+",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-01",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "7",
+          "quote": "Estamos prontos para [...] democratizar o orçamento público",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-05",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "24",
+          "quote": "aprimoramento do ECA Digital [...] regulamentação das plataformas",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "13",
+          "quote": "O Brasil rompeu definitivamente com o isolamento geopolítico pretérito",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "10",
+          "quote": "crescimento no período 2023-2026 acima da média da América Latina",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-04",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "14",
+          "quote": "Queremos fortalecer a soberania brasileira em todas as suas dimensões: [...] defesa nacional",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "14",
+          "quote": "proteger seu território, seu povo, seus recursos naturais",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "9",
+          "quote": "A agenda de Ciência, Tecnologia e Inovação esteve no centro [...] dos cortes orçamentários",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "24",
+          "quote": "promoção do uso seguro das tecnologias e regulamentação [...] dos ambientes digitais",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "56",
+          "quote": "processamento de minerais críticos",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-05",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "56",
+          "quote": "instrumento central da promoção do desenvolvimento regional [...] fortalecendo as capacidades econômicas locais",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "O documento é programático e frequentemente descreve realizações do mandato anterior ou diretrizes gerais, sem formular todas as alternativas da matriz. Por isso, foram mantidos como nulos itens sobre autonomia do Banco Central, metas de dívida e superávit, redução da jornada, contratação privada complementar no SUS, avaliação educacional, imóveis vazios, tarifa zero, mercados de carbono, licenciamento, endurecimento penal, desmilitarização e encarceramento, aborto, decisões monocráticas, fim da reeleição, aproximação a padrões de países desenvolvidos e cooperação universidade-empresa quando não houve apoio ou rejeição explícita e comparável. A menção a proteção de fronteiras e defesa nacional não especifica necessariamente emprego das Forças Armadas em operações de segurança; a posição em SEG-04 foi registrada apenas pela defesa explícita de proteção territorial e fortalecimento da defesa nacional."
+    },
+    {
+      "program": "PSTU — Programa partidário",
+      "positions": {
+        "ECO-01": 2,
+        "ECO-02": null,
+        "ECO-03": 2,
+        "ECO-04": -2,
+        "ECO-05": null,
+        "TRA-01": 2,
+        "TRA-02": -2,
+        "TRA-03": null,
+        "TRA-04": 2,
+        "TRA-05": 2,
+        "SAE-01": 2,
+        "SAE-02": -2,
+        "SAE-03": 2,
+        "SAE-04": 1,
+        "SAE-05": null,
+        "CID-01": 2,
+        "CID-02": -2,
+        "CID-03": null,
+        "CID-04": 2,
+        "CID-05": null,
+        "AMB-01": null,
+        "AMB-02": null,
+        "AMB-03": null,
+        "AMB-04": null,
+        "AMB-05": 2,
+        "SEG-01": 2,
+        "SEG-02": -2,
+        "SEG-03": 2,
+        "SEG-04": null,
+        "SEG-05": null,
+        "DIR-01": 2,
+        "DIR-02": 2,
+        "DIR-03": 2,
+        "DIR-04": 2,
+        "DIR-05": 2,
+        "DEM-01": null,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": 1,
+        "EXT-01": null,
+        "EXT-02": null,
+        "EXT-03": -1,
+        "EXT-04": null,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": null,
+        "CTD-03": 2,
+        "CTD-04": 2,
+        "CTD-05": null
+      },
+      "confidences": {
+        "ECO-01": 0.9,
+        "ECO-03": 0.9,
+        "ECO-04": 0.9,
+        "TRA-01": 0.9,
+        "TRA-02": 0.9,
+        "TRA-04": 0.9,
+        "TRA-05": 0.9,
+        "SAE-01": 0.9,
+        "SAE-02": 0.9,
+        "SAE-03": 0.9,
+        "SAE-04": 0.8,
+        "CID-01": 0.9,
+        "CID-02": 0.9,
+        "CID-04": 0.9,
+        "AMB-05": 0.9,
+        "SEG-01": 0.9,
+        "SEG-02": 0.9,
+        "SEG-03": 0.9,
+        "DIR-01": 0.9,
+        "DIR-02": 0.9,
+        "DIR-03": 0.9,
+        "DIR-04": 0.9,
+        "DIR-05": 0.9,
+        "DEM-05": 0.8,
+        "EXT-03": 0.8,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-03": 0.9,
+        "CTD-04": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "26",
+          "quote": "As terras raras são nossas! Pela criação de uma empresa estatal de terras raras",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "27",
+          "quote": "Tributação fortemente progressiva sobre lucros empresariais e taxação ampliada",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "4",
+          "quote": "Mantém o arcabouço fiscal e a agiotagem escandalosa do pagamento da dívida",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-01",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "8",
+          "quote": "Redução da jornada de trabalho para 36 horas, sem redução dos salários",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": -2,
+          "page": "8",
+          "quote": "A jornada, a precarização do trabalho e rebaixar os salários",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-04",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "9",
+          "quote": "Fiscalização pública das condições de trabalho nas plataformas digitais",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-05",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "8",
+          "quote": "Aumento de 100% no salário mínimo, rumo ao salário mínimo necessário",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "11",
+          "quote": "Defesa do sus público, universal, gratuito e 100% estatal",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-02",
+          "axis": "Saúde e educação",
+          "position": -2,
+          "page": "11",
+          "quote": "Fim da privatização e da gestão privada da saúde (OS, Fundações e PPP)",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "12",
+          "quote": "Investimento massivo na educação pública",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "12",
+          "quote": "Ampliação de vagas em creches, escolas e universidades públicas",
+          "confidence": 0.8
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "13",
+          "quote": "Construção massiva de moradias populares e infraestrutura por empresa pública",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": -2,
+          "page": "14",
+          "quote": "Estatização dos sistemas de transporte urbano e reversão das concessões",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-04",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "14",
+          "quote": "Tarifa zero no transporte público",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "16",
+          "quote": "Terra a quem nela trabalha! Por reforma agrária e por uma revolução na estrutura",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "19",
+          "quote": "Combater o crime organizado, as máfias, as milícias, as facções e demais organizações criminosas por meio da investigação, inteligência e desarticulação",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-02",
+          "axis": "Segurança e justiça",
+          "position": -2,
+          "page": "21",
+          "quote": "Desencarceramento em massa",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "21",
+          "quote": "Desmilitarização da pm e unificação das polícias sob controle dos trabalhadores",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-01",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "21",
+          "quote": "Manutenção e ampliação de cotas para negros nas universidades e serviços",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-02",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "23",
+          "quote": "Creches e escolas públicas, gratuitas e em tempo integral para todas as crianças",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "15",
+          "quote": "Reparação e demarcação imediata das terras indígenas, titulação dos territórios quilombolas e proteção das comunidades tradicionais",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-04",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "24",
+          "quote": "Vidas LGBTQIAPN+ importam: basta de violência! Criminalização da lgbtfobia",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-05",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "23",
+          "quote": "Aborto legal, seguro e gratuito pelo sus",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-05",
+          "axis": "Democracia e instituições",
+          "position": 1,
+          "page": "20",
+          "quote": "Responsabilização de bancos, fintechs e plataformas digitais pela adoção de",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-03",
+          "axis": "Política externa e defesa",
+          "position": -1,
+          "page": "5",
+          "quote": "Não é possível falar em um país soberano sem problematizar uma ruptura com o imperialismo",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "28",
+          "quote": "Proibição da hospedagem de dados governamentais sensíveis em nuvens estrangeiras",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "27",
+          "quote": "Organicamente associados a todas as universidades e institutos públicos de pesquisa e desenvolvimento",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "28",
+          "quote": "Desenvolvimento de uma inteligência artificial pública nacional, financiada",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "26",
+          "quote": "Realizadas nos setores considerados essenciais à soberania econômica, militar e de separação de alta pureza de terras raras e minerais críticos",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "O programa apresenta propostas explícitas e intensas em jornada, salário, serviços públicos, estatização, direitos sociais, desmilitarização, demarcações, aborto, soberania digital e minerais críticos. Não há formulação suficientemente comparável sobre autonomia do Banco Central, qualificação vinculada a benefícios, avaliações de aprendizagem, regularização fundiária e titulação urbana, clima e emissões, renováveis, mercados de carbono, licenciamento, sistema prisional com educação e reinserção, maior atuação militar em segurança, autonomia federativa, tribunais, reeleição, cooperação multilateral, integração latino-americana, defesa orçamentária, cooperação universidade-empresa ou desenvolvimento regional. A evidência para DEM-05 é parcial, pois o trecho localizado está truncado na extração; EXT-03 registra rejeição do alinhamento dependente a acordos com potências, não uma política comercial geral."
+    },
+    {
+      "program": "Flávio Bolsonaro — PL",
+      "positions": {
+        "ECO-01": -1,
+        "ECO-02": 2,
+        "ECO-03": -2,
+        "ECO-04": 2,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": 2,
+        "TRA-03": 2,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": 1,
+        "SAE-02": null,
+        "SAE-03": -1,
+        "SAE-04": null,
+        "SAE-05": 2,
+        "CID-01": 2,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": 2,
+        "AMB-01": null,
+        "AMB-02": 1,
+        "AMB-03": 1,
+        "AMB-04": 2,
+        "AMB-05": null,
+        "SEG-01": 2,
+        "SEG-02": 2,
+        "SEG-03": -2,
+        "SEG-04": 2,
+        "SEG-05": null,
+        "DIR-01": null,
+        "DIR-02": 2,
+        "DIR-03": 1,
+        "DIR-04": null,
+        "DIR-05": -2,
+        "DEM-01": null,
+        "DEM-02": 2,
+        "DEM-03": 2,
+        "DEM-04": 2,
+        "DEM-05": -1,
+        "EXT-01": 2,
+        "EXT-02": 1,
+        "EXT-03": 2,
+        "EXT-04": 2,
+        "EXT-05": 1,
+        "CTD-01": 1,
+        "CTD-02": 2,
+        "CTD-03": 2,
+        "CTD-04": 2,
+        "CTD-05": 2
+      },
+      "confidences": {
+        "ECO-01": 0.8,
+        "ECO-02": 0.9,
+        "ECO-03": 0.9,
+        "ECO-04": 0.9,
+        "TRA-02": 0.9,
+        "TRA-03": 0.9,
+        "SAE-01": 0.8,
+        "SAE-03": 0.8,
+        "SAE-05": 0.9,
+        "CID-01": 0.9,
+        "CID-02": 0.9,
+        "CID-05": 0.9,
+        "AMB-02": 0.8,
+        "AMB-03": 0.8,
+        "AMB-04": 0.9,
+        "SEG-01": 0.9,
+        "SEG-02": 0.9,
+        "SEG-03": 0.9,
+        "SEG-04": 0.9,
+        "DIR-02": 0.9,
+        "DIR-03": 0.8,
+        "DIR-05": 0.9,
+        "DEM-02": 0.9,
+        "DEM-03": 0.9,
+        "DEM-04": 0.9,
+        "DEM-05": 0.8,
+        "EXT-01": 0.9,
+        "EXT-02": 0.8,
+        "EXT-03": 0.9,
+        "EXT-04": 0.9,
+        "EXT-05": 0.8,
+        "CTD-01": 0.8,
+        "CTD-02": 0.9,
+        "CTD-03": 0.9,
+        "CTD-04": 0.9,
+        "CTD-05": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": -1,
+          "page": "42",
+          "quote": "O papel do Estado não é substituir esse esforço, nem sufocá-lo. É abrir o caminho",
+          "confidence": 0.8
+        },
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "72",
+          "quote": "O esforço de simplificação continuará: menos impostos, legislação unificada, desoneração das exportações e dos investimentos",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "72",
+          "quote": "O círculo virtuoso é claro: menos impostos, mais formalidade, mais crescimento",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "71",
+          "quote": "Faremos nossos gastos caberem no orçamento, o que permitirá cobrar menos impostos",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "44",
+          "quote": "com menor custo na folha, para que a empresa tenha estímulo a dar a primeira oportunidade",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "43",
+          "quote": "prioridade nos programas de primeiro emprego, nas ações de qualificação profissional e na intermediação de mão de obra",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "38",
+          "quote": "Vamos também fortalecer a Rede Nacional de Hospitais Inteligentes (EBSERH)",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": -1,
+          "page": "36",
+          "quote": "onde faltar vaga na rede pública, a família receberá um voucher educacional para matricular o filho em outra escola",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "35",
+          "quote": "Vamos priorizar o método fônico, que é o de melhor resultado comprovado pela ciência",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "47",
+          "quote": "Vamos retomar o Casa Verde e Amarela, com meta de 2,5 milhões de residências",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "53",
+          "quote": "atraiam o investimento privado, para integrar à malha os estados hoje desconectados",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "28",
+          "quote": "Quem trabalha a terra vai ter o papel que prova que ela é sua",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "55",
+          "quote": "Vamos também transformar o campo em fonte de energia limpa",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-03",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "58",
+          "quote": "Preservar tem que compensar para quem preserva",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-04",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "50",
+          "quote": "Se não decidir nem se manifestar dentro desse prazo, a licença deve ser concedida",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "14",
+          "quote": "Vamos desorganizar o crime organizado e asfixiar o crime física e financeiramente",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-02",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "16",
+          "quote": "aqueles que desafiarem a lei vão mofar na prisão",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": -2,
+          "page": "14",
+          "quote": "O Brasil terá 5 novos presídios de segurança máxima",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "15",
+          "quote": "vamos usar tropas especiais da Marinha e da Aeronáutica para ocupar e monitorar",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-02",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "21",
+          "quote": "Vamos ampliar a oferta de creches para as crianças desde a primeira infância, em período integral",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 1,
+          "page": "50",
+          "quote": "os povos indígenas e quilombolas terão autonomia para decidir sobre as atividades",
+          "confidence": 0.8
+        },
+        {
+          "id": "DIR-05",
+          "axis": "Direitos e igualdade",
+          "position": -2,
+          "page": "41",
+          "quote": "Vamos assegurar que a categoria feminina, da base ao alto rendimento, seja disputada por atletas do sexo feminino",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-02",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "69",
+          "quote": "Promoveremos a revisão do pacto federativo e a redefinição das regras e dos processos orçamentários",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-03",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "66",
+          "quote": "Ampliação da participação da sociedade civil no CNJ e CNMP, e redefinição de suas competências",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-04",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "66",
+          "quote": "Propomos o fim da reeleição para o cargo de Presidente da República",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-05",
+          "axis": "Democracia e instituições",
+          "position": -1,
+          "page": "67",
+          "quote": "O que o governo não pode fazer é transformar a crítica em delito",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "62",
+          "quote": "Nossa proposta é o oposto: uma diplomacia sem preconceitos ou ranços ideológicos",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "56",
+          "quote": "países que queiram a cooperação do Brasil, sem preconceitos ou ranços ideológicos",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-03",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "63",
+          "quote": "retomar o cronograma interrompido de adesão à OCDE",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-04",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "14",
+          "quote": "equipada com armas de guerra, inteligência e tecnologia",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "56",
+          "quote": "deixa de apenas extrair e exportar matéria bruta e passa a agregar valor aqui dentro",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "57",
+          "quote": "fortalecer os parques tecnológicos, expandir as incubadoras, apoiar as startups de base tecnológica",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-02",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "57",
+          "quote": "aproximar universidades e empresas, com a gestão das universidades integrada à ciência e à tecnologia",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "57",
+          "quote": "Toda essa transformação digital exige uma contrapartida inegociável: proteger quem está",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "56",
+          "quote": "deixa de apenas extrair e exportar matéria bruta e passa a agregar valor aqui dentro",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-05",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "61",
+          "quote": "O Nordeste tem tudo para oferecer ao nordestino a chance de prosperar na sua própria terra",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "O documento é um programa político amplo, com linguagem retórica e propostas de escopo desigual. Várias afirmações da matriz não encontram formulação comparável ou suficientemente explícita, especialmente jornada e salário mínimo, proteção trabalhista em plataformas, tarifa zero, imóveis vazios, reforma agrária, desmilitarização, políticas LGBTQIA+, aborto, orçamento participativo e autonomia do Banco Central; nesses casos foi usado null. Algumas evidências apoiam apenas parte da afirmação, como saúde pública universal, transição energética, compensação ambiental, proteção de terras indígenas e quilombolas, cooperação externa e soberania mineral, razão pela qual a intensidade foi limitada. A posição negativa em DIR-05 decorre do trecho sobre restringir a categoria esportiva feminina, que não é uma manifestação explícita sobre interrupção voluntária da gravidez; portanto, esse item deveria ser tratado como omisso e não como rejeição do aborto."
+    },
+    {
+      "program": "Augusto Cury — partido não declarado",
+      "positions": {
+        "ECO-01": null,
+        "ECO-02": null,
+        "ECO-03": null,
+        "ECO-04": 2,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": null,
+        "TRA-03": null,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": null,
+        "SAE-02": null,
+        "SAE-03": null,
+        "SAE-04": null,
+        "SAE-05": 1,
+        "CID-01": null,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": 2,
+        "AMB-01": null,
+        "AMB-02": 2,
+        "AMB-03": 2,
+        "AMB-04": 2,
+        "AMB-05": 1,
+        "SEG-01": 2,
+        "SEG-02": null,
+        "SEG-03": null,
+        "SEG-04": 2,
+        "SEG-05": 2,
+        "DIR-01": null,
+        "DIR-02": null,
+        "DIR-03": null,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": 1,
+        "DEM-03": null,
+        "DEM-04": 2,
+        "DEM-05": null,
+        "EXT-01": 1,
+        "EXT-02": 1,
+        "EXT-03": null,
+        "EXT-04": null,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": 1,
+        "CTD-03": 2,
+        "CTD-04": 2,
+        "CTD-05": 1
+      },
+      "confidences": {
+        "ECO-04": 0.9,
+        "SAE-05": 0.8,
+        "CID-02": 0.9,
+        "CID-05": 0.9,
+        "AMB-02": 0.9,
+        "AMB-03": 0.9,
+        "AMB-04": 0.9,
+        "AMB-05": 0.8,
+        "SEG-01": 0.9,
+        "SEG-04": 0.9,
+        "SEG-05": 0.9,
+        "DEM-02": 0.8,
+        "DEM-04": 0.9,
+        "EXT-01": 0.8,
+        "EXT-02": 0.8,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-02": 0.8,
+        "CTD-03": 0.9,
+        "CTD-04": 0.9,
+        "CTD-05": 0.8
+      },
+      "evidences": [
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "36",
+          "quote": "Redução gradual e sustentável da dívida pública",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "44",
+          "quote": "utilização de indicadores de desempenho para aprimorar continuamente os serviços prestados",
+          "confidence": 0.8
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "49",
+          "quote": "ampliaremos as concessões e as parcerias público-privadas",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "40",
+          "quote": "A regularização fundiária permitirá segurança jurídica, valorização patrimonial, acesso ao crédito",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "51",
+          "quote": "Liderança mundial em energia renovável",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-03",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "51",
+          "quote": "O Brasil poderá tornar-se protagonista mundial no mercado de créditos de carbono",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-04",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "52",
+          "quote": "licenciamento acelerado",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 1,
+          "page": "48",
+          "quote": "fortaleceremos programas de sucessão familiar no campo",
+          "confidence": 0.8
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "46",
+          "quote": "integração total entre forças policiais, inteligência financeira e cooperação internacional",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "46",
+          "quote": "fortaleceremos a atuação das Forças Armadas no controle estratégico das fronteiras nacionais",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-05",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "47",
+          "quote": "O sistema penitenciário será reformado com foco em educação, trabalho e ressocialização efetiva",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-02",
+          "axis": "Democracia e instituições",
+          "position": 1,
+          "page": "36",
+          "quote": "o ideal seria menos União Federal e mais municípios",
+          "confidence": 0.8
+        },
+        {
+          "id": "DEM-04",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "200",
+          "quote": "Sou contra a reeleição, pois considero que ela seja uma das fontes da corrupção",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "46",
+          "quote": "Fortaleceremos a cooperação com organismos internacionais e países vizinhos",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "46",
+          "quote": "cooperação com organismos internacionais e países vizinhos",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "41",
+          "quote": "reduzindo a dependência externa e fortalecendo nossa soberania tecnológica",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "57",
+          "quote": "Ampliaremos significativamente os investimentos em ciência, pesquisa e desenvolvimento",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-02",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "43",
+          "quote": "As universidades brasileiras deverão aproximar-se ainda mais da sociedade",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "57",
+          "quote": "A inteligência artificial será tratada como infraestrutura estratégica de Estado",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "41",
+          "quote": "terras raras e minerais estratégicos",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-05",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "48",
+          "quote": "promovendo inclusão produtiva e desenvolvimento regional",
+          "confidence": 0.8
+        }
+      ],
+      "limitations": "O documento é extenso e aborda muitos temas em linguagem programática, mas não formula posição comparável para várias afirmações da matriz, especialmente jornada e salário, tributação distributiva, SUS e financiamento educacional, habitação popular, tarifa zero, direitos LGBTQIA+, aborto, demarcações, desmilitarização, decisões monocráticas, regulação de plataformas e integração externa com padrões de países desenvolvidos. As posições não nulas foram registradas somente quando houve apoio textual explícito; menções genéricas a eficiência, tecnologia, sustentabilidade ou proteção social não foram convertidas em posições específicas."
+    },
+    {
+      "program": "Edmilson Costa e Cleusa Santos — PCB",
+      "positions": {
+        "ECO-01": 2,
+        "ECO-02": -2,
+        "ECO-03": 1,
+        "ECO-04": -2,
+        "ECO-05": -2,
+        "TRA-01": 2,
+        "TRA-02": -2,
+        "TRA-03": null,
+        "TRA-04": 2,
+        "TRA-05": 2,
+        "SAE-01": 2,
+        "SAE-02": -2,
+        "SAE-03": 2,
+        "SAE-04": 2,
+        "SAE-05": null,
+        "CID-01": 2,
+        "CID-02": -2,
+        "CID-03": 2,
+        "CID-04": 2,
+        "CID-05": 1,
+        "AMB-01": 2,
+        "AMB-02": 2,
+        "AMB-03": null,
+        "AMB-04": null,
+        "AMB-05": 2,
+        "SEG-01": 1,
+        "SEG-02": -2,
+        "SEG-03": 2,
+        "SEG-04": 1,
+        "SEG-05": null,
+        "DIR-01": 2,
+        "DIR-02": 2,
+        "DIR-03": 2,
+        "DIR-04": 2,
+        "DIR-05": 2,
+        "DEM-01": 2,
+        "DEM-02": null,
+        "DEM-03": 2,
+        "DEM-04": null,
+        "DEM-05": 2,
+        "EXT-01": 2,
+        "EXT-02": 2,
+        "EXT-03": null,
+        "EXT-04": null,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": null,
+        "CTD-03": 1,
+        "CTD-04": 2,
+        "CTD-05": null
+      },
+      "confidences": {
+        "ECO-01": 0.9,
+        "ECO-02": 0.9,
+        "ECO-03": 0.8,
+        "ECO-04": 0.9,
+        "ECO-05": 0.9,
+        "TRA-01": 0.9,
+        "TRA-02": 0.9,
+        "TRA-04": 0.9,
+        "TRA-05": 0.9,
+        "SAE-01": 0.9,
+        "SAE-02": 0.9,
+        "SAE-03": 0.9,
+        "SAE-04": 0.9,
+        "CID-01": 0.9,
+        "CID-02": 0.9,
+        "CID-03": 0.9,
+        "CID-04": 0.9,
+        "CID-05": 0.8,
+        "AMB-01": 0.9,
+        "AMB-02": 0.9,
+        "AMB-05": 0.9,
+        "SEG-01": 0.8,
+        "SEG-02": 0.9,
+        "SEG-03": 0.9,
+        "SEG-04": 0.8,
+        "DIR-01": 0.9,
+        "DIR-02": 0.9,
+        "DIR-03": 0.9,
+        "DIR-04": 0.9,
+        "DIR-05": 0.9,
+        "DEM-01": 0.9,
+        "DEM-03": 0.9,
+        "DEM-05": 0.9,
+        "EXT-01": 0.9,
+        "EXT-02": 0.9,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-03": 0.8,
+        "CTD-04": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "2",
+          "quote": "a estatização das áreas estratégicas da economia e dos setores produtores de bens necessários à vida",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "2",
+          "quote": "fim do arcabouço fiscal; saúde, transporte coletivo e educação 100% públicos",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": 1,
+          "page": "4",
+          "quote": "realizará uma reforma tributária com impostos progressivos",
+          "confidence": 0.8
+        },
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "4",
+          "quote": "revogação do Arcabouço Fiscal, da Lei de Responsabilidade Fiscal",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-05",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "4",
+          "quote": "a retomada do Banco Central (fim da autonomia)",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-01",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "5",
+          "quote": "redução da jornada de trabalho para 30 horas sem redução de salário",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": -2,
+          "page": "14",
+          "quote": "fim das terceirizações, das privatizações e de todas as flexibilizações legais",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-04",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "5",
+          "quote": "registro em carteira e piso salarial para os trabalhadores e as trabalhadoras de plataformas",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-05",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "5",
+          "quote": "salário-mínimo ... alcance o piso do salário-mínimo do Dieese",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "6",
+          "quote": "Um SUS forte, público, gratuito e de qualidade",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-02",
+          "axis": "Saúde e educação",
+          "position": -2,
+          "page": "10",
+          "quote": "estatização de todo o setor privado de saúde",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "7",
+          "quote": "ensino 100% público e gratuito, das creches à pós-graduação",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "7",
+          "quote": "fim do vestibular nas universidades federais e a ampliação das cotas",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "6",
+          "quote": "amplo programa de habitações populares até acabar com o déficit habitacional",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": -2,
+          "page": "10",
+          "quote": "federalizando empresas de tratamento de água e esgoto e implantando o monopólio estatal",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-03",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "6",
+          "quote": "imóveis ociosos serão reformados e destinados à moradia popular",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-04",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "7",
+          "quote": "No transporte será implantada a tarifa zero com transporte 100% público",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-05",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 1,
+          "page": "10",
+          "quote": "Moradia digna para toda a população, partindo da utilização imediata dos imóveis e terrenos da União",
+          "confidence": 0.8
+        },
+        {
+          "id": "AMB-01",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "8",
+          "quote": "ações voltadas para a redução das emissões de gases do efeito estufa",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "11",
+          "quote": "Investimentos em energias alternativas ... diminuindo os impactos ambientais",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "2",
+          "quote": "a reforma agrária popular",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 1,
+          "page": "13",
+          "quote": "As forças armadas priorizarão o cuidado das fronteiras, em conjunto com a polícia federal e demais órgãos de inteligência",
+          "confidence": 0.8
+        },
+        {
+          "id": "SEG-02",
+          "axis": "Segurança e justiça",
+          "position": -2,
+          "page": "13",
+          "quote": "Adoção das 16 medidas contra o encarceramento em massa",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "6",
+          "quote": "completa desmilitarização da segurança pública",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-04",
+          "axis": "Segurança e justiça",
+          "position": 1,
+          "page": "13",
+          "quote": "As forças armadas priorizarão o cuidado das fronteiras",
+          "confidence": 0.8
+        },
+        {
+          "id": "DIR-01",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "6",
+          "quote": "políticas públicas de combate radical ao machismo, à misoginia, ao racismo, à lgbtfobia",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-02",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "11",
+          "quote": "zerando as filas de creches, ampliando a educação integral",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "12",
+          "quote": "Demarcação e proteção integral de todos os territórios indígenas",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-04",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "11",
+          "quote": "Será uma prioridade ... acabar com baixíssima expectativa de vida da população Trans e Travesti",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-05",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "11",
+          "quote": "Legalização do aborto, com garantia de atendimento na rede pública de saúde",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-01",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "3",
+          "quote": "Instituiremos o Orçamento Popular 100% deliberativo",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-03",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "12",
+          "quote": "juízes nomeados para os tribunais regionais e superiores tenham mandato fixo",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-05",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "4",
+          "quote": "Haverá forte regulação das Big Techs e redes sociais",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "8",
+          "quote": "construção de uma nova ordem internacional, baseada na cooperação",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-02",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "8",
+          "quote": "espaços comuns de integração ... entre os povos da América Latina",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "15",
+          "quote": "soberania nacional ... estatal das terras raras e minerais críticos",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "10",
+          "quote": "Aumento da dotação orçamentária para o desenvolvimento científico e tecnológico",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "10",
+          "quote": "criação de Big Techs públicas e nacionais",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "10",
+          "quote": "monopólio estatal e soberano das terras raras e minerais críticos",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "O programa é altamente explícito em propostas de estatização, expansão de serviços públicos, direitos trabalhistas, participação popular, proteção ambiental e soberania nacional. Permaneceram nulos os itens sem formulação comparável ou suficientemente específica: qualificação vinculada a benefícios sociais, avaliações de aprendizagem, mercados de carbono ou pagamento por serviços ambientais, simplificação do licenciamento, reinserção prisional, autonomia federativa, extinção da reeleição, aproximação a padrões de países desenvolvidos, aumento de recursos para defesa, cooperação universidade-empresa e desenvolvimento regional. Em alguns casos, há apenas apoio parcial à formulação da matriz; por exemplo, titulação fundiária aparece para determinados territórios ou em contexto de reforma agrária, e o combate ao crime organizado é tratado por expropriação financeira e inteligência, sem reproduzir integralmente todos os mecanismos da afirmação."
+    },
+    {
+      "program": "Programa sem autoria eleitoral identificada — Proteger Hoje, Transformar o Amanhã",
+      "positions": {
+        "ECO-01": null,
+        "ECO-02": null,
+        "ECO-03": null,
+        "ECO-04": 1,
+        "ECO-05": null,
+        "TRA-01": null,
+        "TRA-02": null,
+        "TRA-03": 1,
+        "TRA-04": null,
+        "TRA-05": null,
+        "SAE-01": null,
+        "SAE-02": null,
+        "SAE-03": null,
+        "SAE-04": null,
+        "SAE-05": 1,
+        "CID-01": null,
+        "CID-02": 2,
+        "CID-03": null,
+        "CID-04": null,
+        "CID-05": null,
+        "AMB-01": null,
+        "AMB-02": null,
+        "AMB-03": null,
+        "AMB-04": null,
+        "AMB-05": null,
+        "SEG-01": 2,
+        "SEG-02": null,
+        "SEG-03": null,
+        "SEG-04": null,
+        "SEG-05": 2,
+        "DIR-01": null,
+        "DIR-02": 2,
+        "DIR-03": null,
+        "DIR-04": null,
+        "DIR-05": null,
+        "DEM-01": null,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": null,
+        "EXT-01": null,
+        "EXT-02": null,
+        "EXT-03": null,
+        "EXT-04": null,
+        "EXT-05": null,
+        "CTD-01": null,
+        "CTD-02": 1,
+        "CTD-03": 1,
+        "CTD-04": null,
+        "CTD-05": 1
+      },
+      "confidences": {
+        "ECO-04": 0.8,
+        "TRA-03": 0.8,
+        "SAE-05": 0.8,
+        "CID-02": 0.9,
+        "SEG-01": 0.9,
+        "SEG-05": 0.9,
+        "DIR-02": 0.9,
+        "CTD-02": 0.8,
+        "CTD-03": 0.8,
+        "CTD-05": 0.8
+      },
+      "evidences": [
+        {
+          "id": "ECO-04",
+          "axis": "Economia e orçamento",
+          "position": 1,
+          "page": "6",
+          "quote": "Indicadores sugeridos: resultado fiscal; dívida/PIB; programas avaliados; economia obtida por revisão de gastos.",
+          "confidence": 0.8
+        },
+        {
+          "id": "TRA-03",
+          "axis": "Trabalho e proteção social",
+          "position": 1,
+          "page": "3",
+          "quote": "Qualificação e reinserção profissional",
+          "confidence": 0.8
+        },
+        {
+          "id": "SAE-05",
+          "axis": "Saúde e educação",
+          "position": 1,
+          "page": "7",
+          "quote": "Avaliação frequente com intervenção pedagógica",
+          "confidence": 0.8
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "5",
+          "quote": "Concessões, PPPs e planejamento de longo prazo",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "9",
+          "quote": "Inteligência financeira e patrimonial",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-05",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "10",
+          "quote": "Trabalho, educação e qualificação",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-02",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "3",
+          "quote": "Creches e apoio às famílias vulneráveis",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-02",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "8",
+          "quote": "Parcerias com setor produtivo e ensino superior",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-03",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "12",
+          "quote": "IA como apoio clínico e administrativo com governança, auditoria e privacidade",
+          "confidence": 0.8
+        },
+        {
+          "id": "CTD-05",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 1,
+          "page": "14",
+          "quote": "redução de desigualdades regionais",
+          "confidence": 0.8
+        }
+      ],
+      "limitations": "O documento é uma versão estruturada para desenvolvimento programático e posterior definição de metas, com muitos objetivos e indicadores, mas sem detalhamento suficiente sobre várias afirmações da matriz. Não há formulações explícitas sobre tributação distributiva, autonomia do Banco Central, jornada e salário mínimo, proteção trabalhista em plataformas, habitação, transporte, política climática, agricultura familiar, licenciamento ambiental, direitos indígenas e quilombolas, população LGBTQIA+, aborto, desenho do orçamento participativo, Judiciário, reeleição, política externa, defesa nacional ou minerais críticos. As referências a saúde e SUS não demonstram, por si sós, universalidade, ampliação por investimento público direto ou contratação privada complementar; por isso esses itens foram mantidos como nulos. A menção a fronteiras inteligentes não foi equiparada a maior atuação das Forças Armadas, e parcerias educacionais ou IA governada foram classificadas apenas como apoios parciais quando não cobriam toda a afirmação."
+    },
+    {
+      "program": "Samara Martins — Unidade Popular",
+      "positions": {
+        "ECO-01": 2,
+        "ECO-02": -2,
+        "ECO-03": 2,
+        "ECO-04": -2,
+        "ECO-05": -2,
+        "TRA-01": 2,
+        "TRA-02": -2,
+        "TRA-03": null,
+        "TRA-04": 2,
+        "TRA-05": 2,
+        "SAE-01": 2,
+        "SAE-02": -2,
+        "SAE-03": 2,
+        "SAE-04": 2,
+        "SAE-05": null,
+        "CID-01": 2,
+        "CID-02": -2,
+        "CID-03": null,
+        "CID-04": 2,
+        "CID-05": null,
+        "AMB-01": null,
+        "AMB-02": 2,
+        "AMB-03": null,
+        "AMB-04": null,
+        "AMB-05": 2,
+        "SEG-01": 2,
+        "SEG-02": -1,
+        "SEG-03": 2,
+        "SEG-04": null,
+        "SEG-05": null,
+        "DIR-01": 2,
+        "DIR-02": 2,
+        "DIR-03": 2,
+        "DIR-04": 2,
+        "DIR-05": 2,
+        "DEM-01": 2,
+        "DEM-02": null,
+        "DEM-03": null,
+        "DEM-04": null,
+        "DEM-05": null,
+        "EXT-01": 1,
+        "EXT-02": null,
+        "EXT-03": -2,
+        "EXT-04": null,
+        "EXT-05": 2,
+        "CTD-01": 2,
+        "CTD-02": null,
+        "CTD-03": null,
+        "CTD-04": 2,
+        "CTD-05": null
+      },
+      "confidences": {
+        "ECO-01": 0.9,
+        "ECO-02": 0.9,
+        "ECO-03": 0.9,
+        "ECO-05": 0.9,
+        "TRA-01": 0.9,
+        "TRA-02": 0.9,
+        "TRA-04": 0.9,
+        "TRA-05": 0.9,
+        "SAE-01": 0.9,
+        "SAE-02": 0.9,
+        "SAE-03": 0.9,
+        "SAE-04": 0.9,
+        "CID-01": 0.9,
+        "CID-02": 0.9,
+        "CID-04": 0.9,
+        "AMB-02": 0.9,
+        "AMB-05": 0.9,
+        "SEG-01": 0.9,
+        "SEG-02": 0.8,
+        "SEG-03": 0.9,
+        "DIR-01": 0.9,
+        "DIR-02": 0.9,
+        "DIR-03": 0.9,
+        "DIR-04": 0.9,
+        "DIR-05": 0.9,
+        "DEM-01": 0.9,
+        "EXT-01": 0.8,
+        "EXT-03": 0.9,
+        "EXT-05": 0.9,
+        "CTD-01": 0.9,
+        "CTD-04": 0.9
+      },
+      "evidences": [
+        {
+          "id": "ECO-01",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "7",
+          "quote": "controle público dos setores estratégicos",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-02",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "12",
+          "quote": "Fim do Arcabouço Fiscal",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-03",
+          "axis": "Economia e orçamento",
+          "position": 2,
+          "page": "16",
+          "quote": "instituição do imposto progressivo sobre grandes fortunas, lucros, dividendos e heranças dos bilionários",
+          "confidence": 0.9
+        },
+        {
+          "id": "ECO-05",
+          "axis": "Economia e orçamento",
+          "position": -2,
+          "page": "18",
+          "quote": "Fim da autonomia do Banco Central em relação ao governo",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-01",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "10",
+          "quote": "30 horas sem redução salarial",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-02",
+          "axis": "Trabalho e proteção social",
+          "position": -2,
+          "page": "12",
+          "quote": "revogar as reformas trabalhista e previdenciária, a terceirização irrestrita",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-04",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "11",
+          "quote": "Regulamentar de forma imediata o trabalho em plataformas garantindo remuneração mínima, proteção previdenciária",
+          "confidence": 0.9
+        },
+        {
+          "id": "TRA-05",
+          "axis": "Trabalho e proteção social",
+          "position": 2,
+          "page": "9",
+          "quote": "valorização permanente acima da inflação",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-01",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "20",
+          "quote": "Fortalecimento e Unificação do SUS 100% Estatal",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-02",
+          "axis": "Saúde e educação",
+          "position": -2,
+          "page": "20",
+          "quote": "Fim da entrega da gestão hospitalar a Organizações Sociais, fundações privadas e cooperativas empresariais",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-03",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "22",
+          "quote": "Destinação de pelo menos 10% do PIB nacional para a educação pública",
+          "confidence": 0.9
+        },
+        {
+          "id": "SAE-04",
+          "axis": "Saúde e educação",
+          "position": 2,
+          "page": "21",
+          "quote": "Garantia de livre acesso do povo à universidade e/ou cursos técnicos profissionalizantes; fim do vestibular",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-01",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "12",
+          "quote": "plano nacional de construção de moradias populares",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-02",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": -2,
+          "page": "15",
+          "quote": "contra a privatização do patrimônio público",
+          "confidence": 0.9
+        },
+        {
+          "id": "CID-04",
+          "axis": "Cidades, moradia e infraestrutura",
+          "position": 2,
+          "page": "31",
+          "quote": "Passe livre irrestrito no transporte para todos os estudantes e jovens em busca de emprego",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-02",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "63",
+          "quote": "eficiência energética, economia solidária, tecnologias limpas",
+          "confidence": 0.9
+        },
+        {
+          "id": "AMB-05",
+          "axis": "Ambiente, energia e agricultura",
+          "position": 2,
+          "page": "11",
+          "quote": "reforma agrária e incentivo estatal à produção camponesa",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-01",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "24",
+          "quote": "julgamento, prisão e confisco dos bens de todos os corruptos",
+          "confidence": 0.9
+        },
+        {
+          "id": "SEG-02",
+          "axis": "Segurança e justiça",
+          "position": -1,
+          "page": "30",
+          "quote": "Não à redução da maioridade penal",
+          "confidence": 0.8
+        },
+        {
+          "id": "SEG-03",
+          "axis": "Segurança e justiça",
+          "position": 2,
+          "page": "29",
+          "quote": "fim da repressão contra a organização e a luta da juventude",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-01",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "7",
+          "quote": "combater todas as formas de exploração, racismo, machismo, LGBTfobia",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-02",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "28",
+          "quote": "Universalização do acesso a creches e pré-escolas públicas e em tempo integral",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-03",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "32",
+          "quote": "reconhecimento e a titulação de terras quilombolas",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-04",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "33",
+          "quote": "combate à LGBTfobia",
+          "confidence": 0.9
+        },
+        {
+          "id": "DIR-05",
+          "axis": "Direitos e igualdade",
+          "position": 2,
+          "page": "28",
+          "quote": "Descriminalização e legalização do aborto",
+          "confidence": 0.9
+        },
+        {
+          "id": "DEM-01",
+          "axis": "Democracia e instituições",
+          "position": 2,
+          "page": "24",
+          "quote": "estabelecer o controle popular sobre o orçamento público",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-01",
+          "axis": "Política externa e defesa",
+          "position": 1,
+          "page": "5",
+          "quote": "luta anti-imperialista, na defesa da autodeterminação dos povos e da soberania do nosso país",
+          "confidence": 0.8
+        },
+        {
+          "id": "EXT-03",
+          "axis": "Política externa e defesa",
+          "position": -2,
+          "page": "63",
+          "quote": "Rompimento de relações de dependência em relação ao capital imperialista internacional",
+          "confidence": 0.9
+        },
+        {
+          "id": "EXT-05",
+          "axis": "Política externa e defesa",
+          "position": 2,
+          "page": "5",
+          "quote": "quem deles é que vai entregar as terras raras brasileiras aos Estados Unidos",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-01",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "23",
+          "quote": "Investir em ciência e tecnologia com vistas a fortalecer a soberania econômica",
+          "confidence": 0.9
+        },
+        {
+          "id": "CTD-04",
+          "axis": "Ciência, tecnologia e desenvolvimento",
+          "position": 2,
+          "page": "5",
+          "quote": "entregar as terras raras brasileiras aos Estados Unidos",
+          "confidence": 0.9
+        }
+      ],
+      "limitations": "A codificação usa exclusivamente o texto extraído e a paginação definida pelos caracteres de form feed. Foram registradas posições apenas quando há apoio ou rejeição explícita da substância da afirmação; omissões, menções genéricas, nomes de instituições ou do partido não foram convertidos em posições. Algumas formulações do programa são mais amplas ou ideológicas que as afirmações da matriz, especialmente em segurança, clima, carbono, regularização fundiária urbana, autonomia federativa, tribunais, reeleição, plataformas digitais, cooperação empresarial, infraestrutura digital e desenvolvimento regional; por isso esses itens permanecem nulos. A evidência de ECO-04 contém posição inválida na lista e deve ser interpretada como -2 conforme o objeto de posições."
+    }
+  ]
+}

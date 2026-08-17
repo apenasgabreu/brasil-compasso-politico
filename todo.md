@@ -1,0 +1,37 @@
+# Project TODO
+
+- [x] Definir os critérios públicos de neutralidade, escopo e tratamento de incerteza das posições programáticas.
+- [x] Definir uma arquitetura de privacidade que mantenha respostas exclusivamente no navegador e trate a exigência de explicação por LLM sem transmissão não consentida de respostas.
+- [x] Extrair o texto, a paginação e os metadados dos 12 programas de governo fornecidos.
+- [x] Catalogar propostas e citações diretas rastreáveis em eixos temáticos consistentes.
+- [x] Pesquisar literatura acadêmica revisada por pares e fontes estatísticas oficiais para fundamentar os eixos e a metodologia.
+- [x] Classificar e incorporar o livro fornecido como fonte contextual, distinguindo-o de literatura revisada por pares e impedindo seu uso na pontuação de candidatos.
+- [x] Persistir na documentação pública a classificação do livro como fonte contextual não revisada por pares, com limites explícitos de uso.
+- [x] Registrar na matriz de dados e no algoritmo que a fonte contextual não pode influenciar posições, pesos, ranking ou pontuação.
+- [x] Reextrair e validar as posições programáticas de Samara Martins a partir do PDF reenviado, com citações e páginas verificáveis.
+- [x] Construir uma matriz versionada de posições candidatas-perguntas, com evidências, confiança e regras para posições ambíguas ou ausentes.
+- [x] Redigir entre 40 e 60 afirmações neutras, em escala de cinco pontos, com opção de não resposta e cobertura de todos os eixos.
+- [x] Implementar ponderação explícita da importância atribuída a cada eixo pelo usuário.
+- [x] Implementar cálculo local de afinidade, ranking e detalhamento por eixo sem envio ou armazenamento das respostas.
+- [x] Implementar página de resultados com gráfico de barras, gráfico radar e mapa econômico × social/liberdades.
+- [x] Exibir, para cada candidato, propostas concretas com citações diretas e links ou páginas de origem no PDF.
+- [x] Implementar uma explicação personalizada estritamente ancorada nas respostas e nas evidências, respeitando a decisão de privacidade definida.
+- [x] Executar a explicação com LLM local no dispositivo quando houver suporte a WebGPU e disponibilizar fallback determinístico sem transmitir respostas.
+- [x] Criar página de transparência metodológica, fontes e limitações da comparação.
+- [x] Adicionar confiança documental verificável por posição e aplicá-la como peso explícito do cálculo de afinidade.
+- [x] Implementar um gráfico radar real dos escores por eixo na página de resultados.
+- [x] Exibir explicação ancorada em respostas e evidências para cada programa na página de resultados, preservando a opção de IA local.
+- [x] Expor na página de resultados, para cada programa, a opção de gerar e visualizar explicação com IA local.
+- [x] Restringir o contexto da IA local a respostas item a item, posições documentadas e citações correspondentes.
+- [x] Construir interface responsiva, elegante e compatível com WCAG 2.2 AA, com navegação por teclado e foco visível.
+- [x] Escrever e executar testes unitários do cálculo de compatibilidade, ponderação e regras de respostas ausentes.
+- [x] Validar a aplicação em desktop e celular, incluindo contraste, acessibilidade, privacidade e consistência visual.
+- [x] Executar e registrar validação de navegação por teclado nas etapas de introdução, pesos, questionário, resultados, detalhamento e metodologia.
+- [x] Executar e registrar checagens objetivas de contraste e acessibilidade compatíveis com WCAG AA nos componentes e estados principais.
+- [x] Consolidar as evidências verificáveis de validação final em desktop e celular, cobrindo contraste, acessibilidade, privacidade e consistência visual.
+- [x] Corrigir a narrativa determinística para não chamar divergências de convergências quando a cobertura comparável é insuficiente.
+- [x] Validar por teclado a abertura e a operação do detalhamento de um programa, registrando evidências verificáveis.
+- [x] Executar auditoria objetiva mais abrangente de acessibilidade para foco, formulários, botões, gráficos, navegação e mensagens.
+- [x] Atualizar a validação final de desktop e celular após concluir as checagens complementares.
+- [x] Persistir e confirmar a documentação final de validação de teclado, auditoria estática de acessibilidade e build de produção.
+- [x] Confirmar por leitura o arquivo de validação final e seu conteúdo de teclado, acessibilidade e build antes do checkpoint.
