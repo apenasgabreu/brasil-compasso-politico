@@ -1,9 +1,14 @@
-export type ShareResult = { candidate: string; score: number | null; coverage: number | null; url: string };
+export type ShareResult = { candidate: string; score: number | null; coverage: number | null; url: string; portraitUrl?: string; document?: string };
 
 const percent = (value: number | null) => value === null ? "não calculada" : `${Math.round(value * 100)}%`;
 
 export function buildShareText(result: ShareResult) {
   return `No Brasil em Perspectiva, minha maior afinidade programática documentada foi com ${result.candidate}: ${percent(result.score)}. Cobertura documental: ${percent(result.coverage)}. É uma comparação de propostas, não recomendação de voto.`;
+}
+
+export function buildStoryOrigin(result: ShareResult) {
+  const document = result.document ? ` Programa analisado: ${result.document}.` : "";
+  return `Resultado calculado localmente a partir das respostas do eleitor comparadas às posições documentadas no programa eleitoral.${document}`;
 }
 
 export function socialLink(network: "x" | "whatsapp", result: ShareResult) {
@@ -26,18 +31,41 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxWidth: number) {
   if (current) lines.push(current); return lines;
 }
 
+async function loadPortrait(source: string) {
+  const response = await fetch(source);
+  if (!response.ok) throw new Error("Não foi possível carregar o retrato para o card.");
+  const objectUrl = URL.createObjectURL(await response.blob());
+  return new Promise<HTMLImageElement>((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => { URL.revokeObjectURL(objectUrl); resolve(image); };
+    image.onerror = () => { URL.revokeObjectURL(objectUrl); reject(new Error("Não foi possível carregar o retrato para o card.")); };
+    image.src = objectUrl;
+  });
+}
+
+function drawPortrait(ctx: CanvasRenderingContext2D, image: HTMLImageElement) {
+  const size = 250; const x = 738; const y = 176;
+  const scale = Math.max(size / image.naturalWidth, size / image.naturalHeight);
+  const width = image.naturalWidth * scale; const height = image.naturalHeight * scale;
+  ctx.save(); ctx.beginPath(); ctx.arc(x + size / 2, y + size / 2, size / 2, 0, Math.PI * 2); ctx.clip();
+  ctx.drawImage(image, x + (size - width) / 2, y + (size - height) / 2, width, height); ctx.restore();
+  ctx.strokeStyle = "rgba(248,243,234,.88)"; ctx.lineWidth = 8; ctx.beginPath(); ctx.arc(x + size / 2, y + size / 2, size / 2 - 4, 0, Math.PI * 2); ctx.stroke();
+}
+
 export async function createStoryCard(result: ShareResult) {
   const canvas = document.createElement("canvas"); canvas.width = 1080; canvas.height = 1920;
   const ctx = canvas.getContext("2d"); if (!ctx) throw new Error("Não foi possível preparar o card.");
   const gradient = ctx.createLinearGradient(0, 0, 1080, 1920); gradient.addColorStop(0, "#17394b"); gradient.addColorStop(1, "#9f4b2d"); ctx.fillStyle = gradient; ctx.fillRect(0, 0, 1080, 1920);
   ctx.fillStyle = "rgba(255,255,255,.14)"; ctx.fillRect(88, 128, 904, 4);
   ctx.fillStyle = "#f8f3ea"; ctx.font = "600 38px Arial"; ctx.fillText("BRASIL EM PERSPECTIVA", 92, 220);
-  ctx.font = "400 68px Georgia"; const heading = "Minha maior afinidade programática documentada"; let y = 410; wrap(ctx, heading, 860).forEach((line) => { ctx.fillText(line, 92, y); y += 88; });
-  ctx.fillStyle = "#ffd7b7"; ctx.font = "700 98px Georgia"; y += 85; wrap(ctx, result.candidate, 860).forEach((line) => { ctx.fillText(line, 92, y); y += 112; });
-  ctx.fillStyle = "#f8f3ea"; ctx.font = "700 220px Georgia"; ctx.fillText(percent(result.score), 92, 1240);
-  ctx.font = "400 42px Arial"; ctx.fillText(`Cobertura documental: ${percent(result.coverage)}`, 96, 1330);
-  ctx.fillStyle = "rgba(248,243,234,.86)"; ctx.font = "400 38px Arial"; y = 1540; wrap(ctx, "Comparação de propostas documentadas. Não é recomendação de voto.", 860).forEach((line) => { ctx.fillText(line, 92, y); y += 52; });
-  ctx.fillStyle = "rgba(248,243,234,.78)"; ctx.font = "400 30px Arial"; ctx.fillText("Compartilhado voluntariamente pelo eleitor.", 92, 1770);
+  if (result.portraitUrl) { try { drawPortrait(ctx, await loadPortrait(result.portraitUrl)); } catch { /* O card permanece válido mesmo se a imagem não carregar. */ } }
+  ctx.font = "400 62px Georgia"; const heading = "Minha maior afinidade programática documentada"; let y = 470; wrap(ctx, heading, 860).forEach((line) => { ctx.fillText(line, 92, y); y += 78; });
+  ctx.fillStyle = "#ffd7b7"; ctx.font = "700 86px Georgia"; y += 72; wrap(ctx, result.candidate, 860).forEach((line) => { ctx.fillText(line, 92, y); y += 102; });
+  ctx.fillStyle = "#f8f3ea"; ctx.font = "700 205px Georgia"; ctx.fillText(percent(result.score), 92, 1190);
+  ctx.font = "400 40px Arial"; ctx.fillText(`Cobertura documental: ${percent(result.coverage)}`, 96, 1275);
+  ctx.fillStyle = "rgba(248,243,234,.9)"; ctx.font = "600 30px Arial"; y = 1480; wrap(ctx, "DE ONDE VEM ESTE RESULTADO", 860).forEach((line) => { ctx.fillText(line, 92, y); y += 42; });
+  ctx.fillStyle = "rgba(248,243,234,.86)"; ctx.font = "400 34px Arial"; y += 28; wrap(ctx, buildStoryOrigin(result), 860).forEach((line) => { ctx.fillText(line, 92, y); y += 47; });
+  ctx.fillStyle = "rgba(248,243,234,.78)"; ctx.font = "400 28px Arial"; ctx.fillText("Comparação de propostas, não recomendação de voto.", 92, 1805);
   const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png"));
   if (!blob) throw new Error("Não foi possível gerar a imagem.");
   return new File([blob], "meu-resultado-brasil-em-perspectiva.png", { type: "image/png" });

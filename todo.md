@@ -60,3 +60,24 @@
 - [x] Ler novamente a documentação de validação final após a última atualização e confirmar sua persistência.
 - [x] Realizar revisão visual independente e explícita da tela móvel de resultados com retratos e painel social.
 - [x] Remover a prévia temporária usada na revisão visual independente antes de salvar a atualização.
+- [x] Incluir no card de Story o retrato verificável da candidatura de maior afinidade.
+- [x] Explicitar no card de Story que a afinidade vem das respostas do eleitor comparadas às posições documentadas no programa.
+- [x] Testar a geração local do card enriquecido e validar sua composição visual.
+- [x] Resolver a exportação de canvas com retrato sem violar a política de origem do navegador.
+- [x] Substituir o retrato inadequado de Luiz Inácio Lula da Silva por imagem verificável com rosto claramente visível.
+- [x] Identificar em fontes confiáveis as candidaturas correspondentes aos programas do Partido Democrata e do PSTU.
+- [x] Integrar os nomes e retratos verificáveis dessas candidaturas aos metadados públicos da aplicação.
+- [x] Validar visualmente as identificações corrigidas e salvar a atualização.
+- [x] Remover fotografias de vices para exibir somente a pessoa candidata à Presidência em cada resultado.
+- [x] Validar em preview de resultados o retrato frontal de Lula, Hertz Dias, Wilson Grassi e a ausência de foto de vice.
+- [x] Validar visualmente, com composição legível, o card de Story com retrato, afinidade e origem metodológica.
+- [ ] Salvar novo checkpoint após registrar as validações visuais finais.
+- [x] Criar e remover uma prévia temporária de resultados para a validação visual dos retratos corrigidos.
+- [x] Capturar uma prévia explícita e legível do card de Story com retrato, afinidade e origem metodológica.
+- [x] Atualizar o registro de validação após a revisão visual explícita do card de Story.
+- [x] Confirmar por uma revisão visual independente que retrato, afinidade e origem estão legíveis no card de Story.
+- [x] Confirmar por leitura a persistência do registro final de validação do card de Story.
+- [x] Extrair e conferir textualmente os elementos visíveis do card de Story salvo, incluindo retrato, afinidade e origem metodológica.
+- [x] Executar OCR verificável do card de Story salvo para confirmar candidato, afinidade e origem metodológica.
+- [x] Persistir a transcrição confirmada do card de Story e relê-la antes do checkpoint.
+- [x] Confirmar por leitura a persistência da transcrição OCR do card de Story em sua documentação dedicada.

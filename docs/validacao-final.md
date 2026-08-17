@@ -25,3 +25,11 @@ Os resultados exibem retratos de fonte rastreável para as candidaturas identifi
 Na verificação interativa da rota de resultados, o painel de compartilhamento foi encontrado e onze imagens de retrato foram carregadas, incluindo a dupla do PCB. Uma prévia exclusiva de desenvolvimento foi usada para inspecionar diretamente a rota de resultados em 375 × 812: retratos, painel social, botões e ranking foram exibidos em coluna, sem corte horizontal. A prévia foi removida após a verificação.
 
 A captura móvel focalizada confirmou a legibilidade do painel social: o resumo, os botões “Compartilhar”, “Preparar para Story” e “Copiar resumo”, além dos links para WhatsApp e X, permaneceram visíveis e separados em 375 × 812. Após a remoção de toda a prévia temporária, a suíte com dez testes, a checagem de tipos e a compilação de produção voltaram a concluir com êxito.
+
+## Atualização de retratos e Story
+
+O retrato de Lula foi substituído por foto oficial frontal. As candidaturas associadas aos programas antes exibidos apenas como sigla foram atualizadas para **Hertz Dias — PSTU**, **Rui Costa Pimenta — PCO** e **Wilson Grassi — Democrata**, usando retratos eleitorais do TSE com crédito e página-fonte. A interface passou a exibir somente a pessoa candidata à Presidência; retratos de vices foram removidos.
+
+O card local para Story passou a incluir o retrato da candidatura de maior afinidade e o bloco “De onde vem este resultado”, que informa que o resultado é calculado localmente a partir das respostas do eleitor comparadas às posições documentadas no programa. A exportação PNG foi testada no navegador com retrato e origem metodológica, gerando arquivo válido de 2,15 MB sem transmissão de respostas.
+
+Uma prévia ampliada do PNG foi revisada visualmente no navegador. O card exibiu retrato frontal de Lula, identificação da candidatura, afinidade de 74%, cobertura de 68% e o bloco “De onde vem este resultado”, incluindo a referência ao Livro do Plano de Governo. A hierarquia, o contraste e a legibilidade permaneceram adequados na composição vertical de Story.

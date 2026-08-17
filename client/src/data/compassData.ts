@@ -82,13 +82,13 @@ export const programs = rawPositions.programs as unknown as Program[];
 
 const sourceFiles = [
   ["zema", "Romeu Zema — NOVO", "Programa de Governo", "/manus-storage/planogoverno10120_8052fe22.pdf"],
-  ["democrata", "Partido Democrata", "Brasil em Primeiro Lugar", "/manus-storage/BrasilemPrimeiroLugar_548312dd.pdf"],
+  ["democrata", "Wilson Grassi — Democrata", "Brasil em Primeiro Lugar", "/manus-storage/BrasilemPrimeiroLugar_548312dd.pdf"],
   ["samara", "Samara Martins — UP", "Programa de Governo", "/manus-storage/pje-ProgramaSAMARA_02(1)_c70778e3.pdf"],
-  ["pco", "PCO", "Programa de Governo 2026", "/manus-storage/PCOprogramadegoverno2026_5fd19712.pdf"],
+  ["pco", "Rui Costa Pimenta — PCO", "Programa de Governo 2026", "/manus-storage/PCOprogramadegoverno2026_5fd19712.pdf"],
   ["caiado", "Ronaldo Caiado — PSD", "Plano de Governo", "/manus-storage/PlanodeGovernoRonaldoCaiadoPresidente_ac37d7fc.pdf"],
   ["renan", "Renan Santos — Partido Missão", "Plano de Governo", "/manus-storage/PlanodeGovernoMissao2026Finalcompressed_3b09ae48.pdf"],
   ["lula", "Luiz Inácio Lula da Silva — coligação", "Livro do Plano de Governo", "/manus-storage/0806JOB838PTlivroplanodegovernocompressed_ca43cf1e.pdf"],
-  ["pstu", "PSTU", "Programa Eleições 2026", "/manus-storage/ProgramaPSTUEleiAAes2026_5920ff3c.pdf"],
+  ["pstu", "Hertz Dias — PSTU", "Programa Eleições 2026", "/manus-storage/ProgramaPSTUEleiAAes2026_5920ff3c.pdf"],
   ["flávio", "Flávio Bolsonaro — PL", "Diretrizes de Plano de Governo", "/manus-storage/DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal_36dd945a.pdf"],
   ["augusto", "Augusto Cury", "Plano de Governo", "/manus-storage/PLANODEGOVERNOOBRASILDOSNOSSOSSONHOS_555f1710.pdf"],
   ["pcb", "Edmilson Costa e Cleusa Santos — PCB", "Programa Político", "/manus-storage/ProgramaPoliticodoPCBeleicoes20261_7be57e53.pdf"],
@@ -102,13 +102,13 @@ const candidatePortraits: Record<string, CandidatePortrait[]> = {
   "Samara Martins — UP": [{ name: "Samara Martins", image: "/manus-storage/samara-martins_2eb2ee23.jpg", source: "https://commons.wikimedia.org/wiki/File:Samara_Martins_UP.jpg", credit: "Wikimedia Commons · atribuição indicada na fonte" }],
   "Ronaldo Caiado — PSD": [{ name: "Ronaldo Caiado", image: "/manus-storage/ronaldo-caiado_e98d53c5.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_do_governador_de_Goi%C3%A1s,_Ronaldo_Caiado_em_2023_(ombros).jpg", credit: "Bianca Kida · CC BY 2.0" }],
   "Renan Santos — Partido Missão": [{ name: "Renan Santos", image: "/manus-storage/renan-santos_691a460c.jpg", source: "https://commons.wikimedia.org/wiki/File:Renan_Santos.jpg", credit: "Romerito Pontes · CC BY 4.0" }],
-  "Luiz Inácio Lula da Silva — coligação": [{ name: "Luiz Inácio Lula da Silva", image: "/manus-storage/lula_fdc20500.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(m%C3%A3o_pitoca).jpg", credit: "Ricardo Stuckert/PR · CC BY 2.0" }],
+  "Luiz Inácio Lula da Silva — coligação": [{ name: "Luiz Inácio Lula da Silva", image: "/manus-storage/lula-rosto_2656dea4.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(rosto)_(cropped).jpg", credit: "Palácio do Planalto · CC BY 2.0" }],
   "Flávio Bolsonaro — PL": [{ name: "Flávio Bolsonaro", image: "/manus-storage/flavio-bolsonaro_8022afb1.jpg", source: "https://commons.wikimedia.org/wiki/File:Flavio_Bolsonaro_em_2006.jpg", credit: "Wikimedia Commons · CC BY 4.0" }],
   "Augusto Cury": [{ name: "Augusto Cury", image: "/manus-storage/augusto-cury_252b0a4e.jpg", source: "https://commons.wikimedia.org/wiki/File:Augusto_Cury,_escritor_(28339139296).jpg", credit: "Lima Andruška · CC BY-SA 2.0" }],
-  "Edmilson Costa e Cleusa Santos — PCB": [
-    { name: "Edmilson Costa", image: "/manus-storage/edmilson-costa_a47ac5e9.jpg", source: "https://commons.wikimedia.org/wiki/File:Edmilson_Costa_-_PCB.jpg", credit: "PCB/Diário Liberdade · CC BY 3.0" },
-    { name: "Cleusa Santos", image: "/manus-storage/cleusa-santos_6a69df02.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_CLEUSA_SANTOS_CANDIDATA_VICE-PRESIDENTE_TSE_(280002551976).jpg", credit: "Fonte TSE · CC BY 4.0" },
-  ],
+  "Edmilson Costa e Cleusa Santos — PCB": [{ name: "Edmilson Costa", image: "/manus-storage/edmilson-costa_a47ac5e9.jpg", source: "https://commons.wikimedia.org/wiki/File:Edmilson_Costa_-_PCB.jpg", credit: "PCB/Diário Liberdade · CC BY 3.0" }],
+  "Wilson Grassi — Democrata": [{ name: "Wilson Grassi", image: "/manus-storage/wilson-grassi-tse_781f214d.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_VETERIN%C3%81RIO_WILSON_GRASSI_CANDIDATO_PRESIDENTE_TSE_(280002548139).jpg", credit: "TSE · CC BY 4.0" }],
+  "Hertz Dias — PSTU": [{ name: "Hertz Dias", image: "/manus-storage/hertz-dias-tse_4efe41ed.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_HERTZ_DIAS_CANDIDATO_PRESIDENTE_TSE_(280002541457).jpg", credit: "TSE · CC BY 4.0" }],
+  "Rui Costa Pimenta — PCO": [{ name: "Rui Costa Pimenta", image: "/manus-storage/rui-costa-pimenta-tse_9512a4d6.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_RUI_COSTA_PIMENTA_CANDIDATO_PRESIDENTE_TSE_(280002552487).jpg", credit: "TSE · CC BY 4.0" }],
   "Clariana Barão — Democracia Cristã": [{ name: "Clariana Barão", image: "/manus-storage/clariana-barao_47a8443a.jpg", source: "https://www.democraciacrista.org.br/clariana-e-a-indicada-na-convencao-nacional-para-presidencia-da-republica-pela-democracia-crista/", credit: "Democracia Cristã · imagem institucional" }],
 };
 

@@ -62,7 +62,7 @@ export default function Home() {
     setNarratives((current) => ({ ...current, [result.program.program]: narrative }));
     setGenerating(null);
   };
-  const shareData = (result: ProgramScore): ShareResult => ({ candidate: getProgramMeta(result.program.program).name, score: result.score, coverage: result.coverage, url: window.location.origin });
+  const shareData = (result: ProgramScore): ShareResult => { const meta = getProgramMeta(result.program.program); return { candidate: meta.name, score: result.score, coverage: result.coverage, url: window.location.origin, portraitUrl: meta.portraits[0]?.image, document: meta.document }; };
   const announce = (text: string) => { setNotice(text); window.scrollTo({ top: 0, behavior: "smooth" }); };
   const shareSummary = async (result: ProgramScore) => { try { await shareNativeResult(shareData(result)); announce("O seletor de compartilhamento do seu dispositivo foi aberto. Nada foi enviado pela aplicação."); } catch (error) { announce(error instanceof Error ? error.message : "Não foi possível abrir o compartilhamento."); } };
   const copySummary = async (result: ProgramScore) => { try { await copyShareText(shareData(result)); announce("Resumo copiado. Você decide onde e se deseja colá-lo."); } catch (error) { announce(error instanceof Error ? error.message : "Não foi possível copiar o resumo."); } };
