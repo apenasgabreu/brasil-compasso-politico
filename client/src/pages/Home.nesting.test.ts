@@ -2,7 +2,7 @@ import { createElement } from "react";
 import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
-import { ProgramCatalog } from "./Home";
+import { journeyGuidance, ProgramCatalog } from "./Home";
 
 describe("catálogo de programas", () => {
   it("não renderiza âncoras dentro dos links externos dos documentos", () => {
@@ -24,5 +24,25 @@ describe("catálogo de programas", () => {
     expect(css).toContain(".portrait-stack-compact a, .portrait-stack-compact .portrait-static");
     expect(css).toContain("@media (max-width: 850px) { .hero-grid, .result-feature, .detail-grid");
     expect(css).toContain(".program-catalog { grid-template-columns: 1fr; }");
+  });
+
+  it("preserva os apoios de compreensão e os fluxos essenciais da jornada", () => {
+    const source = readFileSync(new URL("./Home.tsx", import.meta.url), "utf8");
+
+    expect(Object.keys(journeyGuidance)).toEqual(["intro", "weights", "quiz", "results", "detail", "method"]);
+    expect(journeyGuidance.quiz.title).toContain("Não é uma prova");
+    expect(journeyGuidance.results.text).toContain("Nenhum dos dois números é uma nota");
+    ["Começar com privacidade", "Ir ao questionário", "Ver resultados", "Ler evidências", "Gerar com IA local", "Preparar para Story", "Fazer o questionário"].forEach((label) => expect(source).toContain(label));
+  });
+
+  it("mantém avisos semânticos, responsivos e sem armazenamento ou envio de respostas", () => {
+    const source = readFileSync(new URL("./Home.tsx", import.meta.url), "utf8");
+    const css = readFileSync(new URL("../index.css", import.meta.url), "utf8");
+
+    expect(source).toContain('role="note"');
+    expect((source.match(/<Guidance item=/g) ?? [])).toHaveLength(6);
+    expect(source).not.toMatch(/localStorage|sessionStorage|document\.cookie|fetch\(/);
+    expect(css).toContain(".guidance-note");
+    expect(css).toContain("@media (max-width: 600px)");
   });
 });

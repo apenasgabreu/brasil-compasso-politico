@@ -119,3 +119,18 @@
 - [x] Registrar somente as conclusões visualmente objetivas e testáveis da auditoria de retratos.
 - [x] Qualificar no registro de validação as observações manuais de aparência e manter como conclusão apenas evidências objetivas e testáveis.
 - [x] Reler e confirmar a versão objetiva do registro de validação de retratos após a qualificação das observações manuais.
+- [x] Extrair princípios de uso de Brasil no Espelho relevantes para clareza, confiança e orientação do eleitor, sem tratar a obra como evidência revisada por pares.
+- [x] Confirmar por leitura a persistência das diretrizes de UX e de seus limites de uso como fonte contextual.
+- [x] Auditar a jornada atual de introdução, ponderação, questionário, resultados, detalhamento, método e compartilhamento para identificar fricções do brasileiro médio.
+- [x] Projetar melhorias de UI/UX que aumentem clareza e apoio à decisão sem remover, ocultar ou reduzir funções existentes.
+- [x] Implementar e validar as melhorias de UI/UX mantendo privacidade, acessibilidade e todas as capacidades atuais.
+- [x] Adicionar orientações curtas e progressivas na introdução, ponderação, questionário, resultados e detalhamento.
+- [x] Explicar afinidade, cobertura, não resposta e ponderação em linguagem simples sem induzir respostas.
+- [x] Criar teste de regressão para garantir que os fluxos e ações existentes continuam presentes após as melhorias de UX.
+- [x] Validar resultados, detalhamento e método em desktop e celular após as novas orientações, confirmando ações visíveis.
+- [x] Executar checagem objetiva pós-alteração de foco, semântica e ausência de persistência ou envio das respostas nos novos blocos de orientação.
+- [x] Criar e remover prévias temporárias de resultados e detalhamento para validar as orientações em desktop e celular.
+- [x] Adicionar teste determinístico para semântica dos avisos, responsividade e ausência de armazenamento ou envio nas orientações novas.
+- [x] Capturar evidência textual/DOM de resultados, detalhamento e método que confirme a presença das ações principais após as orientações.
+- [x] Verificar objetivamente que os avisos são informativos, sem controles focáveis próprios, e documentar que a exigência de foco não se aplica a eles.
+- [x] Criar e remover uma prévia temporária de resultados, detalhamento e método para a validação textual auditável.
