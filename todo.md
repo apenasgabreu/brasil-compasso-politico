@@ -161,3 +161,18 @@
 - [x] Exibir o changelog metodológico na página Método de forma acessível e navegável.
 - [x] Vincular o changelog à versão e impressão digital da matriz, à governança e ao manifesto de integridade.
 - [x] Validar a renderização, a responsividade e a cobertura de testes do changelog metodológico.
+- [x] Corrigir o cálculo global de cobertura para usar itens comparados sobre itens respondidos e ignorar eixos sem resposta.
+- [x] Aplicar tratamento explícito de evidência insuficiente no ranking, sem apresentar afinidade de baixa cobertura como posição comparável.
+- [x] Normalizar o cálculo das coordenadas do mapa e indicar ou suprimir dimensões com documentação insuficiente.
+- [x] Adicionar testes de regressão do cálculo global, do ranking por cobertura e das propriedades centrais de pontuação.
+- [x] Corrigir registros documentais obsoletos sobre IA local e registrar a reconciliação no changelog metodológico.
+- [x] Criar inventário versionado dos documentos-fonte, com hash SHA-256, URL de origem e estado de preservação verificável.
+- [x] Incluir a proveniência do build e do commit público no produto e na documentação de integridade.
+- [x] Limitar tamanho de requisições e aplicar limitação de taxa aos procedimentos públicos do cofre cifrado.
+- [x] Reduzir a superfície exposta do template sem remover componentes essenciais de infraestrutura.
+- [x] Publicar codebook operacional de codificação e registrar as limitações de revisão por codificador único.
+- [x] Formalizar transparência de responsabilidade, política de privacidade e critério público de inclusão e status de candidaturas.
+- [x] Padronizar a proveniência dos retratos e registrar pendências de licença ou fonte oficial verificável.
+- [x] Adicionar rotas diretas para conteúdo público metodológico e reforçar a licença dos dados e documentos próprios.
+- [x] Validar as correções com testes, tipagem, build, verificação de integridade, CI e revisão visual.
+- [x] Corrigir a identificação de Luiz Inácio Lula da Silva de coligação para PT nos metadados e textos públicos.

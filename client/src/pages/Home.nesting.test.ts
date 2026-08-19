@@ -3,13 +3,15 @@ import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { journeyGuidance, ProgramCatalog } from "./Home";
-import { matrixIntegrity, methodologyChangelog } from "@/data/compassData";
+import { candidateRegistry, getProgramMeta, matrixIntegrity, methodologyChangelog } from "@/data/compassData";
 
 describe("catálogo de programas", () => {
   it("não renderiza âncoras dentro dos links externos dos documentos", () => {
     const markup = renderToStaticMarkup(createElement(ProgramCatalog));
     expect(markup).not.toMatch(/<a\b[^>]*>(?:(?!<\/?a\b)[\s\S])*<a\b/);
-    expect((markup.match(/<a\b/g) ?? [])).toHaveLength(12);
+    expect((markup.match(/<a\b/g) ?? [])).toHaveLength(15);
+    expect(markup).toContain("archive.org/details/brasil-em-perspectiva-documentos-2026");
+    expect(markup).toContain("dadosabertos.tse.jus.br/dataset/candidatos-2026");
   });
 
   it("mantém retratos estáticos compactos, circulares e responsivos", () => {
@@ -72,5 +74,10 @@ describe("catálogo de programas", () => {
     expect(source).toContain("Changelog metodológico");
     expect(source).toContain("methodologyChangelog.map");
     expect(css).toContain(".methodology-changelog");
+  });
+
+  it("vincula o catálogo ao registro oficial e identifica Lula como PT", () => {
+    expect(candidateRegistry.records).toHaveLength(12);
+    expect(getProgramMeta("lula")).toMatchObject({ name: "Luiz Inácio Lula da Silva — PT", candidateRecord: { party: "PT" } });
   });
 });

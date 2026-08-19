@@ -14,7 +14,7 @@ As combinações críticas de texto e fundo apresentaram razões entre 4,65:1 e 
 
 ## Integridade técnica
 
-Seis testes unitários foram concluídos com sucesso, a checagem de tipos não apresentou erros e a compilação de produção terminou com êxito. O pacote de IA local amplia o tamanho de um fragmento carregado sob demanda, o que foi reportado pelo empacotador como aviso, sem impedir a geração da aplicação.
+Na validação de 19 de agosto de 2026, 28 testes unitários concluíram com sucesso, a checagem de tipos não apresentou erros e a compilação de produção terminou com êxito. Não há pacote, modelo, controle ou fragmento de IA local no produto atual; a explicação usada é determinística e baseada em evidências catalogadas.
 
 ## Atualização de linguagem e compartilhamento
 
@@ -69,3 +69,9 @@ O módulo e a dependência de IA local foram removidos, assim como seus controle
 O resultado persistente foi implementado como cofre AES-GCM gerado no navegador. O banco mantém apenas identificador opaco, ciphertext, IV, versão e datas; o segredo de 256 bits fica exclusivamente no código exibido à pessoa. A interface foi testada de ponta a ponta: criou o cofre, mostrou o código, limpou a sessão e recuperou o mesmo resultado por esse código. O cofre de validação foi removido em seguida. A recuperação não expõe chave ou respostas ao procedimento público do servidor, como comprovado pelo teste de router; o cofre expira após 365 dias e registros vencidos são eliminados oportunisticamente.
 
 A introdução, em 375 × 812, preserva as ações existentes e adiciona o painel “Recupere um resultado cifrado”, com campo de código e aviso de que o segredo não é enviado ao servidor. A suíte final executou 23 testes, incluindo AES-GCM, detecção de modificação, não determinismo, router de cofre, rejeição de envelope malformado e ausência de IA local; tipagem e build concluíram com êxito.
+
+## Correções de auditabilidade e transparência — 19 de agosto de 2026
+
+A rota pública `/metodo` foi carregada diretamente em desktop e em 375 × 812. A página exibiu o changelog até a versão `2026.08.19.3`, a impressão digital da matriz, o arquivo público permanente dos documentos, a referência ao conjunto oficial de candidaturas do TSE, o canal de privacidade e os 12 documentos com hashes abreviados. Em tela móvel, os avisos, links de proveniência, cartões documentais e ações finais permaneceram em coluna única, sem corte horizontal.
+
+A validação automatizada desta publicação concluiu 28 testes, checagem de tipos, build e verificação do manifesto SHA-256. O teste de cofre agora cobre a rejeição de quota excedida; o teste de criptografia cobre uma alteração de Base64URL; e o teste do catálogo confirma os links adicionais de proveniência sem reintroduzir âncoras aninhadas.

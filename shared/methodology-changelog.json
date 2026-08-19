@@ -1,5 +1,27 @@
 [
   {
+    "version": "2026.08.19.3",
+    "date": "2026-08-19",
+    "type": "Proveniência eleitoral e transparência",
+    "title": "Registro oficial do TSE, preservação pública e identificação partidária",
+    "scope": "Cadastro de candidaturas, metadados públicos, retratos, inventário documental e privacidade.",
+    "summary": "A base passou a registrar identificadores presidenciais do TSE, a identificar Luiz Inácio Lula da Silva como PT, a usar retratos eleitorais do TSE para Flávio Bolsonaro e Clariana Barão e a vincular os documentos hashados a um pacote público permanente. Também foram publicados responsável e canal de privacidade.",
+    "impact": "Corrige identificação e rastreabilidade; não muda respostas, posições programáticas, pesos ou a fórmula de afinidade.",
+    "referenceLabel": "Critério de candidaturas e inventário preservado",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/criterio-inclusao-candidaturas.md"
+  },
+  {
+    "version": "2026.08.19.2",
+    "date": "2026-08-19",
+    "type": "Cálculo, comparabilidade e evidências",
+    "title": "Cobertura corrigida e documentos identificados por hash",
+    "scope": "Cobertura global, ordenação, mapa bidimensional, documentação metodológica e inventário de PDFs.",
+    "summary": "A cobertura passou a ser itens comparados sobre itens respondidos; resultados com menos de oito comparações ou 40% de cobertura não recebem colocação. O mapa exige três itens por dimensão e usa normalização por fatores. Cada PDF analisado ganhou SHA-256 e estado público de preservação.",
+    "impact": "Pode alterar a ordem visual e remover resultados pouco comparáveis do ranking principal, sem modificar respostas, posições programáticas ou pesos escolhidos pela pessoa. O inventário torna verificável a cópia documental usada na matriz.",
+    "referenceLabel": "Decisões de produto e integridade dos documentos",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/decisoes-produto.md"
+  },
+  {
     "version": "2026.08.19.1",
     "date": "2026-08-19",
     "type": "Governança e integridade",

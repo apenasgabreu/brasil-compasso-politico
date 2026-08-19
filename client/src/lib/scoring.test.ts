@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { deterministicNarrative, scoreProgram, weightedAffinity } from "./scoring";
-import type { Axis, Program } from "@/data/compassData";
+import { deterministicNarrative, normalizedCoordinate, orderProgramScores, scoreProgram, weightedAffinity } from "./scoring";
+import { questions, type Axis, type Program } from "@/data/compassData";
 
 const weights = Object.fromEntries([
   "Economia e orçamento", "Trabalho e proteção social", "Saúde e educação", "Cidades, moradia e infraestrutura", "Ambiente, energia e agricultura", "Segurança e justiça", "Direitos e igualdade", "Democracia e instituições", "Política externa e defesa", "Ciência, tecnologia e desenvolvimento",
@@ -24,6 +24,37 @@ describe("scoring", () => {
     const result = scoreProgram(program, { "ECO-01": 2 }, weights);
     expect(result.score).toBeNull();
     expect(result.axes.find((axis) => axis.axis === "Economia e orçamento")?.coverage).toBe(0);
+  });
+
+  it("calcula cobertura global pelos itens respondidos, sem punir eixos não respondidos", () => {
+    const secondQuestion = questions.find((question) => question.axis !== "Economia e orçamento");
+    if (!secondQuestion) throw new Error("Pergunta de outro eixo não encontrada");
+    const program: Program = { program: "Teste", positions: { "ECO-01": 2, [secondQuestion.id]: -2 }, evidences: [], limitations: "" };
+    const result = scoreProgram(program, { "ECO-01": 2 }, weights);
+    expect(result.coverage).toBe(1);
+    expect(result.answered).toBe(1);
+    expect(result.compared).toBe(1);
+    expect(result.axes.find((axis) => axis.axis === secondQuestion.axis)?.coverage).toBeNull();
+  });
+
+  it("separa resultados com dados insuficientes antes de ordenar por afinidade", () => {
+    const base = scoreProgram({ program: "Base", positions: { "ECO-01": 2 }, evidences: [], limitations: "" }, { "ECO-01": 2 }, weights);
+    const comparable = { ...base, program: { ...base.program, program: "Comparável" }, score: 0.65, coverage: 0.5, compared: 10, answered: 20, comparability: "comparable" as const };
+    const insufficient = { ...base, program: { ...base.program, program: "Insuficiente" }, score: 1, coverage: 0.2, compared: 4, answered: 20, comparability: "insufficient" as const };
+    expect(orderProgramScores([insufficient, comparable]).map((item) => item.program.program)).toEqual(["Comparável", "Insuficiente"]);
+  });
+
+  it("normaliza coordenadas pela soma dos fatores absolutos", () => {
+    expect(normalizedCoordinate([{ value: 2, factor: 0.5 }, { value: 2, factor: 1.5 }])).toBe(2);
+    expect(normalizedCoordinate([{ value: -2, factor: -1 }, { value: 2, factor: 1 }])).toBe(2);
+  });
+
+  it("preserva simetria e intervalo da afinidade para toda a escala", () => {
+    [-2, -1, 0, 1, 2].forEach((answer) => [-2, -1, 0, 1, 2].forEach((position) => {
+      expect(weightedAffinity(answer as -2 | -1 | 0 | 1 | 2, position as -2 | -1 | 0 | 1 | 2)).toBe(weightedAffinity(position as -2 | -1 | 0 | 1 | 2, answer as -2 | -1 | 0 | 1 | 2));
+      expect(weightedAffinity(answer as -2 | -1 | 0 | 1 | 2, position as -2 | -1 | 0 | 1 | 2)).toBeGreaterThanOrEqual(0);
+      expect(weightedAffinity(answer as -2 | -1 | 0 | 1 | 2, position as -2 | -1 | 0 | 1 | 2)).toBeLessThanOrEqual(1);
+    }));
   });
 
   it("aplica a confiança documental como multiplicador do peso do item", () => {

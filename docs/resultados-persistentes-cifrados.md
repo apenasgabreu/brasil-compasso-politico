@@ -21,13 +21,15 @@ O código exibido terá o formato `BRCP-<identificador>.<segredo>`. Ele deve ser
 
 O JSON cifrado conterá a versão da matriz, respostas, pesos, data de criação e o resultado calculado, permitindo que o resultado se mantenha reproduzível mesmo após mudanças futuras de interface. Cada salvamento usará chave AES-GCM de 256 bits e IV aleatório de 96 bits. O identificador e a versão serão adicionados como dados autenticados, impedindo a troca de um pacote entre identificadores sem que a abertura falhe. [2] [3]
 
-O banco receberá somente `id`, `ciphertext`, `iv`, `version`, `createdAt` e `expiresAt`. Não receberá respostas, ranking, nome de candidatura ou código secreto em claro. O registro será imutável e expira após **365 dias**; a pessoa poderá salvar outro resultado se refizer o teste. A recuperação inválida exibirá uma mensagem genérica para não revelar se um identificador existe.
+O banco receberá somente `id`, `ciphertext`, `iv`, `version`, `createdAt` e `expiresAt`. Não receberá respostas, ranking, nome de candidatura ou código secreto em claro. O registro será imutável e expira após **365 dias**; a pessoa poderá salvar outro resultado se refizer o teste. A recuperação inválida exibirá uma mensagem genérica para não revelar se um identificador existe. A decodificação Base64URL exige forma canônica antes da abertura AES-GCM, rejeitando alterações que explorariam codificações equivalentes.
 
 ## Limites e comportamento seguro
 
 > O código recupera um resultado, não uma identidade. Quem possuir o código poderá abrir aquele cofre; quem o perder não poderá recuperá-lo.
 
 O modelo protege contra leitura do banco por terceiros sem o segredo, mas não protege contra dispositivo comprometido, extensão maliciosa, captura de tela ou compartilhamento voluntário do código. O usuário será orientado a manter o código fora de redes sociais e a não depender de dados de navegação privada. A opção de salvar será voluntária; continuar sem salvar mantém o comportamento inteiramente efêmero da ferramenta.
+
+Para reduzir abuso de armazenamento e enumeração, o servidor aplica por janela de uma hora um máximo de **5 gravações** e **30 leituras** por origem de rede, além de quotas globais de **500 gravações** e **3.000 leituras**. A origem é transformada por HMAC antes de ser registrada na tabela de quota; IPs não são gravados em claro nessa tabela. A API limita corpos de requisição a 128 KB, acima do máximo aceito para um envelope. As quotas são controles de disponibilidade e não substituem as proteções da infraestrutura de hospedagem ou seus próprios registros de transporte.
 
 ## Referências
 

@@ -6,10 +6,10 @@ export const RECOVERY_PREFIX = "BRCP";
 export type ResultSnapshot = {
   program: string;
   score: number | null;
-  coverage: number;
+  coverage: number | null;
   economic: number | null;
   social: number | null;
-  axes: { axis: string; score: number | null; coverage: number }[];
+  axes: { axis: string; score: number | null; coverage: number | null }[];
 };
 
 export type PersistedResultPayload = {
@@ -34,9 +34,12 @@ function bytesToBase64Url(bytes: Uint8Array) {
 }
 
 function base64UrlToBytes(value: string) {
+  if (!/^[A-Za-z0-9_-]+$/.test(value) || value.length % 4 === 1) throw new Error("Base64URL inválido.");
   const normalized = value.replace(/-/g, "+").replace(/_/g, "/") + "=".repeat((4 - value.length % 4) % 4);
   const binary = atob(normalized);
-  return Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  if (bytesToBase64Url(bytes) !== value) throw new Error("Base64URL não canônico.");
+  return bytes;
 }
 
 function randomBytes(length: number) {

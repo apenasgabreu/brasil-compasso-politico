@@ -39,3 +39,18 @@ export const encryptedResultVaults = mysqlTable("encrypted_result_vaults", {
 });
 
 export type EncryptedResultVault = typeof encryptedResultVaults.$inferSelect;
+
+/**
+ * Hourly quotas keyed by HMAC(IP), never by the network identifier in clear text.
+ * These records carry no result payload, recovery secret or user responses.
+ */
+export const resultVaultRateLimits = mysqlTable("result_vault_rate_limits", {
+  keyHash: varchar("keyHash", { length: 64 }).primaryKey(),
+  windowStartedAt: timestamp("windowStartedAt").notNull(),
+  saveCount: int("saveCount").notNull().default(0),
+  loadCount: int("loadCount").notNull().default(0),
+  expiresAt: timestamp("expiresAt").notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type ResultVaultRateLimit = typeof resultVaultRateLimits.$inferSelect;

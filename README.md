@@ -52,6 +52,10 @@ O livro *Brasil no Espelho* é utilizado somente como fonte contextual de comuni
 - [Resultados persistentes cifrados](docs/resultados-persistentes-cifrados.md)
 - [Integridade e governança](docs/integridade-e-governanca.md)
 - [Changelog metodológico](shared/methodology-changelog.json)
+- [Integridade dos documentos-fonte](docs/documentos-fonte-integridade.md)
+- [Codebook de codificação](docs/codebook-codificacao.md)
+- [Critério de inclusão e situação de candidaturas](docs/criterio-inclusao-candidaturas.md)
+- [Política de privacidade e responsável](POLITICA_DE_PRIVACIDADE.md)
 
 ## Arquitetura
 
@@ -101,7 +105,8 @@ Os arquivos que definem a matriz, as perguntas e o cálculo possuem um manifesto
 - Uma posição ausente reduz cobertura, em vez de ser inferida.
 - O resultado não é recomendação de voto ou previsão eleitoral.
 - A recuperação cifrada não protege contra dispositivo comprometido, compartilhamento do código ou perda do próprio código.
+- Situações eleitorais e arquivos do TSE podem mudar; a fonte oficial deve ser consultada novamente antes do uso eleitoral.
 
-## Licença
+## Licenças
 
-Este projeto é distribuído sob a [Licença MIT](LICENSE).
+O código é distribuído sob a [Licença MIT](LICENSE). A matriz, as perguntas, os metadados metodológicos e a documentação própria seguem a [CC BY 4.0](DATA_LICENSE.md). PDFs programáticos, retratos e dados de terceiros não são relicenciados pelo projeto; cada um mantém as condições de sua fonte.
