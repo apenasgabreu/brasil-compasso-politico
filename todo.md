@@ -182,3 +182,4 @@
 - [x] Reproduzir e corrigir a divergência entre a ordem de ranking, os percentuais, o gráfico e a lista de resultados comparáveis.
 - [x] Criar regressões que garantam a mesma ordenação auditável no destaque, gráfico e lista de programas.
 - [x] Tornar determinístico o teste de rejeição de envelope cifrado adulterado e validar sua repetição.
+- [x] Registrar a confirmação da terceira reauditoria e comunicar o backlog técnico remanescente.

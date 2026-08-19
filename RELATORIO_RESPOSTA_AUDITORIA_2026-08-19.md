@@ -102,6 +102,10 @@ Uma verificação posterior confirmou as correções anteriores, mas identificou
 
 O ranking agora usa **afinidade decrescente** como chave primária entre programas comparáveis; cobertura e número de comparações só desempatam valores iguais e continuam sendo requisitos de entrada no ranking. Destaque principal, gráfico, radar e lista consomem a mesma sequência ordenada. O teste do cofre passou a alterar um byte decodificado e recodificá-lo, assegurando que o ciphertext de teste seja sempre distinto. Foram adicionadas regressões para esses fluxos; a suíte final contém 30 testes aprovados, e o teste criptográfico foi executado dez vezes seguidas sem falha.
 
+## Confirmação de terceira reauditoria
+
+Uma terceira reauditoria independente leu o commit `532113d`, reproduziu os gates locais e confirmou a correção da ordenação por afinidade, a atualização de documentação e manifesto e a estabilização determinística do teste de adulteração criptográfica. A conferência local subsequente registrou novamente 30 testes aprovados, tipagem sem erros e manifesto `2026.08.19.4 · e58917fa9fb0b13c`.
+
 > **Nota jurídica.** Este relatório descreve medidas técnicas e documentais adotadas; não é parecer jurídico nem substitui revisão por advogado ou profissional de proteção de dados habilitado.
 
 ## Referências
