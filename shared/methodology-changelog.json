@@ -1,5 +1,16 @@
 [
   {
+    "version": "2026.08.19.4",
+    "date": "2026-08-19",
+    "type": "Correção de apresentação do ranking",
+    "title": "Resultados comparáveis ordenados por afinidade",
+    "scope": "Ordenação de destaque principal, gráfico, radar e lista de programas comparáveis.",
+    "summary": "A ordenação dentro do grupo comparável passou a usar afinidade decrescente como chave principal. Cobertura e número de comparações permanecem como critérios de desempate e como requisitos mínimos de entrada no ranking.",
+    "impact": "Pode alterar a colocação visual entre programas comparáveis, sem modificar respostas, posições codificadas, pesos, afinidades ou a regra de cobertura mínima.",
+    "referenceLabel": "Cálculo de afinidade e cobertura",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/client/src/lib/scoring.ts"
+  },
+  {
     "version": "2026.08.19.3",
     "date": "2026-08-19",
     "type": "Proveniência eleitoral e transparência",

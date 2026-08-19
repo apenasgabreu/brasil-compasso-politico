@@ -1,12 +1,12 @@
 {
-  "version": "2026.08.19.3",
+  "version": "2026.08.19.4",
   "algorithm": "weighted-documented-affinity-v1",
-  "fingerprint": "680cc2f743b71a273eca223c43948854f2166c51e9b7a5d1b28923815a48a67c",
+  "fingerprint": "e58917fa9fb0b13c99bf33f1026b1727de8097c8727fb7761bbc7b8859763e19",
   "files": {
     "client/src/data/compassData.ts": "3f890252e3e3a7f4e45e9cd9c20c06611c41cb681ed2d5535e694676723bedbf",
-    "client/src/lib/scoring.ts": "257f6a23c113952d8fb609ffdb27f6bf91bef1b8e37121562aeb55017b1d5cd9",
+    "client/src/lib/scoring.ts": "1d83d1488b58e3d0a331e283dacacfc2c0a2f35b3bc799374de34efee0de7db5",
     "shared/compassPositions.json": "4060815f538b3da5f625e3f7d422e166ee93d2ee58c822c630c5ee6149fa1cb9",
-    "shared/methodology-changelog.json": "9fac663f27fd1877776e68f8554acccf898a44ef160fb25f67d0598b7bd557ca",
+    "shared/methodology-changelog.json": "9adce9f4600461634cd7c6a19f97b3cc911d4a2abd62cc704a578bd47dc7982a",
     "shared/source-document-integrity.json": "f3c85c5a5a61833a48db25cd6a571b2407c66484913ce1d2a737194eb01dfad6",
     "shared/candidate-registry-2026.json": "da8346f85848a904d008fb57b5c8d2223e3ccd151bdde6e45d5b5bbdbc4623c7"
   }

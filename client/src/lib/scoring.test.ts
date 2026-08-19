@@ -37,11 +37,12 @@ describe("scoring", () => {
     expect(result.axes.find((axis) => axis.axis === secondQuestion.axis)?.coverage).toBeNull();
   });
 
-  it("separa resultados com dados insuficientes antes de ordenar por afinidade", () => {
+  it("separa resultados com dados insuficientes e ordena os comparáveis por afinidade, não por cobertura", () => {
     const base = scoreProgram({ program: "Base", positions: { "ECO-01": 2 }, evidences: [], limitations: "" }, { "ECO-01": 2 }, weights);
-    const comparable = { ...base, program: { ...base.program, program: "Comparável" }, score: 0.65, coverage: 0.5, compared: 10, answered: 20, comparability: "comparable" as const };
+    const highCoverageLowerAffinity = { ...base, program: { ...base.program, program: "Cobertura alta" }, score: 0.57, coverage: 0.9, compared: 18, answered: 20, comparability: "comparable" as const };
+    const highAffinityLowerCoverage = { ...base, program: { ...base.program, program: "Afinidade alta" }, score: 0.91, coverage: 0.55, compared: 11, answered: 20, comparability: "comparable" as const };
     const insufficient = { ...base, program: { ...base.program, program: "Insuficiente" }, score: 1, coverage: 0.2, compared: 4, answered: 20, comparability: "insufficient" as const };
-    expect(orderProgramScores([insufficient, comparable]).map((item) => item.program.program)).toEqual(["Comparável", "Insuficiente"]);
+    expect(orderProgramScores([insufficient, highCoverageLowerAffinity, highAffinityLowerCoverage]).map((item) => item.program.program)).toEqual(["Afinidade alta", "Cobertura alta", "Insuficiente"]);
   });
 
   it("normaliza coordenadas pela soma dos fatores absolutos", () => {

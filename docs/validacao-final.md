@@ -75,3 +75,7 @@ A introdução, em 375 × 812, preserva as ações existentes e adiciona o paine
 A rota pública `/metodo` foi carregada diretamente em desktop e em 375 × 812. A página exibiu o changelog até a versão `2026.08.19.3`, a impressão digital da matriz, o arquivo público permanente dos documentos, a referência ao conjunto oficial de candidaturas do TSE, o canal de privacidade e os 12 documentos com hashes abreviados. Em tela móvel, os avisos, links de proveniência, cartões documentais e ações finais permaneceram em coluna única, sem corte horizontal.
 
 A validação automatizada desta publicação concluiu 28 testes, checagem de tipos, build e verificação do manifesto SHA-256. O teste de cofre agora cobre a rejeição de quota excedida; o teste de criptografia cobre uma alteração de Base64URL; e o teste do catálogo confirma os links adicionais de proveniência sem reintroduzir âncoras aninhadas.
+
+## Correção de ordenação e estabilidade criptográfica — 19 de agosto de 2026
+
+Após verificação independente, a ordenação dos comparáveis foi corrigida para afinidade decrescente, com cobertura e comparações somente como desempate. Destaque, gráfico, radar e lista consomem a mesma sequência. O teste de adulteração do cofre agora modifica um byte do ciphertext antes de recodificá-lo em Base64URL, evitando a substituição eventual por um caractere idêntico. O teste criptográfico foi repetido dez vezes consecutivas sem falha; a suíte completa passou com 30 testes, tipagem, build e manifesto `2026.08.19.4 · e58917fa9fb0b13c`.
