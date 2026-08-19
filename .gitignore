@@ -6,6 +6,8 @@
 dist/
 build/
 *.dist
+playwright-report/
+test-results/
 
 # Environment variables
 .env

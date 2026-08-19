@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "matrixVersion": "2026.08.19.5",
+  "instructions": "Copie as células divergentes do agreement-report. Nunca sobrescreva a decisão inicial ou a decisão cega do segundo codificador. Registre a decisão final apenas depois da discussão documentada.",
+  "entries": [
+    {
+      "caseId": "DC-00-00",
+      "firstCoderPosition": null,
+      "secondCoderPosition": null,
+      "firstCoderConfidence": null,
+      "secondCoderConfidence": null,
+      "sourcePagesReviewed": [],
+      "discussionSummary": "",
+      "finalDecision": null,
+      "finalConfidence": null,
+      "decisionRationale": "",
+      "reviewers": [],
+      "resolvedAt": ""
+    }
+  ]
+}

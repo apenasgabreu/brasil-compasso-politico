@@ -183,3 +183,7 @@
 - [x] Criar regressões que garantam a mesma ordenação auditável no destaque, gráfico e lista de programas.
 - [x] Tornar determinístico o teste de rejeição de envelope cifrado adulterado e validar sua repetição.
 - [x] Registrar a confirmação da terceira reauditoria e comunicar o backlog técnico remanescente.
+- [x] Criar pacote de dupla codificação independente, com folha cega, protocolo de reconciliação e métrica de concordância reproduzível.
+- [x] Adicionar testes e2e com Playwright e axe-core para jornada principal, resultados e acessibilidade.
+- [x] Configurar artefato de build e atestação verificável de proveniência no workflow de CI.
+- [x] Documentar execução, limites e verificação pública dos novos controles de qualidade.

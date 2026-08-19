@@ -54,6 +54,7 @@ O livro *Brasil no Espelho* é utilizado somente como fonte contextual de comuni
 - [Changelog metodológico](shared/methodology-changelog.json)
 - [Integridade dos documentos-fonte](docs/documentos-fonte-integridade.md)
 - [Codebook de codificação](docs/codebook-codificacao.md)
+- [Dupla codificação independente](review/double-coding/README.md)
 - [Critério de inclusão e situação de candidaturas](docs/criterio-inclusao-candidaturas.md)
 - [Política de privacidade e responsável](POLITICA_DE_PRIVACIDADE.md)
 
@@ -65,7 +66,7 @@ O livro *Brasil no Espelho* é utilizado somente como fonte contextual de comuni
 | API | Express e tRPC com contratos tipados. |
 | Dados persistentes | MySQL/TiDB via Drizzle ORM; somente cofres já cifrados. |
 | Criptografia do cofre | Web Crypto API, AES-GCM e código de recuperação gerado no navegador. |
-| Testes | Vitest para cálculo, criptografia, router, compartilhamento, HTML e regressões de UX. |
+| Testes | Vitest para cálculo, criptografia, router, compartilhamento, HTML e regressões de UX; Playwright + axe-core para jornada pública e acessibilidade. |
 
 ## Executar localmente
 
@@ -85,6 +86,7 @@ pnpm test
 pnpm check
 pnpm build
 pnpm run verify:integrity
+pnpm test:e2e
 ```
 
 Não versione arquivos `.env`, chaves, códigos de recuperação ou cópias de dados pessoais. O `.gitignore` já protege os arquivos de ambiente mais comuns.
@@ -98,6 +100,8 @@ Erros de segurança devem ser reportados conforme [SECURITY.md](SECURITY.md), e 
 ## Integridade e governança
 
 Os arquivos que definem a matriz, as perguntas e o cálculo possuem um manifesto versionado de hashes. Rode `pnpm run verify:integrity` para confirmar que eles correspondem à versão pública. Uma alteração metodológica requer evidência, página, justificativa, teste, atualização consciente do manifesto e revisão conforme [GOVERNANCE.md](GOVERNANCE.md). Não há mecanismo de usuários, compartilhamentos ou cofres cifrados que altere afinidade de terceiros ou produza ranking coletivo.
+
+Em cada atualização da `main`, o CI também atesta o artefato de build para verificação de proveniência. Consulte [Qualidade e proveniência](docs/qualidade-e-proveniencia.md) para saber como validar o artefato e para entender os limites da atestação.
 
 ## Limitações importantes
 
