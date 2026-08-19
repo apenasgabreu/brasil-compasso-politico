@@ -79,3 +79,9 @@ A validação automatizada desta publicação concluiu 28 testes, checagem de ti
 ## Correção de ordenação e estabilidade criptográfica — 19 de agosto de 2026
 
 Após verificação independente, a ordenação dos comparáveis foi corrigida para afinidade decrescente, com cobertura e comparações somente como desempate. Destaque, gráfico, radar e lista consomem a mesma sequência. O teste de adulteração do cofre agora modifica um byte do ciphertext antes de recodificá-lo em Base64URL, evitando a substituição eventual por um caractere idêntico. O teste criptográfico foi repetido dez vezes consecutivas sem falha; a suíte completa passou com 30 testes, tipagem, build e manifesto `2026.08.19.4 · e58917fa9fb0b13c`.
+
+## Dupla codificação, e2e e proveniência — 19 de agosto de 2026
+
+Foi gerada uma folha cega integral de 600 células para o segundo codificador. O teste automatizado confirma que ela não contém posição, confiança ou evidência do primeiro codificador. O protocolo mede decisão de presença documental separadamente da intensidade da posição, preserva divergências e exige reconciliação documentada antes de qualquer atualização da matriz.
+
+Foram adicionados Playwright e axe-core. A auditoria e2e cobre a introdução e a rota direta Método; ela identificou e motivou correções de zoom móvel, contraste e hierarquia de títulos. Após as correções, dois cenários e2e passaram sem violações automáticas. O CI passa a executar esse job em todo push e pull request e, na `main`, empacota o build e cria uma atestação de proveniência verificável depois do sucesso dos gates. A validação local final registrou 32 testes unitários, tipagem, build, integridade `2026.08.19.5 · 561dc65fc6798ea3` e dois testes e2e aprovados.

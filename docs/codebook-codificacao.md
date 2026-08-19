@@ -28,3 +28,7 @@ Cada célula vincula **uma afirmação do questionário** a uma passagem do prog
 Uma revisão documental pode corrigir nome, URL, página, transcrição ou metadado sem alterar a posição. Uma revisão interpretativa deve indicar a célula, a citação anterior, a citação revisada, a justificativa e o impacto no resultado. Mudanças estruturais — novos itens, alteração de direção normativa, pesos, limiares ou algoritmo — exigem versão de matriz, changelog e revisão de governança.
 
 Para auditoria independente, a amostra deve ser estratificada por candidatura, eixo, intensidade (`±1` e `±2`) e confiança. Discordâncias devem registrar a decisão de cada codificador antes da resolução; uma medida como alfa de Krippendorff só poderá ser publicada depois de coleta independente suficiente.
+
+## Dupla codificação iniciada
+
+O projeto agora mantém uma folha cega para o segundo codificador em `review/double-coding/reviewer-2-blind-template.json`. Ela inclui todas as 600 células da matriz, o enunciado, o PDF e seu SHA-256, mas omite posição, confiança, citação e página da primeira codificação. O protocolo, a métrica de concordância e o log de reconciliação estão documentados em `review/double-coding/README.md`.

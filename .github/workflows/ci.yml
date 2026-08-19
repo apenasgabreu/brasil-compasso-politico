@@ -40,3 +40,67 @@ jobs:
         run: pnpm check
       - name: Build application
         run: pnpm build
+      - name: Package build artifact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: tar -C dist -czf brasil-em-perspectiva-build.tgz .
+      - name: Upload build artifact for provenance
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: brasil-em-perspectiva-build
+          path: brasil-em-perspectiva-build.tgz
+          if-no-files-found: error
+          retention-days: 30
+
+  e2e-accessibility:
+    name: e2e-accessibility
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Re-enable Corepack for Node.js 22
+        run: corepack enable
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Install Playwright browser
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Run end-to-end accessibility tests
+        run: pnpm test:e2e
+      - name: Upload failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-failure-evidence
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14
+
+  attest-build-provenance:
+    name: attest-build-provenance
+    needs: [quality-and-integrity, e2e-accessibility]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: brasil-em-perspectiva-build
+          path: artifacts
+      - name: Generate SLSA build provenance attestation
+        uses: actions/attest@v4
+        with:
+          subject-path: artifacts/brasil-em-perspectiva-build.tgz

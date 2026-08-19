@@ -1,5 +1,16 @@
 [
   {
+    "version": "2026.08.19.5",
+    "date": "2026-08-19",
+    "type": "Garantias de revisão e entrega",
+    "title": "Dupla codificação iniciada, acessibilidade e2e e proveniência de build",
+    "scope": "Folha cega de revisão independente, reconciliação, métricas de concordância, testes Playwright/axe-core e atestação do artefato de build.",
+    "summary": "Foi criada uma folha cega integral para segundo codificador, com protocolo de reconciliação e métricas reproduzíveis. O CI passou a executar testes e2e de acessibilidade e a atestar o pacote de build da branch principal depois dos gates de qualidade.",
+    "impact": "Não altera respostas, posições programáticas, pesos, cobertura, afinidade ou ordem do ranking. Aumenta a verificabilidade de revisões futuras, da acessibilidade e da origem do artefato de CI.",
+    "referenceLabel": "Qualidade e proveniência",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/qualidade-e-proveniencia.md"
+  },
+  {
     "version": "2026.08.19.4",
     "date": "2026-08-19",
     "type": "Correção de apresentação do ranking",
