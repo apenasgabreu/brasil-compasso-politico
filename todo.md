@@ -176,3 +176,6 @@
 - [x] Adicionar rotas diretas para conteúdo público metodológico e reforçar a licença dos dados e documentos próprios.
 - [x] Validar as correções com testes, tipagem, build, verificação de integridade, CI e revisão visual.
 - [x] Corrigir a identificação de Luiz Inácio Lula da Silva de coligação para PT nos metadados e textos públicos.
+- [x] Confirmar a publicação do último checkpoint no deploy e no GitHub e entregar relatório ponto a ponto das correções auditadas.
+- [x] Publicar o commit validado 493e469 na branch principal do GitHub por pull request e confirmar o CI remoto correspondente.
+- [x] Corrigir a proveniência de build exibida como indisponível na produção e confirmar o commit público no rodapé.
