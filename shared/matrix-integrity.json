@@ -1,0 +1,10 @@
+{
+  "version": "2026.08.19.1",
+  "algorithm": "weighted-documented-affinity-v1",
+  "fingerprint": "68bbe7045ccb8bbc92e030d93ff2d3a6967ed514a286d6a73eb0efe3a579b3cb",
+  "files": {
+    "client/src/data/compassData.ts": "a63723fa8137e4cb63938002a3d7fd52eaaca22b49e469eb8f0102192d6ecd95",
+    "client/src/lib/scoring.ts": "0cc6d8b1a55dcad3986b60e8bf8a3723187ae214ab89847f694e54c318528264",
+    "shared/compassPositions.json": "4060815f538b3da5f625e3f7d422e166ee93d2ee58c822c630c5ee6149fa1cb9"
+  }
+}

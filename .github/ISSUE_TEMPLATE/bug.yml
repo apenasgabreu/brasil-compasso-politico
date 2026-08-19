@@ -1,0 +1,48 @@
+name: Relato de bug
+description: Relate um problema técnico, de acessibilidade, privacidade ou visualização.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não inclua código de recuperação, respostas individuais, screenshot de resultados identificáveis ou informação pessoal.
+  - type: textarea
+    id: summary
+    attributes:
+      label: O que aconteceu?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir?
+      placeholder: 1. ... 2. ... 3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que você esperava que acontecesse?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoria
+      options:
+        - Interface ou acessibilidade
+        - Cálculo ou apresentação do resultado
+        - Documento ou evidência
+        - Recuperação cifrada
+        - Privacidade ou segurança
+        - Outro
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacidade
+      options:
+        - label: Removi respostas, código de recuperação e dados pessoais do relato.
+          required: true

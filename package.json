@@ -10,6 +10,8 @@
     "check": "tsc --noEmit",
     "format": "prettier --write .",
     "test": "vitest run",
+    "update:integrity": "node scripts/update-matrix-integrity.mjs",
+    "verify:integrity": "node scripts/verify-matrix-integrity.mjs",
     "db:push": "drizzle-kit generate && drizzle-kit migrate"
   },
   "dependencies": {

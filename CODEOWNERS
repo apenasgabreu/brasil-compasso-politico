@@ -1,0 +1,8 @@
+# Arquivos que definem cálculo, evidências e automação exigem revisão explícita.
+/shared/compassPositions.json @apenasgabreu
+/shared/matrix-integrity.json @apenasgabreu
+/client/src/data/compassData.ts @apenasgabreu
+/client/src/lib/scoring.ts @apenasgabreu
+/scripts/*integrity* @apenasgabreu
+/.github/workflows/ @apenasgabreu
+/GOVERNANCE.md @apenasgabreu

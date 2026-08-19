@@ -1,0 +1,28 @@
+.matrix-integrity-panel {
+  margin: 1.4rem 0;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--rust);
+  background: var(--paper-2);
+}
+
+.matrix-integrity-panel h3 {
+  margin: 0.25rem 0 0.45rem;
+}
+
+.matrix-integrity-panel p:last-child {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.matrix-integrity-panel code {
+  color: var(--ink);
+  font-size: 0.82em;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .matrix-integrity-panel {
+    padding: 1rem;
+  }
+}

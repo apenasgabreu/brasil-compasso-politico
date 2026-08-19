@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Política de segurança
+    url: https://github.com/apenasgabreu/brasil-compasso-politico/security/policy
+    about: Reporte vulnerabilidades em canal privado, sem incluir códigos de recuperação ou respostas individuais.
+  - name: Guia de governança metodológica
+    url: https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/GOVERNANCE.md
+    about: Consulte regras para alterações em matriz, perguntas, evidências e cálculo.

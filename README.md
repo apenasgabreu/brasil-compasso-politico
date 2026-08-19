@@ -47,6 +47,8 @@ O livro *Brasil no Espelho* é utilizado somente como fonte contextual de comuni
 - [Diretrizes de UX](docs/diretrizes-ux-brasil-no-espelho.md)
 - [Créditos dos retratos](docs/creditos-retratos.md)
 - [Validação técnica e acessibilidade](docs/validacao-final.md)
+- [Resultados persistentes cifrados](docs/resultados-persistentes-cifrados.md)
+- [Integridade e governança](docs/integridade-e-governanca.md)
 
 ## Arquitetura
 
@@ -75,15 +77,20 @@ Em outro terminal, use os comandos abaixo para validar o projeto:
 pnpm test
 pnpm check
 pnpm build
+pnpm run verify:integrity
 ```
 
 Não versione arquivos `.env`, chaves, códigos de recuperação ou cópias de dados pessoais. O `.gitignore` já protege os arquivos de ambiente mais comuns.
 
 ## Contribuir
 
-Contribuições devem preservar quatro compromissos: neutralidade metodológica, rastreabilidade documental, acessibilidade e privacidade. Antes de abrir uma alteração, leia [CONTRIBUTING.md](CONTRIBUTING.md) e execute a suíte de testes.
+Contribuições devem preservar quatro compromissos: neutralidade metodológica, rastreabilidade documental, acessibilidade e privacidade. Antes de abrir uma alteração, leia [CONTRIBUTING.md](CONTRIBUTING.md), [GOVERNANCE.md](GOVERNANCE.md) e execute a suíte de testes.
 
 Erros de segurança devem ser reportados conforme [SECURITY.md](SECURITY.md), e não por issue pública.
+
+## Integridade e governança
+
+Os arquivos que definem a matriz, as perguntas e o cálculo possuem um manifesto versionado de hashes. Rode `pnpm run verify:integrity` para confirmar que eles correspondem à versão pública. Uma alteração metodológica requer evidência, página, justificativa, teste, atualização consciente do manifesto e revisão conforme [GOVERNANCE.md](GOVERNANCE.md). Não há mecanismo de usuários, compartilhamentos ou cofres cifrados que altere afinidade de terceiros ou produza ranking coletivo.
 
 ## Limitações importantes
 

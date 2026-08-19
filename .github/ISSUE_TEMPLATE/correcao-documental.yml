@@ -1,0 +1,59 @@
+name: Correção documental ou metodológica
+description: Proponha correção verificável de fonte, citação, página, posição ou cobertura.
+title: "[Documentação] "
+labels: ["documentação", "revisão-metodológica"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulário apenas para correções verificáveis. Não inclua respostas individuais, códigos de recuperação ou dados pessoais.
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Tipo de correção
+      options:
+        - Citação ou página
+        - Documento ou autoria
+        - Posição atribuída
+        - Cobertura ou limitação
+        - Formulação da pergunta
+        - Algoritmo ou peso
+    validations:
+      required: true
+  - type: input
+    id: program
+    attributes:
+      label: Programa ou candidatura afetada
+      placeholder: Ex.: Programa de Governo 2026 — candidatura X
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Página e seção do documento
+      placeholder: Ex.: p. 18, capítulo 3
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Trecho e vínculo da evidência
+      description: Informe um trecho curto, a página e o URL público do documento ou fonte primária.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Alteração proposta e impacto esperado
+      description: Explique qual posição, pergunta, citação ou limitação deve mudar. Não proponha resultados desejados para uma candidatura.
+    validations:
+      required: true
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Declarações
+      options:
+        - label: Não incluí resposta individual, código de recuperação ou dado pessoal.
+          required: true
+        - label: Declaro eventual vínculo com candidatura, partido, campanha ou organização interessada.
+          required: true

@@ -149,3 +149,11 @@
 - [x] Adicionar documentação de contribuição, segurança e licença apropriadas para um repositório público.
 - [x] Revisar a documentação, testes e conteúdo público antes do checkpoint.
 - [x] Alterar a visibilidade do repositório GitHub conectado para pública após salvar a versão documentada.
+- [x] Documentar ameaças relevantes, controles técnicos e limites da prevenção contra manipulação de resultados.
+- [x] Criar workflow de CI para testes, tipagem, build e verificação de integridade em pull requests e na branch principal.
+- [x] Criar templates de issue para correções documentais/metodológicas e para bugs técnicos.
+- [x] Publicar guia de governança para revisão metodológica, conflitos de interesse, evidências e mudanças de matriz.
+- [x] Implementar manifesto versionado e verificação de integridade da matriz programática para detectar mudanças não documentadas.
+- [x] Exibir na interface a versão e a impressão digital da matriz usada para calcular resultados, sem alterar o algoritmo de afinidade.
+- [ ] Configurar proteções proporcionais de branch e revisão no GitHub público, respeitando as permissões disponíveis.
+- [ ] Validar CI, testes de integridade, transparência da versão e ausência de recursos capazes de agregar ou alterar resultados de terceiros.

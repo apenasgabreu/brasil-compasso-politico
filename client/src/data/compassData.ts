@@ -1,6 +1,13 @@
 import rawPositions from "../../../shared/compassPositions.json";
+import integrityManifest from "../../../shared/matrix-integrity.json";
 
 export type Position = -2 | -1 | 0 | 1 | 2;
+export const matrixIntegrity = integrityManifest as {
+  version: string;
+  algorithm: string;
+  fingerprint: string;
+  files: Record<string, string>;
+};
 export type Answer = Position | null | undefined;
 
 export type Axis =
