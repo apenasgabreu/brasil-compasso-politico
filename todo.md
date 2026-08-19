@@ -134,3 +134,13 @@
 - [x] Capturar evidência textual/DOM de resultados, detalhamento e método que confirme a presença das ações principais após as orientações.
 - [x] Verificar objetivamente que os avisos são informativos, sem controles focáveis próprios, e documentar que a exigência de foco não se aplica a eles.
 - [x] Criar e remover uma prévia temporária de resultados, detalhamento e método para a validação textual auditável.
+- [x] Documentar a arquitetura de resultado persistente com cifragem no navegador, código secreto e armazenamento apenas de conteúdo cifrado.
+- [x] Confirmar que a documentação de recuperação cifrada foi persistida com dados, limites e referências técnicas.
+- [x] Reler a documentação de recuperação cifrada antes de implementar o armazenamento persistente.
+- [x] Remover o LLM local, seus controles de consentimento, referências textuais e dependências de produção.
+- [x] Criar esquema de dados e procedimentos públicos para armazenar e recuperar somente o conteúdo cifrado por identificador opaco.
+- [x] Implementar geração, exibição, cópia e uso seguro de código de recuperação sem enviar chave ou respostas em claro ao servidor.
+- [x] Validar criptografia, recuperação, expiração, privacidade, acessibilidade e remoção integral da IA local.
+- [x] Adicionar testes de regressão que confirmem ausência de LLM local e que o segredo de recuperação não integra a requisição ao servidor.
+- [x] Executar teste de ponta a ponta de criação e recuperação de um cofre cifrado sem expor respostas em claro.
+- [x] Criar e remover uma prévia temporária de resultados para validar salvamento e recuperação cifrados pela interface real.

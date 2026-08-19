@@ -25,4 +25,17 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+/**
+ * Immutable encrypted result vault. The server receives no recovery secret,
+ * responses, weights, ranking, or candidate information in readable form.
+ */
+export const encryptedResultVaults = mysqlTable("encrypted_result_vaults", {
+  id: varchar("id", { length: 64 }).primaryKey(),
+  ciphertext: text("ciphertext").notNull(),
+  iv: varchar("iv", { length: 64 }).notNull(),
+  version: varchar("version", { length: 32 }).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  expiresAt: timestamp("expiresAt").notNull(),
+});
+
+export type EncryptedResultVault = typeof encryptedResultVaults.$inferSelect;

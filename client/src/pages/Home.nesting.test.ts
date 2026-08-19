@@ -32,7 +32,7 @@ describe("catálogo de programas", () => {
     expect(Object.keys(journeyGuidance)).toEqual(["intro", "weights", "quiz", "results", "detail", "method"]);
     expect(journeyGuidance.quiz.title).toContain("Não é uma prova");
     expect(journeyGuidance.results.text).toContain("Nenhum dos dois números é uma nota");
-    ["Começar com privacidade", "Ir ao questionário", "Ver resultados", "Ler evidências", "Gerar com IA local", "Preparar para Story", "Fazer o questionário"].forEach((label) => expect(source).toContain(label));
+    ["Começar com privacidade", "Ir ao questionário", "Ver resultados", "Ler evidências", "Preparar para Story", "Fazer o questionário"].forEach((label) => expect(source).toContain(label));
   });
 
   it("mantém avisos semânticos, responsivos e sem armazenamento ou envio de respostas", () => {
@@ -44,5 +44,13 @@ describe("catálogo de programas", () => {
     expect(source).not.toMatch(/localStorage|sessionStorage|document\.cookie|fetch\(/);
     expect(css).toContain(".guidance-note");
     expect(css).toContain("@media (max-width: 600px)");
+  });
+
+  it("não mantém dependências, controles ou textos de IA local", () => {
+    const source = readFileSync(new URL("./Home.tsx", import.meta.url), "utf8");
+    const packageJson = readFileSync(new URL("../../../package.json", import.meta.url), "utf8");
+
+    expect(source).not.toMatch(/localNarrative|Gerar com IA|IA local|modelo local/);
+    expect(packageJson).not.toContain("@mlc-ai/web-llm");
   });
 });

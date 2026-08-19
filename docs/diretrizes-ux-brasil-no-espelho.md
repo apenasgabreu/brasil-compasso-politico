@@ -12,7 +12,7 @@
 |---|---|---|
 | A obra descreve excesso de confiança e suscetibilidade a informações falsas, inclusive quando reforçam crenças políticas. | Não apresentar o teste como diagnóstico, verdade factual ou recomendação. | Tornar explícito, no início e nos resultados, que o teste mede proximidade documental e que não há resposta “certa”. |
 | A exposição longa a informação pode reforçar polarização, em vez de apenas aumentar compreensão. | Evitar textos explicativos extensos antes da resposta. | Usar instruções breves no ponto de ação e manter fontes, evidências e detalhes como aprofundamento voluntário posterior. |
-| O Brasil tem diferenças sociais, regionais, etárias e educacionais; a média não descreve todas as pessoas. | Não reduzir o produto a um “usuário médio” nem padronizar um único caminho cognitivo. | Conservar controles de ponderação, não resposta, evidências rastreáveis, explicação detalhada e IA local; acrescentar apoios opcionais de compreensão. |
+| O Brasil tem diferenças sociais, regionais, etárias e educacionais; a média não descreve todas as pessoas. | Não reduzir o produto a um “usuário médio” nem padronizar um único caminho cognitivo. | Conservar controles de ponderação, não resposta, evidências rastreáveis, explicação detalhada e recuperação cifrada por código; acrescentar apoios opcionais de compreensão. |
 | Desconfiança interpessoal e política pede transparência verificável. | Confiança deve ser conquistada por limites e prova de origem, não por promessas vagas. | Reforçar privacidade local, cobertura documental, páginas de origem e limite de interpretação em cada etapa relevante. |
 
 ## Auditoria da jornada atual

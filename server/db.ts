@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { eq, lt } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { encryptedResultVaults, InsertUser, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,28 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function createEncryptedResultVault(input: { id: string; ciphertext: string; iv: string; version: string; expiresAt: Date }) {
+  const db = await getDb();
+  if (!db) throw new Error("O armazenamento de resultados não está disponível agora.");
+  await db.delete(encryptedResultVaults).where(lt(encryptedResultVaults.expiresAt, new Date()));
+  await db.insert(encryptedResultVaults).values(input);
+  return { id: input.id, expiresAt: input.expiresAt };
+}
+
+export async function getEncryptedResultVault(id: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+
+  const result = await db.select({ ciphertext: encryptedResultVaults.ciphertext, iv: encryptedResultVaults.iv, version: encryptedResultVaults.version, expiresAt: encryptedResultVaults.expiresAt })
+    .from(encryptedResultVaults)
+    .where(eq(encryptedResultVaults.id, id))
+    .limit(1);
+
+  const vault = result[0];
+  if (!vault) return undefined;
+  if (vault.expiresAt <= new Date()) {
+    await db.delete(encryptedResultVaults).where(eq(encryptedResultVaults.id, id));
+    return undefined;
+  }
+  return vault;
+}
