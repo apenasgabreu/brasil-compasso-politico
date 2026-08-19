@@ -1,6 +1,6 @@
 import { eq, lt } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { encryptedResultVaults, InsertUser, users } from "../drizzle/schema";
+import { encryptedResultVaults, InsertUser, resultVaultRateLimits, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -113,4 +113,40 @@ export async function getEncryptedResultVault(id: string) {
     return undefined;
   }
   return vault;
+}
+
+export const VAULT_RATE_WINDOW_MS = 60 * 60 * 1000;
+export const VAULT_SAVE_LIMIT_PER_WINDOW = 5;
+export const VAULT_LOAD_LIMIT_PER_WINDOW = 30;
+export const VAULT_GLOBAL_SAVE_LIMIT_PER_WINDOW = 500;
+export const VAULT_GLOBAL_LOAD_LIMIT_PER_WINDOW = 3_000;
+
+export async function consumeEncryptedVaultQuota(keyHash: string, operation: "save" | "load", customLimit?: number) {
+  const db = await getDb();
+  if (!db) throw new Error("O armazenamento de resultados não está disponível agora.");
+  const now = new Date();
+  const windowStartedAt = new Date(Math.floor(now.getTime() / VAULT_RATE_WINDOW_MS) * VAULT_RATE_WINDOW_MS);
+  const expiresAt = new Date(windowStartedAt.getTime() + VAULT_RATE_WINDOW_MS);
+  const limit = customLimit ?? (operation === "save" ? VAULT_SAVE_LIMIT_PER_WINDOW : VAULT_LOAD_LIMIT_PER_WINDOW);
+  const countColumn = operation === "save" ? "saveCount" : "loadCount";
+
+  await db.delete(resultVaultRateLimits).where(lt(resultVaultRateLimits.expiresAt, now));
+  const current = (await db.select().from(resultVaultRateLimits).where(eq(resultVaultRateLimits.keyHash, keyHash)).limit(1))[0];
+  if (!current || current.windowStartedAt.getTime() !== windowStartedAt.getTime()) {
+    await db.insert(resultVaultRateLimits).values({
+      keyHash,
+      windowStartedAt,
+      saveCount: operation === "save" ? 1 : 0,
+      loadCount: operation === "load" ? 1 : 0,
+      expiresAt,
+    }).onDuplicateKeyUpdate({
+      set: { windowStartedAt, saveCount: operation === "save" ? 1 : 0, loadCount: operation === "load" ? 1 : 0, expiresAt },
+    });
+    return { limit, remaining: limit - 1, resetsAt: expiresAt };
+  }
+
+  const count = current[countColumn];
+  if (count >= limit) return { limit, remaining: 0, resetsAt: current.expiresAt, exceeded: true as const };
+  await db.update(resultVaultRateLimits).set({ [countColumn]: count + 1 }).where(eq(resultVaultRateLimits.keyHash, keyHash));
+  return { limit, remaining: limit - count - 1, resetsAt: current.expiresAt };
 }

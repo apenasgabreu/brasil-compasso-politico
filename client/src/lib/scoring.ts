@@ -1,7 +1,24 @@
 import { axisOrder, getProgramMeta, type Answer, type Axis, type Position, programs, questions, type Program } from "@/data/compassData";
 
-export type AxisScore = { axis: Axis; score: number | null; coverage: number; compared: number };
-export type ProgramScore = { program: Program; score: number | null; coverage: number; axes: AxisScore[]; economic: number | null; social: number | null };
+export const MINIMUM_COMPARISONS_FOR_RANKING = 8;
+export const MINIMUM_COVERAGE_FOR_RANKING = 0.4;
+export const MINIMUM_COMPARISONS_FOR_COORDINATE = 3;
+
+export type AxisScore = { axis: Axis; score: number | null; coverage: number | null; compared: number; answered: number };
+export type Comparability = "comparable" | "insufficient" | "unavailable";
+export type ProgramScore = {
+  program: Program;
+  score: number | null;
+  coverage: number | null;
+  compared: number;
+  answered: number;
+  comparability: Comparability;
+  axes: AxisScore[];
+  economic: number | null;
+  social: number | null;
+  economicCompared: number;
+  socialCompared: number;
+};
 
 const valid = (value: unknown): value is Position => [-2, -1, 0, 1, 2].includes(value as number);
 
@@ -9,9 +26,10 @@ export function weightedAffinity(answer: Position, position: Position) {
   return 1 - Math.abs(answer - position) / 4;
 }
 
-function coordinate(values: { value: Position; factor: number }[]) {
-  if (!values.length) return null;
-  return values.reduce((total, item) => total + item.value * item.factor, 0) / values.length;
+export function normalizedCoordinate(values: { value: Position; factor: number }[]) {
+  const denominator = values.reduce((total, item) => total + Math.abs(item.factor), 0);
+  if (!denominator) return null;
+  return values.reduce((total, item) => total + item.value * item.factor, 0) / denominator;
 }
 
 export function scoreProgram(program: Program, answers: Record<string, Answer>, weights: Record<Axis, number>): ProgramScore {
@@ -37,32 +55,63 @@ export function scoreProgram(program: Program, answers: Record<string, Answer>, 
       numerator += affinity * weight;
       denominator += weight;
     });
-    return { axis, score: axisDenominator ? axisNumerator / axisDenominator : null, coverage: answered ? covered / answered : 0, compared: covered };
+    return { axis, score: axisDenominator ? axisNumerator / axisDenominator : null, coverage: answered ? covered / answered : null, compared: covered, answered };
   });
 
   const dimensionValues = (key: "economic" | "social", source: Record<string, Position | null>) => questions
     .filter((question) => question[key] !== undefined && valid(source[question.id]))
     .map((question) => ({ value: source[question.id] as Position, factor: question[key] as number }));
 
+  const answered = axisScores.reduce((sum, axis) => sum + axis.answered, 0);
+  const compared = axisScores.reduce((sum, axis) => sum + axis.compared, 0);
+  const coverage = answered ? compared / answered : null;
+  const score = denominator ? numerator / denominator : null;
+  const dimension = (key: "economic" | "social", source: Record<string, Position | null>) => {
+    const values = dimensionValues(key, source);
+    return { value: values.length >= MINIMUM_COMPARISONS_FOR_COORDINATE ? normalizedCoordinate(values) : null, compared: values.length };
+  };
+  const economic = dimension("economic", program.positions);
+  const social = dimension("social", program.positions);
+  const comparability: Comparability = score === null || coverage === null
+    ? "unavailable"
+    : compared >= MINIMUM_COMPARISONS_FOR_RANKING && coverage >= MINIMUM_COVERAGE_FOR_RANKING
+      ? "comparable"
+      : "insufficient";
+
   return {
     program,
-    score: denominator ? numerator / denominator : null,
-    coverage: axisScores.reduce((sum, axis) => sum + axis.coverage, 0) / axisScores.length,
+    score,
+    coverage,
+    compared,
+    answered,
+    comparability,
     axes: axisScores,
-    economic: coordinate(dimensionValues("economic", program.positions)),
-    social: coordinate(dimensionValues("social", program.positions)),
+    economic: economic.value,
+    social: social.value,
+    economicCompared: economic.compared,
+    socialCompared: social.compared,
   };
 }
 
+export function orderProgramScores(scores: ProgramScore[]) {
+  const rank = (item: ProgramScore) => item.comparability === "comparable" ? 2 : item.comparability === "insufficient" ? 1 : 0;
+  return [...scores].sort((a, b) => rank(b) - rank(a) || (b.coverage ?? -1) - (a.coverage ?? -1) || (b.score ?? -1) - (a.score ?? -1));
+}
+
 export function scoreAll(answers: Record<string, Answer>, weights: Record<Axis, number>) {
-  return programs.map((program) => scoreProgram(program, answers, weights)).sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+  return orderProgramScores(programs.map((program) => scoreProgram(program, answers, weights)));
 }
 
 export function userCoordinates(answers: Record<string, Answer>) {
-  const coordinates = (key: "economic" | "social") => coordinate(questions
+  const coordinates = (key: "economic" | "social") => {
+    const values = questions
     .filter((question) => question[key] !== undefined && valid(answers[question.id]))
-    .map((question) => ({ value: answers[question.id] as Position, factor: question[key] as number })));
-  return { economic: coordinates("economic"), social: coordinates("social") };
+    .map((question) => ({ value: answers[question.id] as Position, factor: question[key] as number }));
+    return { value: values.length >= MINIMUM_COMPARISONS_FOR_COORDINATE ? normalizedCoordinate(values) : null, compared: values.length };
+  };
+  const economic = coordinates("economic");
+  const social = coordinates("social");
+  return { economic: economic.value, social: social.value, economicCompared: economic.compared, socialCompared: social.compared };
 }
 
 export function deterministicNarrative(item: ProgramScore, answers: Record<string, Answer> = {}) {

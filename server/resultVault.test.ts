@@ -1,11 +1,18 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const { createEncryptedResultVault, getEncryptedResultVault } = vi.hoisted(() => ({
+const { consumeEncryptedVaultQuota, createEncryptedResultVault, getEncryptedResultVault } = vi.hoisted(() => ({
+  consumeEncryptedVaultQuota: vi.fn(),
   createEncryptedResultVault: vi.fn(),
   getEncryptedResultVault: vi.fn(),
 }));
 
-vi.mock("./db", () => ({ createEncryptedResultVault, getEncryptedResultVault }));
+vi.mock("./db", () => ({
+  consumeEncryptedVaultQuota,
+  createEncryptedResultVault,
+  getEncryptedResultVault,
+  VAULT_GLOBAL_LOAD_LIMIT_PER_WINDOW: 3000,
+  VAULT_GLOBAL_SAVE_LIMIT_PER_WINDOW: 500,
+}));
 
 import { appRouter } from "./routers";
 
@@ -14,7 +21,10 @@ const ciphertext = "ciphertext-content-that-is-not-plaintext";
 const iv = "abcdefghijklmnop";
 
 describe("resultVault router", () => {
-  beforeEach(() => vi.clearAllMocks());
+  beforeEach(() => {
+    vi.clearAllMocks();
+    consumeEncryptedVaultQuota.mockResolvedValue({ remaining: 1, limit: 5, resetsAt: new Date() });
+  });
 
   it("aceita somente envelope cifrado e nunca recebe segredo de recuperação", async () => {
     createEncryptedResultVault.mockResolvedValue({ id: vaultId, expiresAt: new Date("2027-08-19T00:00:00.000Z") });
@@ -43,6 +53,14 @@ describe("resultVault router", () => {
     const caller = appRouter.createCaller({} as never);
 
     await expect(caller.resultVault.save({ id: vaultId, ciphertext: "conteudo+invalido", iv, version: "brcp-v1" })).rejects.toMatchObject({ code: "BAD_REQUEST" });
+    expect(createEncryptedResultVault).not.toHaveBeenCalled();
+  });
+
+  it("bloqueia gravações quando uma quota do cofre é excedida", async () => {
+    consumeEncryptedVaultQuota.mockResolvedValueOnce({ exceeded: true, remaining: 0, limit: 500, resetsAt: new Date() });
+    const caller = appRouter.createCaller({ req: { headers: { "x-forwarded-for": "198.51.100.10" } } } as never);
+
+    await expect(caller.resultVault.save({ id: vaultId, ciphertext, iv, version: "brcp-v1" })).rejects.toMatchObject({ code: "TOO_MANY_REQUESTS" });
     expect(createEncryptedResultVault).not.toHaveBeenCalled();
   });
 });

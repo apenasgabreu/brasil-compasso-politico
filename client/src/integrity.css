@@ -94,3 +94,36 @@
   color: var(--navy);
   font-weight: 700;
 }
+
+.program-catalog .document-hash {
+  grid-column: 2;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  overflow-wrap: anywhere;
+}
+
+.document-provenance {
+  margin-top: 0.9rem;
+}
+
+.document-provenance > p {
+  margin: 0.45rem 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.document-provenance a {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.document-provenance .document-responsibility {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 850px) {
+  .program-catalog .document-hash {
+    grid-column: 2;
+  }
+}

@@ -14,7 +14,7 @@ Este documento descreve como o projeto reduz o risco de que colaboradores, usuá
 | Um pull request quebra cálculo, interface ou privacidade. | CI executa testes, tipagem, build, verificação de matriz e varredura de segredos. A proteção de `main` exige pull request, checks e conversas resolvidas. | Checks não substituem revisão humana de mudanças metodológicas. |
 | Workflow de CI é explorado por contribuição não confiável. | O workflow usa `pull_request`, permissões mínimas de leitura e não acessa segredos. Não usa `pull_request_target`; ações são fixadas em SHAs completos. [3] | Código de PR ainda é executado em ambiente efêmero, portanto nenhum segredo é disponibilizado. |
 | Uma alteração opaca tenta reescrever o histórico da matriz. | O manifesto fixa hashes SHA-256 dos dados e fontes de versão; o CI falha se o manifesto não for atualizado conscientemente. Proteção de branch impede force-push e exclusão. [1] [2] | O hash confirma alteração, não determina se a decisão metodológica foi correta. |
-| Um ator tenta ocupar o armazenamento de cofres cifrados. | O endpoint aceita somente envelopes limitados, valida formato, expira em 365 dias e remove registros vencidos. | Uma limitação de taxa global exige infraestrutura compartilhada; o projeto registra isso como melhoria futura, não como garantia existente. |
+| Um ator tenta ocupar o armazenamento de cofres cifrados. | O endpoint aceita somente envelopes limitados, valida formato, expira em 365 dias, remove registros vencidos, limita requisições a 128 KB e aplica quotas por origem com HMAC e quotas globais por janela de uma hora. | As quotas reduzem abuso, mas não substituem controles de borda da infraestrutura nem tornam ataques distribuídos impossíveis. |
 
 ## Princípios inegociáveis
 

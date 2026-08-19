@@ -7,6 +7,8 @@ const trackedFiles = [
   "client/src/lib/scoring.ts",
   "shared/compassPositions.json",
   "shared/methodology-changelog.json",
+  "shared/source-document-integrity.json",
+  "shared/candidate-registry-2026.json",
 ];
 
 const sha256 = (input) => createHash("sha256").update(input).digest("hex");

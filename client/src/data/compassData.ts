@@ -1,6 +1,8 @@
 import rawPositions from "../../../shared/compassPositions.json";
 import integrityManifest from "../../../shared/matrix-integrity.json";
 import rawMethodologyChangelog from "../../../shared/methodology-changelog.json";
+import rawSourceDocumentIntegrity from "../../../shared/source-document-integrity.json";
+import rawCandidateRegistry from "../../../shared/candidate-registry-2026.json";
 
 export type Position = -2 | -1 | 0 | 1 | 2;
 export const matrixIntegrity = integrityManifest as {
@@ -21,6 +23,24 @@ export type MethodologyChangelogEntry = {
   referenceUrl: string;
 };
 export const methodologyChangelog = rawMethodologyChangelog as MethodologyChangelogEntry[];
+export type SourceDocumentIntegrity = {
+  version: string;
+  hashAlgorithm: "SHA-256";
+  officialCatalogUrl: string;
+  archiveItemUrl: string;
+  archivePackageUrl: string;
+  archivePackageSha256: string;
+  preservationPolicy: string;
+  documents: { program: string; fileName: string; sha256: string; deliveryUrl: string; officialStatus: string; archiveStatus: string }[];
+};
+export const sourceDocumentIntegrity = rawSourceDocumentIntegrity as SourceDocumentIntegrity;
+export type CandidateRegistry = {
+  source: string;
+  resource: string;
+  retrievedAt: string;
+  records: { program: string; ballotName: string; party: string; candidateSequence: string; registrationStatus: string }[];
+};
+export const candidateRegistry = rawCandidateRegistry as CandidateRegistry;
 export type Answer = Position | null | undefined;
 
 export type Axis =
@@ -107,10 +127,10 @@ const sourceFiles = [
   ["pco", "Rui Costa Pimenta — PCO", "Programa de Governo 2026", "/manus-storage/PCOprogramadegoverno2026_5fd19712.pdf"],
   ["caiado", "Ronaldo Caiado — PSD", "Plano de Governo", "/manus-storage/PlanodeGovernoRonaldoCaiadoPresidente_ac37d7fc.pdf"],
   ["renan", "Renan Santos — Partido Missão", "Plano de Governo", "/manus-storage/PlanodeGovernoMissao2026Finalcompressed_3b09ae48.pdf"],
-  ["lula", "Luiz Inácio Lula da Silva — coligação", "Livro do Plano de Governo", "/manus-storage/0806JOB838PTlivroplanodegovernocompressed_ca43cf1e.pdf"],
+  ["lula", "Luiz Inácio Lula da Silva — PT", "Livro do Plano de Governo", "/manus-storage/0806JOB838PTlivroplanodegovernocompressed_ca43cf1e.pdf"],
   ["pstu", "Hertz Dias — PSTU", "Programa Eleições 2026", "/manus-storage/ProgramaPSTUEleiAAes2026_5920ff3c.pdf"],
   ["flávio", "Flávio Bolsonaro — PL", "Diretrizes de Plano de Governo", "/manus-storage/DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal_36dd945a.pdf"],
-  ["augusto", "Augusto Cury", "Plano de Governo", "/manus-storage/PLANODEGOVERNOOBRASILDOSNOSSOSSONHOS_555f1710.pdf"],
+  ["augusto", "Augusto Cury — Avante", "Plano de Governo", "/manus-storage/PLANODEGOVERNOOBRASILDOSNOSSOSSONHOS_555f1710.pdf"],
   ["pcb", "Edmilson Costa e Cleusa Santos — PCB", "Programa Político", "/manus-storage/ProgramaPoliticodoPCBeleicoes20261_7be57e53.pdf"],
   ["proteger", "Clariana Barão — Democracia Cristã", "Proteger Hoje, Transformar o Amanhã", "/manus-storage/PLANODEGOVERNO_7020aa1e.pdf"],
 ] as const;
@@ -122,22 +142,22 @@ const candidatePortraits: Record<string, CandidatePortrait[]> = {
   "Samara Martins — UP": [{ name: "Samara Martins", image: "/manus-storage/samara-martins_2eb2ee23.jpg", source: "https://commons.wikimedia.org/wiki/File:Samara_Martins_UP.jpg", credit: "Wikimedia Commons · atribuição indicada na fonte" }],
   "Ronaldo Caiado — PSD": [{ name: "Ronaldo Caiado", image: "/manus-storage/ronaldo-caiado_e98d53c5.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_do_governador_de_Goi%C3%A1s,_Ronaldo_Caiado_em_2023_(ombros).jpg", credit: "Bianca Kida · CC BY 2.0" }],
   "Renan Santos — Partido Missão": [{ name: "Renan Santos", image: "/manus-storage/renan-santos_691a460c.jpg", source: "https://commons.wikimedia.org/wiki/File:Renan_Santos.jpg", credit: "Romerito Pontes · CC BY 4.0" }],
-  "Luiz Inácio Lula da Silva — coligação": [{ name: "Luiz Inácio Lula da Silva", image: "/manus-storage/lula-rosto_2656dea4.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(rosto)_(cropped).jpg", credit: "Palácio do Planalto · CC BY 2.0" }],
-  "Flávio Bolsonaro — PL": [{ name: "Flávio Bolsonaro", image: "/manus-storage/flavio-bolsonaro_8022afb1.jpg", source: "https://commons.wikimedia.org/wiki/File:Flavio_Bolsonaro_em_2006.jpg", credit: "Wikimedia Commons · CC BY 4.0" }],
-  "Augusto Cury": [{ name: "Augusto Cury", image: "/manus-storage/augusto-cury_252b0a4e.jpg", source: "https://commons.wikimedia.org/wiki/File:Augusto_Cury,_escritor_(28339139296).jpg", credit: "Lima Andruška · CC BY-SA 2.0" }],
+  "Luiz Inácio Lula da Silva — PT": [{ name: "Luiz Inácio Lula da Silva", image: "/manus-storage/lula-rosto_2656dea4.jpg", source: "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(rosto)_(cropped).jpg", credit: "Palácio do Planalto · CC BY 2.0" }],
+  "Flávio Bolsonaro — PL": [{ name: "Flávio Bolsonaro", image: "/manus-storage/flavio-bolsonaro-tse-2026_72926241.jpg", source: "https://dadosabertos.tse.jus.br/dataset/candidatos-2026/resource/e8f0a648-b438-4117-814a-f32f4c4977c8", credit: "TSE · Dados Abertos 2026" }],
+  "Augusto Cury — Avante": [{ name: "Augusto Cury", image: "/manus-storage/augusto-cury_252b0a4e.jpg", source: "https://commons.wikimedia.org/wiki/File:Augusto_Cury,_escritor_(28339139296).jpg", credit: "Lima Andruška · CC BY-SA 2.0" }],
   "Edmilson Costa e Cleusa Santos — PCB": [{ name: "Edmilson Costa", image: "/manus-storage/edmilson-costa_a47ac5e9.jpg", source: "https://commons.wikimedia.org/wiki/File:Edmilson_Costa_-_PCB.jpg", credit: "PCB/Diário Liberdade · CC BY 3.0" }],
   "Wilson Grassi — Democrata": [{ name: "Wilson Grassi", image: "/manus-storage/wilson-grassi-tse_781f214d.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_VETERIN%C3%81RIO_WILSON_GRASSI_CANDIDATO_PRESIDENTE_TSE_(280002548139).jpg", credit: "TSE · CC BY 4.0" }],
   "Hertz Dias — PSTU": [{ name: "Hertz Dias", image: "/manus-storage/hertz-dias-tse_4efe41ed.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_HERTZ_DIAS_CANDIDATO_PRESIDENTE_TSE_(280002541457).jpg", credit: "TSE · CC BY 4.0" }],
   "Rui Costa Pimenta — PCO": [{ name: "Rui Costa Pimenta", image: "/manus-storage/rui-costa-pimenta-tse_9512a4d6.jpg", source: "https://commons.wikimedia.org/wiki/File:2026_RUI_COSTA_PIMENTA_CANDIDATO_PRESIDENTE_TSE_(280002552487).jpg", credit: "TSE · CC BY 4.0" }],
-  "Clariana Barão — Democracia Cristã": [{ name: "Clariana Barão", image: "/manus-storage/clariana-barao_47a8443a.jpg", source: "https://www.democraciacrista.org.br/clariana-e-a-indicada-na-convencao-nacional-para-presidencia-da-republica-pela-democracia-crista/", credit: "Democracia Cristã · imagem institucional" }],
+  "Clariana Barão — Democracia Cristã": [{ name: "Clariana Barão", image: "/manus-storage/clariana-barao-tse-2026_90d90ff3.jpg", source: "https://dadosabertos.tse.jus.br/dataset/candidatos-2026/resource/e8f0a648-b438-4117-814a-f32f4c4977c8", credit: "TSE · Dados Abertos 2026" }],
 };
 
 export function getProgramMeta(program: string) {
   const normalized = program.toLocaleLowerCase("pt-BR");
   const found = sourceFiles.find(([needle]) => normalized.includes(needle));
   return found
-    ? { name: found[1], document: found[2], url: found[3], portraits: candidatePortraits[found[1]] ?? [], identifiable: true }
-    : { name: program, document: "Documento programático", url: "#", portraits: [], identifiable: false };
+    ? { name: found[1], document: found[2], url: found[3], documentIntegrity: sourceDocumentIntegrity.documents.find((item) => item.program === found[1]) ?? null, candidateRecord: candidateRegistry.records.find((item) => item.program === found[1]) ?? null, portraits: candidatePortraits[found[1]] ?? [], identifiable: true }
+    : { name: program, document: "Documento programático", url: "#", documentIntegrity: null, candidateRecord: null, portraits: [], identifiable: false };
 }
 
 export const responseOptions: { value: Position; label: string }[] = [

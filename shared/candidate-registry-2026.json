@@ -1,0 +1,19 @@
+{
+  "source": "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
+  "resource": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+  "retrievedAt": "2026-08-19T11:33:00-03:00",
+  "records": [
+    { "program": "Romeu Zema — NOVO", "ballotName": "ZEMA", "party": "NOVO", "candidateSequence": "280002539826", "registrationStatus": "#NE" },
+    { "program": "Wilson Grassi — Democrata", "ballotName": "VETERINÁRIO WILSON GRASSI", "party": "DEMOCRATA", "candidateSequence": "280002548139", "registrationStatus": "#NE" },
+    { "program": "Samara Martins — UP", "ballotName": "SAMARA", "party": "UP", "candidateSequence": "280002538811", "registrationStatus": "#NE" },
+    { "program": "Rui Costa Pimenta — PCO", "ballotName": "RUI COSTA PIMENTA", "party": "PCO", "candidateSequence": "280002552487", "registrationStatus": "#NE" },
+    { "program": "Ronaldo Caiado — PSD", "ballotName": "RONALDO CAIADO", "party": "PSD", "candidateSequence": "280002551932", "registrationStatus": "#NE" },
+    { "program": "Renan Santos — Partido Missão", "ballotName": "RENAN SANTOS", "party": "MISSÃO", "candidateSequence": "280002540694", "registrationStatus": "#NE" },
+    { "program": "Luiz Inácio Lula da Silva — PT", "ballotName": "LULA", "party": "PT", "candidateSequence": "280002542548", "registrationStatus": "#NE" },
+    { "program": "Hertz Dias — PSTU", "ballotName": "HERTZ DIAS", "party": "PSTU", "candidateSequence": "280002541457", "registrationStatus": "#NE" },
+    { "program": "Flávio Bolsonaro — PL", "ballotName": "FLAVIO BOLSONARO", "party": "PL", "candidateSequence": "280002551544", "registrationStatus": "#NE" },
+    { "program": "Augusto Cury — Avante", "ballotName": "ESCRITOR AUGUSTO CURY", "party": "AVANTE", "candidateSequence": "280002551547", "registrationStatus": "#NE" },
+    { "program": "Edmilson Costa e Cleusa Santos — PCB", "ballotName": "EDMILSON COSTA", "party": "PCB", "candidateSequence": "280002551975", "registrationStatus": "#NE" },
+    { "program": "Clariana Barão — Democracia Cristã", "ballotName": "CLARIANA BARAO", "party": "DC", "candidateSequence": "280002552484", "registrationStatus": "#NE" }
+  ]
+}
