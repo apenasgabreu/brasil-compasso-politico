@@ -144,3 +144,8 @@
 - [x] Adicionar testes de regressão que confirmem ausência de LLM local e que o segredo de recuperação não integra a requisição ao servidor.
 - [x] Executar teste de ponta a ponta de criação e recuperação de um cofre cifrado sem expor respostas em claro.
 - [x] Criar e remover uma prévia temporária de resultados para validar salvamento e recuperação cifrados pela interface real.
+- [x] Auditar arquivos públicos, histórico recente e configuração do repositório antes de torná-lo público.
+- [x] Criar README público que explique objetivo, metodologia, privacidade, recuperação cifrada, uso local e limitações da ferramenta.
+- [x] Adicionar documentação de contribuição, segurança e licença apropriadas para um repositório público.
+- [x] Revisar a documentação, testes e conteúdo público antes do checkpoint.
+- [ ] Alterar a visibilidade do repositório GitHub conectado para pública após salvar a versão documentada.
