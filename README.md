@@ -51,6 +51,7 @@ O livro *Brasil no Espelho* é utilizado somente como fonte contextual de comuni
 - [Validação técnica e acessibilidade](docs/validacao-final.md)
 - [Resultados persistentes cifrados](docs/resultados-persistentes-cifrados.md)
 - [Integridade e governança](docs/integridade-e-governanca.md)
+- [Changelog metodológico](shared/methodology-changelog.json)
 
 ## Arquitetura
 

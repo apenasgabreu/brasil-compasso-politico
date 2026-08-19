@@ -19,6 +19,8 @@ Toda proposta começa em issue ou pull request com motivação, escopo, evidênc
 
 O CI precisa passar e o manifesto de integridade precisa ser atualizado conscientemente quando arquivos protegidos mudarem. O histórico público deve conter a razão da mudança. Correções urgentes de erro factual podem ser aplicadas mais rapidamente, mas permanecem sujeitas a revisão posterior e registro público.
 
+Cada mudança metodológica aceita deve acrescentar uma entrada em `shared/methodology-changelog.json`, com versão, data, tipo, escopo, impacto no cálculo e referência pública. A entrada é exibida na página Método; não são aceitas versões vagas como “melhorias gerais” sem declarar o que mudou e o que permaneceu igual.
+
 ## Independência e conflitos de interesse
 
 Pessoas que tenham vínculo de campanha, partido, candidatura, consultoria política, financiamento ou atividade de advocacia relacionada devem declarar o vínculo no issue ou pull request. Ter vínculo não invalida uma evidência documental, mas impede que a própria pessoa seja a única revisora de uma alteração que beneficie diretamente a parte vinculada.

@@ -6,6 +6,7 @@ const trackedFiles = [
   "client/src/data/compassData.ts",
   "client/src/lib/scoring.ts",
   "shared/compassPositions.json",
+  "shared/methodology-changelog.json",
 ];
 
 const sha256 = (input) => createHash("sha256").update(input).digest("hex");

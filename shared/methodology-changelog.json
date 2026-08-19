@@ -1,0 +1,46 @@
+[
+  {
+    "version": "2026.08.19.1",
+    "date": "2026-08-19",
+    "type": "Governança e integridade",
+    "title": "Manifesto público e CI obrigatório",
+    "scope": "Matriz, perguntas, cálculo e processo de revisão.",
+    "summary": "Foi publicado um manifesto SHA-256 para os arquivos que definem a comparação, junto de CI, governança e proteção de branch.",
+    "impact": "Não altera respostas, posições programáticas, pesos ou percentuais. Torna alterações futuras visíveis e verificáveis.",
+    "referenceLabel": "Guia de integridade e governança",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/integridade-e-governanca.md"
+  },
+  {
+    "version": "2026.08.17.3",
+    "date": "2026-08-17",
+    "type": "Correção documental",
+    "title": "Atribuição de Proteger Hoje, Transformar o Amanhã",
+    "scope": "Metadados da candidatura e catálogo de programas.",
+    "summary": "O plano foi atribuído a Clariana Barão, da Democracia Cristã, após correção documental.",
+    "impact": "Corrige a identificação pública do documento; não modifica a citação, a posição codificada ou o cálculo de afinidade.",
+    "referenceLabel": "Matriz e questionário",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/matriz-questionario.md"
+  },
+  {
+    "version": "2026.08.17.2",
+    "date": "2026-08-17",
+    "type": "Clareza do questionário",
+    "title": "Simplificação cirúrgica de dez afirmações",
+    "scope": "Linguagem dos itens com maior carga técnico-institucional.",
+    "summary": "Dez enunciados receberam linguagem cotidiana e direta após diagnóstico de compreensão contextual.",
+    "impact": "Preserva identificadores, direção normativa, escala, eixo e vínculo programático; não repondera candidaturas nem cria novos itens.",
+    "referenceLabel": "Diagnóstico de compreensão",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/diagnostico-compreensao-inicial.md"
+  },
+  {
+    "version": "2026.08.17.1",
+    "date": "2026-08-17",
+    "type": "Evidência e cobertura",
+    "title": "Confiança documental explícita",
+    "scope": "Matriz de posições e cálculo de cobertura comparável.",
+    "summary": "Cada posição passou a registrar nível de confiança documental, associado a citação e página verificáveis.",
+    "impact": "O cálculo dá menos peso a evidências classificadas como menos confiáveis; silêncio ou ambiguidade continuam sem virar concordância automática.",
+    "referenceLabel": "Decisões de produto e neutralidade",
+    "referenceUrl": "https://github.com/apenasgabreu/brasil-compasso-politico/blob/main/docs/decisoes-produto.md"
+  }
+]

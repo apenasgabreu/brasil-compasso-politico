@@ -157,3 +157,7 @@
 - [x] Exibir na interface a versão e a impressão digital da matriz usada para calcular resultados, sem alterar o algoritmo de afinidade.
 - [x] Configurar proteções proporcionais de branch e revisão no GitHub público, respeitando as permissões disponíveis.
 - [x] Validar CI, testes de integridade, transparência da versão e ausência de recursos capazes de agregar ou alterar resultados de terceiros.
+- [x] Definir entradas versionadas do changelog com data, tipo, escopo, impacto no cálculo e referência pública.
+- [x] Exibir o changelog metodológico na página Método de forma acessível e navegável.
+- [x] Vincular o changelog à versão e impressão digital da matriz, à governança e ao manifesto de integridade.
+- [x] Validar a renderização, a responsividade e a cobertura de testes do changelog metodológico.

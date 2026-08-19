@@ -26,3 +26,71 @@
     padding: 1rem;
   }
 }
+
+.methodology-changelog {
+  margin: 2rem 0;
+}
+
+.changelog-intro {
+  max-width: 44rem;
+  color: var(--ink-soft);
+}
+
+.methodology-changelog ol {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.methodology-changelog article {
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+
+.changelog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.changelog-meta code {
+  color: var(--ink);
+  font-size: 0.78rem;
+}
+
+.methodology-changelog h4 {
+  margin: 0.65rem 0 0.8rem;
+}
+
+.methodology-changelog dl {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.methodology-changelog dt {
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.methodology-changelog dd {
+  margin: 0.12rem 0 0;
+  color: var(--ink-soft);
+}
+
+.methodology-changelog article > a {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin-top: 0.85rem;
+  color: var(--navy);
+  font-weight: 700;
+}
