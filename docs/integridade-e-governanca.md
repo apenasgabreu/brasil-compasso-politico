@@ -39,3 +39,7 @@ Uma alteração em pergunta, posição, peso, normalização, cobertura, texto d
 [2] [GitHub Docs, *Managing a branch protection rule*](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 [3] [GitHub Docs, *Secure use reference for GitHub Actions*](https://docs.github.com/en/actions/reference/security/secure-use)
+
+## Estado configurado
+
+Em 19 de agosto de 2026, o workflow `quality-and-integrity` concluiu com sucesso a verificação de manifesto, a suíte de testes, a tipagem e o build. A branch `main` passou a exigir esse check atualizado, exige que a branch esteja em dia antes do merge, aplica as regras também a administradores, exige conversas resolvidas e bloqueia force-push e exclusão. Aprovação obrigatória de Code Owner permanece desativada enquanto houver apenas uma pessoa mantenedora; essa escolha evita uma falsa sensação de revisão independente e está documentada para reavaliação quando houver segunda pessoa revisora.
