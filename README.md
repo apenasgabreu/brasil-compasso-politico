@@ -2,6 +2,8 @@
 
 > Um questionário programático, auditável e privado para comparar prioridades do eleitor com posições documentadas em programas de governo.
 
+[![Quality and integrity](https://github.com/apenasgabreu/brasil-compasso-politico/actions/workflows/ci.yml/badge.svg)](https://github.com/apenasgabreu/brasil-compasso-politico/actions/workflows/ci.yml)
+
 **Brasil em Perspectiva** não recomenda voto, não mede competência eleitoral e não infere intenção de voto. A ferramenta transforma respostas a 50 afirmações em uma comparação com posições extraídas dos programas de governo analisados. Cada resultado mostra o nível de afinidade, a cobertura documental, a leitura por eixo, as citações e as páginas de origem.
 
 O projeto está disponível em [brasilcpol-fqgbdhtx.manus.space](https://brasilcpol-fqgbdhtx.manus.space).

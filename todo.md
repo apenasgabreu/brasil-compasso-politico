@@ -155,5 +155,5 @@
 - [x] Publicar guia de governança para revisão metodológica, conflitos de interesse, evidências e mudanças de matriz.
 - [x] Implementar manifesto versionado e verificação de integridade da matriz programática para detectar mudanças não documentadas.
 - [x] Exibir na interface a versão e a impressão digital da matriz usada para calcular resultados, sem alterar o algoritmo de afinidade.
-- [ ] Configurar proteções proporcionais de branch e revisão no GitHub público, respeitando as permissões disponíveis.
-- [ ] Validar CI, testes de integridade, transparência da versão e ausência de recursos capazes de agregar ou alterar resultados de terceiros.
+- [x] Configurar proteções proporcionais de branch e revisão no GitHub público, respeitando as permissões disponíveis.
+- [x] Validar CI, testes de integridade, transparência da versão e ausência de recursos capazes de agregar ou alterar resultados de terceiros.
