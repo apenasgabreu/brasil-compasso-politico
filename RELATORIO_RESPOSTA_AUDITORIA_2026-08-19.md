@@ -96,6 +96,12 @@ As correções alteram principalmente a **honestidade de interpretação do resu
 
 O projeto ficou mais auditável, mas não deve alegar perfeição. A prioridade seguinte é institucional, não cosmética: segunda codificação independente, atestação formal de build, testes e2e/acessibilidade contínuos, rotina de atualização eleitoral e revisão jurídica profissional da política de privacidade e do período eleitoral.
 
+## Addendum — verificação posterior e correção de ordenação
+
+Uma verificação posterior confirmou as correções anteriores, mas identificou duas pendências introduzidas ou expostas pela revisão: dentro do conjunto comparável, a ordenação priorizava cobertura antes de afinidade; e o teste de adulteração do cofre podia manter o mesmo último caractere Base64URL por acaso. Ambas foram corrigidas na matriz `2026.08.19.4`.
+
+O ranking agora usa **afinidade decrescente** como chave primária entre programas comparáveis; cobertura e número de comparações só desempatam valores iguais e continuam sendo requisitos de entrada no ranking. Destaque principal, gráfico, radar e lista consomem a mesma sequência ordenada. O teste do cofre passou a alterar um byte decodificado e recodificá-lo, assegurando que o ciphertext de teste seja sempre distinto. Foram adicionadas regressões para esses fluxos; a suíte final contém 30 testes aprovados, e o teste criptográfico foi executado dez vezes seguidas sem falha.
+
 > **Nota jurídica.** Este relatório descreve medidas técnicas e documentais adotadas; não é parecer jurídico nem substitui revisão por advogado ou profissional de proteção de dados habilitado.
 
 ## Referências

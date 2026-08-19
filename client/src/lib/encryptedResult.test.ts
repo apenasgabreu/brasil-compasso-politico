@@ -24,7 +24,11 @@ describe("encrypted result vault", () => {
   it("rejeita alteração do conteúdo e códigos inválidos", async () => {
     const vaultId = createVaultId();
     const { secret, envelope } = await encryptResultPayload(payload, vaultId);
-    await expect(decryptResultPayload({ ...envelope, ciphertext: `${envelope.ciphertext.slice(0, -1)}A` }, vaultId, secret)).rejects.toThrow("Não foi possível abrir");
+    const alteredBytes = Buffer.from(envelope.ciphertext, "base64url");
+    alteredBytes[0] ^= 1;
+    const alteredCiphertext = alteredBytes.toString("base64url");
+    expect(alteredCiphertext).not.toBe(envelope.ciphertext);
+    await expect(decryptResultPayload({ ...envelope, ciphertext: alteredCiphertext }, vaultId, secret)).rejects.toThrow("Não foi possível abrir");
     await expect(decryptResultPayload(envelope, createVaultId(), secret)).rejects.toThrow("Não foi possível abrir");
     expect(() => parseRecoveryCode("BRCP-inválido")).toThrow("Código de recuperação inválido");
   });

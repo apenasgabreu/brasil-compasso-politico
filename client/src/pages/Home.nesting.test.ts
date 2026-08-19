@@ -80,4 +80,12 @@ describe("catálogo de programas", () => {
     expect(candidateRegistry.records).toHaveLength(12);
     expect(getProgramMeta("lula")).toMatchObject({ name: "Luiz Inácio Lula da Silva — PT", candidateRecord: { party: "PT" } });
   });
+
+  it("usa a mesma sequência ordenada para destaque, gráfico e lista de resultados comparáveis", () => {
+    const source = readFileSync(new URL("./Home.tsx", import.meta.url), "utf8");
+    expect(source).toContain('const comparableResults = results.filter((result) => result.comparability === "comparable")');
+    expect(source).toContain("const primaryResult = comparableResults[0]");
+    expect(source).toContain("const data = comparableResults.map");
+    expect(source).toContain("comparableResults.map((result, index) => resultRow(result, index))");
+  });
 });

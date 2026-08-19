@@ -95,7 +95,7 @@ export function scoreProgram(program: Program, answers: Record<string, Answer>, 
 
 export function orderProgramScores(scores: ProgramScore[]) {
   const rank = (item: ProgramScore) => item.comparability === "comparable" ? 2 : item.comparability === "insufficient" ? 1 : 0;
-  return [...scores].sort((a, b) => rank(b) - rank(a) || (b.coverage ?? -1) - (a.coverage ?? -1) || (b.score ?? -1) - (a.score ?? -1));
+  return [...scores].sort((a, b) => rank(b) - rank(a) || (b.score ?? -1) - (a.score ?? -1) || (b.coverage ?? -1) - (a.coverage ?? -1) || b.compared - a.compared || a.program.program.localeCompare(b.program.program));
 }
 
 export function scoreAll(answers: Record<string, Answer>, weights: Record<Axis, number>) {

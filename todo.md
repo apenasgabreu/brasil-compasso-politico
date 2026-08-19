@@ -179,3 +179,6 @@
 - [x] Confirmar a publicação do último checkpoint no deploy e no GitHub e entregar relatório ponto a ponto das correções auditadas.
 - [x] Publicar o commit validado 493e469 na branch principal do GitHub por pull request e confirmar o CI remoto correspondente.
 - [x] Corrigir a proveniência de build exibida como indisponível na produção e confirmar o commit público no rodapé.
+- [x] Reproduzir e corrigir a divergência entre a ordem de ranking, os percentuais, o gráfico e a lista de resultados comparáveis.
+- [x] Criar regressões que garantam a mesma ordenação auditável no destaque, gráfico e lista de programas.
+- [x] Tornar determinístico o teste de rejeição de envelope cifrado adulterado e validar sua repetição.
