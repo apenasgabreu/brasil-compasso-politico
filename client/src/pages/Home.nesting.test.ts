@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { journeyGuidance, ProgramCatalog } from "./Home";
+import { matrixIntegrity, methodologyChangelog } from "@/data/compassData";
 
 describe("catálogo de programas", () => {
   it("não renderiza âncoras dentro dos links externos dos documentos", () => {
@@ -52,5 +53,24 @@ describe("catálogo de programas", () => {
 
     expect(source).not.toMatch(/localNarrative|Gerar com IA|IA local|modelo local/);
     expect(packageJson).not.toContain("@mlc-ai/web-llm");
+  });
+
+  it("publica changelog metodológico versionado e vinculado à integridade da matriz", () => {
+    const source = readFileSync(new URL("./Home.tsx", import.meta.url), "utf8");
+    const css = readFileSync(new URL("../integrity.css", import.meta.url), "utf8");
+
+    expect(methodologyChangelog.length).toBeGreaterThanOrEqual(3);
+    expect(new Set(methodologyChangelog.map((entry) => entry.version)).size).toBe(methodologyChangelog.length);
+    methodologyChangelog.forEach((entry) => {
+      expect(entry.date).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(entry.scope).not.toHaveLength(0);
+      expect(entry.impact).not.toHaveLength(0);
+      expect(entry.referenceUrl).toMatch(/^https:\/\//);
+    });
+    expect(matrixIntegrity.fingerprint).toMatch(/^[a-f0-9]{64}$/);
+    expect(matrixIntegrity.files).toHaveProperty("shared/methodology-changelog.json");
+    expect(source).toContain("Changelog metodológico");
+    expect(source).toContain("methodologyChangelog.map");
+    expect(css).toContain(".methodology-changelog");
   });
 });

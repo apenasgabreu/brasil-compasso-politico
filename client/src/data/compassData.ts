@@ -1,5 +1,6 @@
 import rawPositions from "../../../shared/compassPositions.json";
 import integrityManifest from "../../../shared/matrix-integrity.json";
+import rawMethodologyChangelog from "../../../shared/methodology-changelog.json";
 
 export type Position = -2 | -1 | 0 | 1 | 2;
 export const matrixIntegrity = integrityManifest as {
@@ -8,6 +9,18 @@ export const matrixIntegrity = integrityManifest as {
   fingerprint: string;
   files: Record<string, string>;
 };
+export type MethodologyChangelogEntry = {
+  version: string;
+  date: string;
+  type: string;
+  title: string;
+  scope: string;
+  summary: string;
+  impact: string;
+  referenceLabel: string;
+  referenceUrl: string;
+};
+export const methodologyChangelog = rawMethodologyChangelog as MethodologyChangelogEntry[];
 export type Answer = Position | null | undefined;
 
 export type Axis =
